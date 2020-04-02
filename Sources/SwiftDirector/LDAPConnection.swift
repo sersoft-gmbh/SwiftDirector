@@ -1,8 +1,8 @@
 import CLDAP
-#if os(Linux)
-import Glibc
-#else
+#if canImport(Darwin)
 import Darwin.C
+#elseif canImport(Glibc)
+import Glibc
 #endif
 
 public final class LDAPConnection {
@@ -119,19 +119,17 @@ public final class LDAPConnection {
                 }
             }
         }
-        func readAttributes(entryPtr: OpaquePointer) throws -> [AttributeKey: Any] {
-            func readValues(attributeKey: UnsafePointer<CChar>) throws -> Any? {
+        func readAttributes(entryPtr: OpaquePointer) throws -> [AttributeKey: [String]] {
+            func readValues(attributeKey: UnsafePointer<CChar>) throws -> [String]? {
                 guard let valuesPtr = ldap_get_values_len(handle, entryPtr, attributeKey) else { return nil }
                 defer { free(valuesPtr) }
-                let values = UnsafeMutableBufferPointer(start: valuesPtr, count: numericCast(ldap_count_values_len(valuesPtr))).compactMap {
+                return UnsafeMutableBufferPointer(start: valuesPtr, count: numericCast(ldap_count_values_len(valuesPtr))).compactMap {
                     $0.map { String(cString: $0.pointee.bv_val) }
                 }
-                if values.isEmpty { return Optional<Any>.none as Any }
-                return values.count == 1 ? values[0] : values
             }
             var attrPtr: OpaquePointer?
             guard let firstAttrKey = ldap_first_attribute(handle, entryPtr, &attrPtr) else { return [:] }
-            var attributes: [AttributeKey: Any] = [:]
+            var attributes: [AttributeKey: [String]] = [:]
             attributes[.init(rawValue: String(cString: firstAttrKey))] = try readValues(attributeKey: firstAttrKey)
             while let attributeKey = ldap_next_attribute(handle, entryPtr, attrPtr) {
                 let key = AttributeKey(rawValue: String(cString: attributeKey))

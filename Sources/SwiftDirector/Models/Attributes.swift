@@ -15,7 +15,7 @@ public struct AttributeKey: RawRepresentable, Hashable, CustomStringConvertible,
     }
 }
 
-public struct Attribute<Value>: Hashable {
+public struct Attribute<Value: LDAPValue>: Hashable {
     public let key: AttributeKey
     public init(key: AttributeKey) { self.key = key }
 }
