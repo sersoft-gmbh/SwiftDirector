@@ -1,0 +1,5 @@
+module CLDAP [system] {
+  header "/usr/include/ldap.h"
+  link "ldap"
+  export *
+}
