@@ -3,6 +3,31 @@
 
 import PackageDescription
 
+extension Target {
+    static var cldap: Target {
+        #if os(Linux)
+        return systemLibrary(
+            name: "CLDAP",
+            path: "Sources/CLDAPLinux",
+            providers: [
+                .apt(["libldap2-dev"]),
+                .brew(["openldap"]),
+        ])
+        #else
+        return target(
+            name: "CLDAP",
+            path: "Sources/CLDAPMac",
+            cSettings: [
+                .unsafeFlags(["-I/usr/local/opt/openldap/include"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS]))
+            ],
+            linkerSettings: [
+                .unsafeFlags(["-L/usr/local/opt/openldap/lib"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS])),
+                .linkedLibrary("ldap")
+            ])
+        #endif
+    }
+}
+
 let package = Package(
     name: "SwiftDirector",
     products: [
@@ -18,35 +43,15 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .systemLibrary(
-            name: "CLDAP",
-            providers: [
-                .apt(["libldap2-dev"]),
-                .brew(["openldap"]),
-        ]),
-////        .target(
-//            name: "CLDAPShims",
-//            dependencies: ["CLDAP"],
-//
-//        ),
+        .cldap,
         .target(
             name: "SwiftDirector",
             dependencies: [
                 "CLDAP",
-            ],
-            cSettings: [
-                .unsafeFlags(["-I/usr/local/opt/openldap/include"], .when(platforms: [.macOS])),
-            ],
-            swiftSettings: [
-                .unsafeFlags(["-I/usr/local/opt/openldap/include"], .when(platforms: [.macOS])),
-            ],
-            linkerSettings: [
-                .unsafeFlags(["-L/usr/local/opt/openldap/lib"], .when(platforms: [.macOS])),
-                .linkedLibrary("ldap"),
             ]
         ),
         .testTarget(
             name: "SwiftDirectorTests",
-            dependencies: ["SwiftDirector"]),
+            dependencies: ["CLDAP", "SwiftDirector"]),
     ]
 )

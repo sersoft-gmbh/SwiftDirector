@@ -1,8 +1,7 @@
-#if os(Linux)
 import CLDAP
+#if os(Linux)
 import Glibc
 #else
-import ldap
 import Darwin.C
 #endif
 

@@ -1,8 +1,4 @@
-#if os(Linux)
 import CLDAP
-#else
-import ldap
-#endif
 
 typealias LDAPErrno = CInt
 
