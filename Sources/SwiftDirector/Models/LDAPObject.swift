@@ -1,12 +1,10 @@
-fileprivate extension AttributeKey {
-    static let entryDN: AttributeKey = "entryDN"
-}
-
 @dynamicMemberLookup
-public struct LDAPObject<ObjectClass: ObjectClassProtocol> {
+public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable, Identifiable, CustomStringConvertible, CustomDebugStringConvertible {
+    public typealias ID = ObjectClass.ID
+
     private final class Storage {
-        private var raw: [AttributeKey: [String]]
-        private var cache: [AttributeKey: Any]
+        private(set) var raw: [AttributeKey: [String]]
+        private(set) var cache: [AttributeKey: Any]
 
         private init(raw: [AttributeKey: [String]], cache: [AttributeKey: Any]) {
             self.raw = raw
@@ -24,14 +22,7 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol> {
                 if let cachedValue = cache[attribute.key] {
                     return cachedValue as! T
                 }
-                guard let rawValue = raw[attribute.key] else {
-                    if let null = Optional<Any>.none as? T {
-                        cache[attribute.key] = null
-                        return null
-                    }
-                    fatalError("Attribute with key \(attribute.key) is not present in object of object class \(ObjectClass.self)!")
-                }
-                let converted = T(fromLDAPRaw: rawValue)
+                let converted = raw[attribute.key].map(T.init) ?? T(fromLDAPRaw: EmptyCollection())
                 cache[attribute.key] = converted
                 return converted
             }
@@ -45,10 +36,11 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol> {
     private let objectClass = ObjectClass()
     private var storage: Storage
 
-    public var entryDN: String {
-        get { self[Attribute(key: .entryDN)] }
-        set { self[Attribute(key: .entryDN)] = newValue }
-    }
+    @inlinable
+    public var id: ID { self[dynamicMember: ObjectClass.idPath] }
+
+    public var description: String { description(includeCache: false) }
+    public var debugDescription: String { description(includeCache: true) }
 
     init(storage: [AttributeKey: [String]]) {
         self.storage = .init(raw: storage)
@@ -68,4 +60,29 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol> {
         get { self[objectClass[keyPath: path]] }
         set { self[objectClass[keyPath: path]] = newValue }
     }
+
+    @inlinable
+    public func hash(into hasher: inout Hasher) { hasher.combine(id) }
+
+    private func description(includeCache: Bool) -> String {
+        let idAttrKey = objectClass[keyPath: ObjectClass.idPath].key
+        func description<V>(for dict: [AttributeKey: V], indent: Int) -> String {
+            dict.sorted { $0.key < $1.key }
+                .lazy
+                .filter { $0.key != idAttrKey }
+                .map { "- \($0.key): \($0.value)" }
+                .joined(separator: "\n" + repeatElement(" ", count: indent))
+        }
+        let baseDesc = """
+        \(ObjectClass.self) (\(ObjectClass.oid)):
+           ID (\(idAttrKey)): \(id)
+           Attributes:
+              \(description(for: storage.raw, indent: 6))
+        """
+        guard includeCache else { return baseDesc }
+        return baseDesc + "\n   Cache:\n" + description(for: storage.cache, indent: 6)
+    }
+
+    @inlinable
+    public static func ==(lhs: Self, rhs: Self) -> Bool { lhs.id == rhs.id }
 }
