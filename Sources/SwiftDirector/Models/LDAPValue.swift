@@ -1,47 +1,3 @@
-/*public struct LDAPRaw: RandomAccessCollection {
-    public typealias Element = String
-    public typealias Index = Int
-    public typealias SubSequence = AnyRandomAccessCollection
-    public typealias Indices = AnyRandomAccessCollection
-
-    @usableFromInline
-    enum Storage {
-        case array(Array<Element>)
-        case singleValue(CollectionOfOne<Element>)
-        case empty(EmptyCollection<Element>)
-    }
-
-    @usableFromInline
-    let storage: Storage
-
-    public subscript(position: Int) -> String {
-        _read {
-            switch storage {
-            case .array(let arr): return arr[position]
-            case .singleValue(let str):
-                precondition(position == 0, "Index out of bounds!")
-                return str
-            case .empty: preconditionFailure("Index out of bounds!")
-            }
-        }
-    }
-    public var startIndex: Int {
-        switch storage {
-        case .array(let arr): return arr.startIndex
-        case .singleValue(_): return 0
-        case .empty: return 0
-        }
-    }
-
-    public var endIndex: Int {
-        switch storage {
-        case .array(let arr): return arr.endIndex
-        case .singleValue(_): return 1
-        case .empty: return 0
-        }
-    }
-}*/
-
 public protocol LDAPRaw: RandomAccessCollection where Element == String {}
 extension Array: LDAPRaw where Element == String {}
 extension CollectionOfOne: LDAPRaw where Element == String {}
@@ -50,7 +6,6 @@ extension AnyRandomAccessCollection: LDAPRaw where Element == String {}
 
 public protocol LDAPValue: Equatable {
     associatedtype LDAPRawType: LDAPRaw
-
     var ldapRaw: LDAPRawType { get }
 
     init<Raw: LDAPRaw>(fromLDAPRaw ldapRaw: Raw)
@@ -73,7 +28,7 @@ extension Int: LDAPValue {
 }
 
 extension Bool: LDAPValue {
-    public var ldapRaw: some LDAPRaw { String(self).ldapRaw }
+    public var ldapRaw: some LDAPRaw { (self ? "TRUE" : "FALSE").ldapRaw }
 
     public init<Raw: LDAPRaw>(fromLDAPRaw ldapRaw: Raw) {
         self = String(fromLDAPRaw: ldapRaw) == "TRUE"
