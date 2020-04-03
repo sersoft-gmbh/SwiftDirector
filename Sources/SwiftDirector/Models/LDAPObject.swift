@@ -1,3 +1,4 @@
+/// Represents a concrete object of a given object class type. This type can be used to extract attributes for this object.
 @dynamicMemberLookup
 public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable, Identifiable, CustomStringConvertible, CustomDebugStringConvertible {
     public typealias ID = ObjectClass.ID
@@ -35,25 +36,47 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable,
         set { self[metaObjectClass[keyPath: path]] = newValue }
     }
 
+    /// Checks whether this object has the given attribute.
+    /// - Parameter attributePath: The path for the attribute.
+    /// - Returns: `true` if this object has the given attribute, `false` otherwise.
     @inlinable
     public func hasAttribute<T>(_ attributePath: KeyPath<ObjectClass, Attribute<T>>) -> Bool {
         storage.hasAttribute(metaObjectClass[keyPath: attributePath])
     }
 
+    /// Checks whether this object can be casted to the given other object class.
+    /// - Parameter other: The other object class type against which to check castability.
+    /// - Returns: `true` if this object can be casted to the other object class type, `false` otherwise.
     public func canCast<C: ObjectClassProtocol>(to other: C.Type) -> Bool {
         guard other != ObjectClass.self else { return true }
-        guard hasAttribute(\.objectClass) else { return false }
-        let objectClasses = self.objectClass
+        guard hasAttribute(\.objectClasses) else { return false }
+        let objectClasses = self.objectClasses
         return objectClasses.contains(other.name) || objectClasses.contains(other.oid)
     }
 
-    public func forceCast<C: ObjectClassProtocol>(to other: C.Type = C.self) -> LDAPObject<C> {
+    @usableFromInline
+    func uncheckedForceCast<C: ObjectClassProtocol>(to other: C.Type) -> LDAPObject<C> {
         LDAPObject<C>(storage: storage)
     }
 
+    /// Force casts this object to new object class type.
+    /// - Parameter other: The new object class type to force cast to.
+    /// - Returns: The new object of the new object class type.
+    /// - Precondition: This object must be castable to the new type.
+    ///                 Otherwise an assertion is triggered in debug builds and in release builds accessing attributes on the new object results in undefined behavior.
+    @inlinable
+    public func forceCast<C: ObjectClassProtocol>(to other: C.Type = C.self) -> LDAPObject<C> {
+        assert(canCast(to: other))
+        return uncheckedForceCast(to: other)
+    }
+
+    /// Casts this object to a new object class type if possible.
+    /// - Parameter other: The new object class type to use.
+    /// - Returns: The new object of the new object class type or nil if the receiver is not castable to the new object class type.
+    /// - SeeAlso: `canCast(to:)`
     @inlinable
     public func cast<C: ObjectClassProtocol>(to other: C.Type = C.self) -> LDAPObject<C>? {
-        canCast(to: other) ? forceCast(to: other) : nil
+        canCast(to: other) ? uncheckedForceCast(to: other) : nil
     }
 
     @inlinable

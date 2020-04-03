@@ -1,4 +1,5 @@
-public struct AttributeKey: RawRepresentable, Hashable, Comparable, ExpressibleByStringLiteral, CustomStringConvertible, CustomDebugStringConvertible {
+/// Represents a key for an attribute.
+public struct AttributeKey: RawRepresentable, Hashable, Comparable, Codable, ExpressibleByStringLiteral, CustomStringConvertible, CustomDebugStringConvertible {
     public typealias RawValue = String
 
     public let rawValue: RawValue
@@ -21,11 +22,15 @@ public struct AttributeKey: RawRepresentable, Hashable, Comparable, ExpressibleB
     }
 }
 
+/// Represents an (typed) attribute containing its key.
 public struct Attribute<Value: LDAPValue>: Hashable, CustomStringConvertible, CustomDebugStringConvertible {
+    /// The key for this attribute.
     public let key: AttributeKey
 
     public var description: String { "\(key): \(Value.self)" }
     public var debugDescription: String { description }
 
+    /// Creates a new attribute with the given key.
+    /// - Parameter key: The key to use for this attribute.
     public init(key: AttributeKey) { self.key = key }
 }

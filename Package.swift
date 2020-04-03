@@ -6,7 +6,7 @@ import PackageDescription
 import Foundation
 #endif
 
-extension Target {
+fileprivate extension Target {
     static func cldap() -> Target {
         #if os(Linux)
         return systemLibrary(
@@ -20,15 +20,12 @@ extension Target {
         let openldapPath = "/usr/local/opt/openldap"
         var isDir: ObjCBool = false
         if !FileManager.default.fileExists(atPath: openldapPath, isDirectory: &isDir) || !isDir.boolValue {
-            print("'\(openldapPath)' is missing! Build will most likely fail. Please install 'openldap' with 'brew install openldap'")
+            print("'\(openldapPath)' is missing! Builds will most likely fail. Please install 'openldap' with e.g. 'brew install openldap'")
         }
         return target(
             name: "CLDAP",
             path: "Sources/CLDAPMac",
             cSettings: [
-                .unsafeFlags(["-I\(openldapPath)/include"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS])),
-            ],
-            cxxSettings: [
                 .unsafeFlags(["-I\(openldapPath)/include"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS])),
             ],
             linkerSettings: [
@@ -53,19 +50,13 @@ let package = Package(
             name: "SwiftDirector",
             targets: ["SwiftDirector"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .cldap(),
         .target(
             name: "SwiftDirector",
-            dependencies: [
-                "CLDAP",
-            ]
+            dependencies: ["CLDAP"]
         ),
         .testTarget(
             name: "SwiftDirectorTests",

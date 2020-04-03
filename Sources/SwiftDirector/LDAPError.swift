@@ -1,7 +1,9 @@
 import CLDAP
 
+/// A typealias for the error codes used in LDAP.
 typealias LDAPErrno = CInt
 
+/// The error type representing errors occurring during LDAP operations.
 public struct LDAPError: Error, Equatable, CustomStringConvertible {
     private enum Kind: Equatable {
         case ldap(LDAPErrno)
@@ -16,8 +18,8 @@ public struct LDAPError: Error, Equatable, CustomStringConvertible {
 
     public var description: String {
         switch kind {
-        case .ldap(let errno): return String(cString: ldap_err2string(errno))
-        case .unknown: return "An unknown error occurred!"
+        case .ldap(let errno): return "[\(Self.self)] \(String(cString: ldap_err2string(errno)))"
+        case .unknown: return "[\(Self.self)] An unknown error occurred!"
         }
     }
 
@@ -32,22 +34,30 @@ public struct LDAPError: Error, Equatable, CustomStringConvertible {
 
     init?(errno: LDAPErrno) {
         guard errno != 0 else { return nil }
-        self.init(nonZeroErrno: errno)
+        self.init(kind: .ldap(errno))
     }
 
+    /// An unknown error that does not correspond to any LDAP error.
+    /// Usually occurs if ldap returned a success status code but not the necessary results.
     public static var unknown: LDAPError { .init(kind: .unknown) }
 }
 
+// MARK: - Execution Helpers
 extension LDAPError {
-    static func validateVoid(work: () throws -> LDAPErrno) throws {
-        if let error = try LDAPError(errno: work()) {
+    private static func _validateVoid(work: () -> LDAPErrno, beforeThrow: () -> ()) throws {
+        if let error = LDAPError(errno: work()) {
+            beforeThrow()
             throw error
         }
     }
 
-    static func validate<T>(work: (inout T?) throws -> LDAPErrno) throws -> T {
+    static func validateVoid(work: () -> LDAPErrno) throws {
+        try _validateVoid(work: work, beforeThrow: {})
+    }
+
+    static func validate<T>(freeingWith free: ((T?) -> ())? = nil, work: (inout T?) -> LDAPErrno) throws -> T {
         var result: T?
-        try validateVoid { try work(&result) }
+        try _validateVoid(work: { work(&result) }, beforeThrow: { free?(result) })
         guard let unwrappedResult = result else { throw unknown }
         return unwrappedResult
     }

@@ -4,11 +4,11 @@ extension GroupOfNamesProtocol {
     public var commonName: Attribute<String> { .init(key: "cn") }
 
     // Is "MAY" in some LDAP implementations - however in our implementation will lead to an empty array.
-    public var member: Attribute<Array<String>> { .init(key: "member") }
+    public var member: Attribute<Array<DistinguishedName>> { .init(key: "member") }
 
     public var organization: Attribute<String?> { .init(key: "o") }
     public var organizationalUnit: Attribute<String?> { .init(key: "ou") }
-    public var owner: Attribute<String?> { .init(key: "owner") }
+    public var owner: Attribute<DistinguishedName?> { .init(key: "owner") }
 }
 
 public struct GroupOfNames: GroupOfNamesProtocol {
