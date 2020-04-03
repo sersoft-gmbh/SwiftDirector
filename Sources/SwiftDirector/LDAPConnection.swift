@@ -8,14 +8,8 @@ import Glibc
 public final class LDAPConnection {
     private enum Mode {
         case primary(LDAPServer, isUnbound: Bool)
+        // We keep a reference to the original connection to make sure we're not accidentially closed.
         case duplicate(original: LDAPConnection)
-    }
-
-    public var server: LDAPServer {
-        switch mode {
-        case .primary(let server, _): return server
-        case .duplicate(let original): return original.server
-        }
     }
 
     private var mode: Mode
@@ -35,6 +29,13 @@ public final class LDAPConnection {
             case .duplicate(let original):
                 original.isUnbound = newValue
             }
+        }
+    }
+
+    public var server: LDAPServer {
+        switch mode {
+        case .primary(let server, _): return server
+        case .duplicate(let original): return original.server
         }
     }
 
@@ -77,9 +78,10 @@ public final class LDAPConnection {
         }
     }
 
-    @inlinable
-    public func duplicate() throws -> LDAPConnection {
-        try .init(duplicating: self)
+    public func duplicate(fromOriginal: Bool) throws -> LDAPConnection {
+        guard fromOriginal, case .duplicate(let original) = mode
+            else { return try .init(duplicating: self) }
+        return try original.duplicate(fromOriginal: fromOriginal)
     }
 
     @inlinable
@@ -109,7 +111,7 @@ public final class LDAPConnection {
         isUnbound = true
     }
 
-    public func search<T>(base: String, filter: String? = nil) throws -> [LDAPObject<T>] {
+    public func search<T>(_ objectClass: T.Type = T.self, base: String, filter: String? = nil) throws -> [LDAPObject<T>] {
         let objectClassFilter = "(objectClass=\(T.oid))"
         let actualFilter = filter.map { "(&\(objectClassFilter)\($0))" } ?? objectClassFilter
         let result: OpaquePointer = try LDAPError.validate { resultPtr in
