@@ -11,6 +11,7 @@ extension OrganizationalPersonProtocol {
 
 public struct OrganizationalPerson: OrganizationalPersonProtocol {
     public static var oid: String { "2.5.6.7" }
+    public static var name: String { "organizationalPerson" }
     
     public init() {}
 }

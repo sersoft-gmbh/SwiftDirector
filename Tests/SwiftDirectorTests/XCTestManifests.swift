@@ -6,12 +6,7 @@ extension SwiftDirectorTests {
     //   `swift test --generate-linuxmain`
     // to regenerate.
     static let __allTests__SwiftDirectorTests = [
-        ("testAuthBind", testAuthBind),
-        ("testBind", testBind),
-        ("testConnect", testConnect),
-        ("testConnectionReconnect", testConnectionReconnect),
-        ("testDuplicate", testDuplicate),
-        ("testSearch", testSearch),
+        ("testNothing", testNothing),
     ]
 }
 

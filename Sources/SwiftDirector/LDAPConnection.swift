@@ -143,7 +143,7 @@ public final class LDAPConnection {
         }
         var entryPtr_ = ldap_first_entry(handle, result)
         while let entryPtr = entryPtr_ {
-            try resultObjects.append(.init(storage: readAttributes(entryPtr: entryPtr)))
+            try resultObjects.append(.init(rawAttributes: readAttributes(entryPtr: entryPtr)))
             entryPtr_ = ldap_next_entry(handle, entryPtr)
         }
         return resultObjects
