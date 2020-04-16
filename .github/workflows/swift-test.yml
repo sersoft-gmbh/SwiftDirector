@@ -38,7 +38,7 @@ jobs:
         SWIFT_BRANCH: "swift-5.2.1-release"
         SWIFT_VERSION: "swift-5.2.1-RELEASE"
       run: |
-        curl -fsL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/files/install_swift_linux.sh') -o install_swift.sh
+        curl -fsL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/files/install_swift_linux.sh' -o install_swift.sh
         chmod +x install_swift.sh
         sudo ./install_swift.sh
     - uses: actions/checkout@v2
