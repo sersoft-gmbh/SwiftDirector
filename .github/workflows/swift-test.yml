@@ -1,0 +1,35 @@
+name: Swift Tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  validate-linux-tests:
+    runs-on: macos-latest
+    steps:
+      - name: Generate Linux Tests
+        run: swift test --generate-linuxmain
+      - name: Check for git differences
+        run: git diff --exit-code
+  test:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-18.04]
+
+    runs-on: ${{matrix.os}}
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install OpenLDAP
+      if: runner.os == 'macOS'
+      run: brew install openldap
+    - name: Install OpenLDAP
+      if: runner.os == 'Linux'
+      run: apt install libldap2-dev
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v --parallel
