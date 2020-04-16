@@ -10,6 +10,7 @@ jobs:
   validate-linux-tests:
     runs-on: macos-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Generate Linux Tests
         run: swift test --generate-linuxmain
       - name: Check for git differences
@@ -28,7 +29,7 @@ jobs:
       run: brew install openldap
     - name: Install OpenLDAP
       if: runner.os == 'Linux'
-      run: apt install libldap2-dev
+      run: sudo apt-get install libldap2-dev
     - name: Build
       run: swift build -v
     - name: Run tests
