@@ -1,4 +1,4 @@
-name: Swift Tests
+name: Tests
 
 on:
   push:
@@ -32,17 +32,15 @@ jobs:
     - name: Install Swift
       if: runner.os == 'Linux'
       env:
-        SWIFT_SKIP_APT: 0
-        SWIFT_INSTALL_TARGET: "/"
-        SWIFT_PLATFORM: "ubuntu18.04"
-        SWIFT_BRANCH: "swift-5.2.1-release"
-        SWIFT_VERSION: "swift-5.2.1-RELEASE"
+        SWIFT_PLATFORM: ubuntu18.04
+        SWIFT_RELEASE: 5.2.1
       run: |
         curl -fsL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/files/install_swift_linux.sh' -o install_swift.sh
         chmod +x install_swift.sh
         sudo ./install_swift.sh
+        rm install_swift.sh
     - uses: actions/checkout@v2
     - name: Build
       run: swift build -v
-    - name: Run tests
+    - name: Test
       run: swift test -v --parallel
