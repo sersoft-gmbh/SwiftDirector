@@ -10,6 +10,7 @@ jobs:
   validate-linux-tests:
     runs-on: macos-latest
     steps:
+      - run: sudo xcode-select -s /Applications/Xcode_11.4.app/Contents/Developer
       - uses: actions/checkout@v2
       - name: Generate Linux Tests
         run: swift test --generate-linuxmain
@@ -23,13 +24,21 @@ jobs:
     runs-on: ${{matrix.os}}
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Install OpenLDAP
+    - run: sudo xcode-select -s /Applications/Xcode_11.4.app/Contents/Developer
       if: runner.os == 'macOS'
-      run: brew install openldap
     - name: Install OpenLDAP
       if: runner.os == 'Linux'
       run: sudo apt-get install libldap2-dev
+    - name: Install Swift
+      if: runner.os == 'Linux'
+      env:
+        SWIFT_SKIP_APT: 0
+        SWIFT_INSTALL_TARGET: "/"
+        SWIFT_PLATFORM: "ubuntu18.04"
+        SWIFT_BRANCH: "swift-5.2.1-release"
+        SWIFT_VERSION: "swift-5.2.1-RELEASE"
+      run: sudo eval "$(curl -fsL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/files/install_swift_linux.sh')"
+    - uses: actions/checkout@v2
     - name: Build
       run: swift build -v
     - name: Run tests
