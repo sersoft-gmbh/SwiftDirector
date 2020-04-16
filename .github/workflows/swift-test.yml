@@ -35,6 +35,7 @@ jobs:
         SWIFT_PLATFORM: ubuntu18.04
         SWIFT_RELEASE: 5.2.1
       run: |
+        env
         curl -fsL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/files/install_swift_linux.sh' -o install_swift.sh
         chmod +x install_swift.sh
         sudo ./install_swift.sh
