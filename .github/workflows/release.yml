@@ -1,0 +1,26 @@
+name: Release Processing
+
+on:
+  release:
+    types: 
+      - created
+      - updated
+      - published
+
+jobs:
+  publish-docs:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install Dependencies
+      run: |
+        brew install sourcekitten
+        gem install jazzy
+    - name: Build Docs
+      run: |
+        sourcekitten doc --spm-module SwiftDirector > docs.json
+        jazzy --sourcekitten-sourcefile docs.json --module-version $(echo "${GITHUB_REF}" | awk -F'/' '{print $NF}') --output docs
+    - name: Publish GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v1.4.0
+      with:
+        build_dir: docs
