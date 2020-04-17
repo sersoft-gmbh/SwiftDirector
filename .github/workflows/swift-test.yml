@@ -31,14 +31,9 @@ jobs:
       run: sudo apt-get install libldap2-dev
     - name: Install Swift
       if: runner.os == 'Linux'
-      env:
-        SWIFT_PLATFORM: ubuntu18.04
-        SWIFT_RELEASE: 5.2.0
-      run: |
-        curl -fsL 'https://bitbucket.org/!api/2.0/snippets/sersoftgmbh/7AgnAp/files/install_swift_linux.sh' -o install_swift.sh
-        chmod +x install_swift.sh
-        sudo ./install_swift.sh
-        rm install_swift.sh
+      uses: sersoft-gmbh/SwifyActions@v1
+      with:
+        release-version: 5.2.2
     - uses: actions/checkout@v2
     - name: Build
       run: swift build -v
