@@ -2,7 +2,7 @@ name: Release Processing
 
 on:
   release:
-    types: 
+    types:
       - created
       - updated
       - published
@@ -11,11 +11,12 @@ jobs:
   publish-docs:
     runs-on: macos-latest
     steps:
+    - run: sudo xcode-select -s /Applications/Xcode_11.4.app/Contents/Developer
     - uses: actions/checkout@v2
     - name: Install Dependencies
       run: |
         brew install sourcekitten
-        gem install jazzy
+        gem install jazzy --no-document
     - name: Build Docs
       run: |
         sourcekitten doc --spm-module SwiftDirector > docs.json
