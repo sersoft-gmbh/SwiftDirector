@@ -31,7 +31,7 @@ jobs:
       run: sudo apt-get install libldap2-dev
     - name: Install Swift
       if: runner.os == 'Linux'
-      uses: sersoft-gmbh/SwifyActions@v1
+      uses: sersoft-gmbh/SwiftyActions@v1
       with:
         release-version: 5.2.2
     - uses: actions/checkout@v2
