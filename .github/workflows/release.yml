@@ -3,9 +3,8 @@ name: Release Processing
 on:
   release:
     types:
-      - created
-      - updated
       - published
+      - updated
 
 jobs:
   publish-docs:
