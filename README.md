@@ -28,8 +28,7 @@ let server = LDAPServer.ldap(host: "ldap.mydomain.com")
 let server = LDAPServer.ldaps(host: "ldaps.mydomain.com")
 ```
 
-Both methods optionally take a `port` paraemeter if you require a non-default port. If you need different schemes, there is the `LDAPServer.init(scheme:host:port)` initializer with which you can create a fully customized `LDAPServer`.
-
+Both methods optionally take a `port` parameter if you require a non-default port. If you need different schemes, there is the `LDAPServer(scheme:host:port)` initializer with which you can create a fully customized `LDAPServer`.
 
 ### LDAPConnection
 
@@ -72,7 +71,6 @@ for result in results {
 }
 ```
 
-
 ### Object Classes
 
 Object classes describe the attributes that are available on an object. In SwiftDirector, object classes are represented as protocols and (empty) structs which are used in combination with the `@dynamicMemberLookup` features of Swift to allow you to easily access information on an `LDAPObject` (see below).
@@ -109,7 +107,6 @@ public struct MySpecialPerson: MySpecialPersonProtocol {
 }
 ```
 
-
 ### LDAPObject
 
 An `LDAPObject` represents a concrete object retrieved from an LDAP directory. It's a generic struct whose generic parameter has to be an object class. It gives access to the object class' attributes which are exposed as simple properties thanks to the power of `@dynamicMemberLookup`:
@@ -139,7 +136,6 @@ object.hasAttribute(\.authPassword) // Returns whether or not `authPassword` is 
 ```
 
 Finally, `LDAPObject` uses the identifying attribute specified by the object class to conform to `Equatable`, `Hashable` and `Identifiable`.
-
 
 ## Possible Features
 
