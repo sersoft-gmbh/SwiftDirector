@@ -10,19 +10,16 @@ jobs:
   publish-docs:
     runs-on: macos-latest
     steps:
-    - run: sudo xcode-select -s /Applications/Xcode_11.4.app/Contents/Developer
-    - uses: actions/checkout@v2
-    - name: Install Dependencies
-      run: |
-        brew install sourcekitten
-        gem install jazzy --no-document
-    - name: Build Docs
-      run: |
-        sourcekitten doc --spm-module SwiftDirector > docs.json
-        jazzy --sourcekitten-sourcefile docs.json --module-version $(echo "${GITHUB_REF}" | awk -F'/' '{print $NF}') --output docs
-    - name: Publish GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v1.4.0
-      with:
-        build_dir: docs
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - run: sudo xcode-select -s /Applications/Xcode_11.4.app/Contents/Developer
+      - uses: actions/checkout@v2
+      - uses: dawidd6/action-get-tag@v1.0.0
+        id: get-tag
+      - uses: sersoft-gmbh/swifty-docs-action@v1
+        with:
+          module-version: ${{steps.get-tag.outputs.tag}}
+          output: docs
+      - uses: crazy-max/ghaction-github-pages@v1.4.0
+        with:
+          build_dir: docs
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
