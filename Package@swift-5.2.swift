@@ -1,4 +1,4 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -17,11 +17,7 @@ fileprivate extension Target {
                 .brew(["openldap"]),
         ])
         #else
-        #if arch(arm)
         let openldapPath = "/usr/local/opt/openldap"
-        #else
-        let openldapPath = "/opt/homebrew/opt/openldap"
-        #endif
         var isDir: ObjCBool = false
         if !FileManager.default.fileExists(atPath: openldapPath, isDirectory: &isDir) || !isDir.boolValue {
             print("'\(openldapPath)' is missing! Builds will most likely fail. Please install 'openldap' with e.g. 'brew install openldap'")
@@ -30,7 +26,6 @@ fileprivate extension Target {
             name: "CLDAP",
             path: "Sources/CLDAPMac",
             cSettings: [
-//                .headerSearchPath("\(openldapPath)/include", .when(platforms: [.iOS, .tvOS, .watchOS, .macOS])),
                 .unsafeFlags(["-I\(openldapPath)/include"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS])),
             ],
             linkerSettings: [
