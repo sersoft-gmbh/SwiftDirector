@@ -18,9 +18,9 @@ fileprivate extension Target {
         ])
         #else
         #if arch(arm)
-        let openldapPath = "/usr/local/opt/openldap"
-        #else
         let openldapPath = "/opt/homebrew/opt/openldap"
+        #else
+        let openldapPath = "/usr/local/opt/openldap"
         #endif
         var isDir: ObjCBool = false
         if !FileManager.default.fileExists(atPath: openldapPath, isDirectory: &isDir) || !isDir.boolValue {
