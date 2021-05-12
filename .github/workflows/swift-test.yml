@@ -24,7 +24,7 @@ jobs:
         run: sudo apt-get install libldap2-dev
       - name: Install Swift
         if: runner.os == 'Linux'
-        uses: sersoft-gmbh/SwiftyActions@v1
+        uses: sersoft-gmbh/SwiftyActions@v1.1.1
         with:
           release-version: 5.4
           platform: ${{matrix.os}}
@@ -37,7 +37,7 @@ jobs:
       - name: Generate Coverage Files
         if: runner.os == 'Linux'
         run: llvm-cov export -format="lcov" .build/debug/*PackageTests.xctest -instr-profile .build/debug/codecov/default.profdata > coverage.lcov
-      - uses: codecov/codecov-action@v1
+      - uses: codecov/codecov-action@v1.5.0
         with:
             token: ${{secrets.CODECOV_TOKEN}}
             file: coverage.lcov
