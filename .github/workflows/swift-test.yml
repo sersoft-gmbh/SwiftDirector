@@ -27,6 +27,7 @@ jobs:
         uses: sersoft-gmbh/SwiftyActions@v1
         with:
           release-version: 5.4
+          platform: ${{matrix.os}}
       - uses: actions/checkout@v2
       - name: Build & Test
         run: swift test -v --parallel --enable-code-coverage
