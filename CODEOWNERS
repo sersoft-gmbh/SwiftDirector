@@ -1,0 +1,17 @@
+# Global
+*  @ffried
+
+# Workflow & Deployment related files
+.github/*      @ffried
+.jazzy.yaml    @ffried
+.codecov.yml   @ffried
+
+# Project & Source files
+*.pch           @ffried
+*.h             @ffried
+*.m             @ffried
+*.c             @ffried
+*.swift         @ffried
+/Package.*      @ffried
+/Sources/*      @ffried
+/Tests/*        @ffried
