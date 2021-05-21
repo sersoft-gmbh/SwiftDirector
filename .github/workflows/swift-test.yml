@@ -24,7 +24,7 @@ jobs:
         run: sudo apt-get install libldap2-dev
       - name: Install Swift
         if: runner.os == 'Linux'
-        uses: sersoft-gmbh/SwiftyActions@v1.1.1
+        uses: sersoft-gmbh/SwiftyActions@v1.2
         with:
           release-version: ${{matrix.swift-version}}
           platform: ${{matrix.os}}
