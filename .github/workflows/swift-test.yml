@@ -38,7 +38,7 @@ jobs:
       - uses: actions/cache@v2.1.6
         with:
           path: .build
-          key: ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-${{hashFiles('Package.resolved')}}
+          key: ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-${{hashFiles('**/Package.resolved')}}
           restore-keys: |
             ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-
       - name: Build & Test
