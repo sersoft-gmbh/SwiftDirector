@@ -31,9 +31,7 @@ jobs:
           github-token: ${{secrets.GITHUB_TOKEN}}
       - name: Read Swift Version
         id: swift-version
-        run: |
-          SWIFT_VERSION=$(swift -version | head -1 | sed -Ee 's|.*version ([0-9]+\.[0-9]+(\.[0-9])?).*|\1|g')
-          echo "::set-output name=version::${SWIFT_VERSION}"
+        uses: sersoft-gmbh/swift-version-action@v1
       - uses: actions/checkout@v2.3.4
       - uses: actions/cache@v2.1.6
         with:
