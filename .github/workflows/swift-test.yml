@@ -29,7 +29,8 @@ jobs:
           release-version: ${{matrix.swift-version}}
           platform: ${{matrix.os}}
           github-token: ${{secrets.GITHUB_TOKEN}}
-      - id: swift-version
+      - name: Read Swift Version
+        id: swift-version
         run: |
           SWIFT_VERSION=$(swift -version | head -1 | sed -Ee 's|.*version ([0-9]+\.[0-9]+(\.[0-9])?).*|\1|g')
           echo "::set-output name=version::${SWIFT_VERSION}"
@@ -37,7 +38,7 @@ jobs:
       - uses: actions/cache@v2.1.6
         with:
           path: .build
-          key: ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-${{hashFiles('**/Package.resolved')}}
+          key: ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-${{hashFiles('Package.resolved')}}
           restore-keys: |
             ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-
       - name: Build & Test
