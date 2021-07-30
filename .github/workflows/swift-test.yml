@@ -50,5 +50,5 @@ jobs:
       - uses: codecov/codecov-action@v2.0.2
         with:
           token: ${{secrets.CODECOV_TOKEN}}
-          files: ${{steps.coverage-files.outputs.files}}
+          files: ${{join(fromJSON(steps.coverage-files.outputs.files), ',')}}
           fail_ci_if_error: true
