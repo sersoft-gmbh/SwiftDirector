@@ -4,7 +4,7 @@ on:
   release:
     types:
       - published
-      - updated
+      - edited
 
 jobs:
   publish-docs:
@@ -13,19 +13,23 @@ jobs:
       - uses: dawidd6/action-get-tag@v1.0.0
         id: get-tag
       - uses: maxim-lobanov/setup-xcode@v1.3.0
+        if: runner.os == 'macOS'
         with:
           xcode-version: ^12.4
+      - name: Read OS Version
+        uses: sersoft-gmbh/os-version-action@v1.0.0
+        id: os-version
       - name: Read Swift Version
+        uses: sersoft-gmbh/swift-version-action@v1.0.0
         id: swift-version
-        uses: sersoft-gmbh/swift-version-action@v1
       - uses: actions/checkout@v2.3.4
       - uses: actions/cache@v2.1.6
         with:
           path: .build
-          key: ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-${{hashFiles('**/Package.resolved')}}
+          key: ${{runner.os}}-${{steps.os-version.outputs.version}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-${{hashFiles('**/Package.resolved')}}
           restore-keys: |
-            ${{runner.os}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-
-      - uses: sersoft-gmbh/swifty-docs-action@v1.2
+            ${{runner.os}}-${{steps.os-version.outputs.version}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-
+      - uses: sersoft-gmbh/swifty-docs-action@v1.2.0
         with:
           module-version: ${{steps.get-tag.outputs.tag}}
           output: docs
