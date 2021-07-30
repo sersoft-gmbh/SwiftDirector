@@ -44,8 +44,8 @@ jobs:
             ${{runner.os}}-${{steps.os-version.outputs.version}}-${{github.repository}}-spm-${{steps.swift-version.outputs.version}}-
       - name: Build & Test
         run: swift test -v --parallel --enable-code-coverage
-        uses: sersoft-gmbh/swift-coverage-action@v2.0.0
       - name: Generate Coverage Files
+        uses: sersoft-gmbh/swift-coverage-action@v2.0.0
         id: coverage-files
       - uses: codecov/codecov-action@v2.0.2
         with:
