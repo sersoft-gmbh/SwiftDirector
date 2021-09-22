@@ -100,7 +100,7 @@ public final class LDAPConnection {
     /// - Returns: A duplicated connection.
     public func duplicate(fromOriginal: Bool = false) throws -> LDAPConnection {
         guard fromOriginal, case .duplicate(let original, _) = mode
-            else { return try .init(duplicating: self) }
+        else { return try .init(duplicating: self) }
         return try original.duplicate(fromOriginal: fromOriginal)
     }
 
@@ -133,7 +133,7 @@ public final class LDAPConnection {
         assertValid()
         try LDAPError.validateVoid {
             let copiedCredentials = strdup(credentials)
-            defer { free(copiedCredentials) }
+            defer { if let creds = copiedCredentials { free(creds) } }
             var creds = berval(bv_len: numericCast(credentials.utf8.count), bv_val: copiedCredentials)
             return ldap_sasl_bind_s(handle, dn, nil, &creds, nil, nil, nil)
         }
@@ -156,7 +156,9 @@ public final class LDAPConnection {
     ///   - filter: Additional LDAP filters to specify. Defaults to `nil`. The method will add the filter for the object class.
     /// - Throws: An `LDAPError` if searching or parsing fails.
     /// - Returns: A list of `LDAPObject`s of the given object class type.
-    public func search<ObjectClass>(for objectClass: ObjectClass.Type = ObjectClass.self, inBase base: String, filteredBy filter: String? = nil) throws -> [LDAPObject<ObjectClass>] {
+    public func search<ObjectClass>(for objectClass: ObjectClass.Type = ObjectClass.self,
+                                    inBase base: String,
+                                    filteredBy filter: String? = nil) throws -> [LDAPObject<ObjectClass>] {
         func readAttributes(entryPtr: OpaquePointer) -> [AttributeKey: [String]] {
             func readValues(attributeKey: UnsafePointer<CChar>) -> [String]? {
                 guard let valuesPtr = ldap_get_values_len(handle, entryPtr, attributeKey) else { return nil }
@@ -194,7 +196,7 @@ public final class LDAPConnection {
 fileprivate extension Collection where Element == String {
     func withMutableArrayOfCStrings<R>(_ body: (inout [UnsafeMutablePointer<CChar>?]) throws -> R) rethrows -> R {
         var cStrings = map { strdup($0) } + CollectionOfOne(nil)
-        defer { cStrings.forEach { free($0) } }
+        defer { cStrings.lazy.compactMap { $0 }.forEach { free($0) } }
         return try body(&cStrings)
     }
 }
