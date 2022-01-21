@@ -17,7 +17,7 @@ fileprivate extension Target {
                 .brew(["openldap"]),
         ])
         #else
-        #if arch(arm)
+        #if arch(arm64) || arch(arm)
         let openldapPath = "/opt/homebrew/opt/openldap"
         #else
         let openldapPath = "/usr/local/opt/openldap"
