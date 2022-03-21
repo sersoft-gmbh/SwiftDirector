@@ -69,3 +69,8 @@ extension LDAPServer {
         .init(schema: .ldaps, host: host, port: port)
     }
 }
+
+#if compiler(>=5.5) && canImport(_Concurrency)
+extension LDAPServer: Sendable {}
+extension LDAPServer.Schema: Sendable {}
+#endif

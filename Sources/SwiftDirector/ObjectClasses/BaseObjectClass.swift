@@ -12,10 +12,10 @@ public protocol ObjectClassProtocol {
     static var oid: String { get }
     /// The name of this object class (e.g. top or shadowAccount).
     static var name: String { get }
-    /// The path to the identifying attribute of this object class. Defaults to the `entryDN`.
+    /// The path to the identifying attribute of this object class. Defaults to the `entryDN` if `ID` is `DistinguishedName`.
     static var idPath: IDPath { get }
 
-    /// Creates a new instance of the object class. The object class is just a describtor and should thus not have any fields and the initializer should not do anything.
+    /// Creates a new instance of the object class. The object class is just a descriptor and should thus not have any fields and the initializer should not do anything.
     init()
 }
 
@@ -29,10 +29,17 @@ extension ObjectClassProtocol {
     public var memberOf: Attribute<Array<DistinguishedName>> { .init(key: "memberOf") }
 }
 
-extension ObjectClassProtocol where ID == DistinguishedName {
+public protocol _DNIdentifiedObjectClassProtocol: ObjectClassProtocol where ID == DistinguishedName {}
+extension _DNIdentifiedObjectClassProtocol {
     @inlinable
     public static var idPath: IDPath { \.entryDN }
 }
+
+
+//extension ObjectClassProtocol where ID == DistinguishedName {
+//    @inlinable
+//    public static var idPath: IDPath { \.entryDN }
+//}
 
 extension ObjectClassProtocol {
     /// The display name of this object class.

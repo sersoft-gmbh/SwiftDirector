@@ -142,3 +142,8 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable,
         raw.keys.contains(attribute.key)
     }
 }
+
+#if compiler(>=5.5) && canImport(_Concurrency)
+extension LDAPObjectStorage: @unchecked Sendable {}
+extension LDAPObject: Sendable where ObjectClass: Sendable {}
+#endif

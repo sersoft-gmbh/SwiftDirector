@@ -11,9 +11,17 @@ extension GroupOfNamesProtocol {
     public var owner: Attribute<DistinguishedName?> { .init(key: "owner") }
 }
 
+@frozen
 public struct GroupOfNames: GroupOfNamesProtocol {
     public static var oid: String { "2.5.6.9" }
     public static var name: String { "groupOfNames" }
 
+    @inlinable
+    public static var idPath: IDPath { \.entryDN }
+
     public init() {}
 }
+
+#if compiler(>=5.5) && canImport(_Concurrency)
+extension GroupOfNames: Sendable {}
+#endif

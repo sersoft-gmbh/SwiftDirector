@@ -8,9 +8,19 @@ extension InetOrgPersonProtocol {
     public var employeeNumber: Attribute<String?> { .init(key: "employeeNumber") }
 }
 
+@frozen
 public struct InetOrgPerson: InetOrgPersonProtocol {
+    public typealias ID = DistinguishedName
+
+    @inlinable
+    public static var idPath: IDPath { \.entryDN }
+
     public static var oid: String { "2.16.840.1.113730.3.2.2" }
     public static var name: String { "inetOrgPerson" }
     
     public init() {}
 }
+
+#if compiler(>=5.5) && canImport(_Concurrency)
+extension InetOrgPerson: Sendable {}
+#endif

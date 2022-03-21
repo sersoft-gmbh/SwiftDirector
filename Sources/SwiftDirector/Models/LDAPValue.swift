@@ -88,7 +88,11 @@ extension ContiguousArray: LDAPValue where Element: LDAPValue {
     public var ldapRaw: some LDAPRaw { flatMap { $0.ldapRaw } }
 
     public init<Raw: LDAPRaw>(fromLDAPRaw ldapRaw: Raw) {
-        self.init(Array(fromLDAPRaw: ldapRaw))
+        self.init()
+        reserveCapacity(ldapRaw.count)
+        for elem in ldapRaw {
+            append(.init(fromLDAPRaw: CollectionOfOne(elem)))
+        }
     }
 }
 
@@ -96,6 +100,9 @@ extension Set: LDAPValue where Element: LDAPValue {
     public var ldapRaw: some LDAPRaw { flatMap { $0.ldapRaw } }
 
     public init<Raw: LDAPRaw>(fromLDAPRaw ldapRaw: Raw) {
-        self.init(Array(fromLDAPRaw: ldapRaw))
+        self.init(minimumCapacity: ldapRaw.count)
+        for elem in ldapRaw {
+            insert(.init(fromLDAPRaw: CollectionOfOne(elem)))
+        }
     }
 }

@@ -34,3 +34,8 @@ public struct Attribute<Value: LDAPValue>: Hashable, CustomStringConvertible, Cu
     /// - Parameter key: The key to use for this attribute.
     public init(key: AttributeKey) { self.key = key }
 }
+
+#if compiler(>=5.5) && canImport(_Concurrency)
+extension AttributeKey: Sendable {}
+extension Attribute: Sendable {} // independent of `Value`, since `Value` is only in the type signature.
+#endif

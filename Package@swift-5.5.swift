@@ -1,4 +1,4 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -17,7 +17,7 @@ fileprivate extension Target {
                 .brew(["openldap"]),
         ])
         #else
-        #if arch(arm)
+        #if arch(arm64) || arch(arm)
         let openldapPath = "/opt/homebrew/opt/openldap"
         #else
         let openldapPath = "/usr/local/opt/openldap"

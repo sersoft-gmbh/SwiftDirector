@@ -16,11 +16,16 @@ public struct DistinguishedName: RawRepresentable, Hashable, Comparable, Codable
     }
 
     @inlinable
-    public init<Raw>(fromLDAPRaw ldapRaw: Raw) where Raw : LDAPRaw {
+    public init<Raw>(fromLDAPRaw ldapRaw: Raw) where Raw: LDAPRaw {
         self.init(rawValue: .init(fromLDAPRaw: ldapRaw))
     }
 
+    @inlinable
     public static func <(lhs: Self, rhs: Self) -> Bool {
         lhs.rawValue < rhs.rawValue
     }
 }
+
+#if compiler(>=5.5) && canImport(_Concurrency)
+extension DistinguishedName: Sendable {}
+#endif
