@@ -4,7 +4,7 @@
 ![Tests](https://github.com/sersoft-gmbh/SwiftDirector/workflows/Tests/badge.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/881ad22124074683a8e001bb1864ca71)](https://www.codacy.com/gh/sersoft-gmbh/SwiftDirector?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/SwiftDirector&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/sersoft-gmbh/SwiftDirector/branch/master/graph/badge.svg)](https://codecov.io/gh/sersoft-gmbh/SwiftDirector)
-[![Docs](https://img.shields.io/badge/-documentation-informational)](https://sersoft-gmbh.github.io/SwiftDirector)
+[![Docs](https://img.shields.io/badge/-documentation-informational)](https://sersoft-gmbh.github.io/SwiftDirector/documentation/swiftdirector)
 
 A Swift interface for (Open)LDAP.
 
@@ -148,7 +148,7 @@ While not yet integrated, the following features might provide added value and c
 
 ## Documentation
 
-The API is documented using header doc. If you prefer to view the documentation as a webpage, there is an [online version](https://sersoft-gmbh.github.io/SwiftDirector) available for you.
+The API is documented using header doc. If you prefer to view the documentation as a webpage, there is an [online version](https://sersoft-gmbh.github.io/SwiftDirector/documentation/swiftdirector) available for you.
 
 ## Contributing
 
