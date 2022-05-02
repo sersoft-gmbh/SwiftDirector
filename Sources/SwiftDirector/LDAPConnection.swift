@@ -81,7 +81,7 @@ public final class LDAPConnection {
     /// Closes (invalidates) this connection.
     /// If this connection is a primary connection (non-duplicate), it will be unbound.
     /// If this is a duplicate connection, it will be destroyed.
-    /// - Throws: Any LDAPError occuring during unbinding / destroying.
+    /// - Throws: Any ``LDAPError`` occuring during unbinding / destroying.
     /// - SeeAlso: `unbind()`
     public func close() throws {
         switch mode {
@@ -96,7 +96,7 @@ public final class LDAPConnection {
 
     /// Returns a duplicated connection.
     /// - Parameter fromOriginal: Whether or not the duplicate should be made from the original connection if this connection is already a duplicate. Defaults to `false`.
-    /// - Throws: An `LDAPError` if the duplication does not work.
+    /// - Throws: An ``LDAPError`` if the duplication does not work.
     /// - Returns: A duplicated connection.
     public func duplicate(fromOriginal: Bool = false) throws -> LDAPConnection {
         guard fromOriginal, case .duplicate(let original, _) = mode
@@ -110,10 +110,9 @@ public final class LDAPConnection {
     }
 
     /// Creates a new primary (non-duplicate) connection based on this connection's `server`.
-    /// - Throws: Any `LDAPError` occurring during the creation of a new connection.
+    /// - Throws: Any ``LDAPError`` occurring during the creation of a new connection.
     /// - Returns: A new primary (non-duplicate) connection.
-    /// - SeeAlso: `LDAPConnection.init(server:)`
-    /// - SeeAlso: `LDAPConnection.server`
+    /// - SeeAlso: ``LDAPConnection/server``
     @inlinable
     public func newPrimaryConnection() throws -> LDAPConnection {
         try .init(server: server)
@@ -124,18 +123,18 @@ public final class LDAPConnection {
         assert(isValid, "Cannot perform operations on a closed connection!", file: file, line: line)
     }
 
-    /// Binds this connection to a given distinguishedName (DN) with the given credentials.
+    /// Binds this connection to a given distinguishedName (``DistinguishedName``) with the given credentials.
     /// - Parameters:
     ///   - dn: The distinguished name to bind this connection to.
     ///   - credentials: The credentials to use for binding.
-    /// - Throws: An `LDAPError` if binding fails.
-    public func bind(dn: String, credentials: String) throws {
+    /// - Throws: An ``LDAPError`` if binding fails.
+    public func bind(dn: DistinguishedName, credentials: String) throws {
         assertValid()
         try LDAPError.validateVoid {
             let copiedCredentials = strdup(credentials)
             defer { if let creds = copiedCredentials { free(creds) } }
             var creds = berval(bv_len: numericCast(credentials.utf8.count), bv_val: copiedCredentials)
-            return ldap_sasl_bind_s(handle, dn, nil, &creds, nil, nil, nil)
+            return ldap_sasl_bind_s(handle, dn.rawValue, nil, &creds, nil, nil, nil)
         }
     }
 
@@ -154,8 +153,8 @@ public final class LDAPConnection {
     ///   - objectClass: The object class type of which the resulting objects should be.
     ///   - base: The base in which to search.
     ///   - filter: Additional LDAP filters to specify. Defaults to `nil`. The method will add the filter for the object class.
-    /// - Throws: An `LDAPError` if searching or parsing fails.
-    /// - Returns: A list of `LDAPObject`s of the given object class type.
+    /// - Throws: An ``LDAPError`` if searching or parsing fails.
+    /// - Returns: A list of ``LDAPObject``s of the given object class type.
     public func search<ObjectClass>(for objectClass: ObjectClass.Type = ObjectClass.self,
                                     inBase base: String,
                                     filteredBy filter: String? = nil) throws -> [LDAPObject<ObjectClass>] {

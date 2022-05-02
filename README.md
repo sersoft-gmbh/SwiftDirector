@@ -4,7 +4,7 @@
 ![Tests](https://github.com/sersoft-gmbh/SwiftDirector/workflows/Tests/badge.svg)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/881ad22124074683a8e001bb1864ca71)](https://www.codacy.com/gh/sersoft-gmbh/SwiftDirector?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sersoft-gmbh/SwiftDirector&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/sersoft-gmbh/SwiftDirector/branch/master/graph/badge.svg)](https://codecov.io/gh/sersoft-gmbh/SwiftDirector)
-[![jazzy](https://raw.githubusercontent.com/sersoft-gmbh/SwiftDirector/gh-pages/badge.svg?sanitize=true)](https://sersoft-gmbh.github.io/SwiftDirector)
+[![Docs](https://img.shields.io/badge/-documentation-informational)](https://sersoft-gmbh.github.io/SwiftDirector)
 
 A Swift interface for (Open)LDAP.
 

@@ -42,27 +42,27 @@ public struct LDAPServer: Hashable {
     }
 
     /// Opens a new connection to this server.
-    /// - Throws: Any `LDAPError` happening during connection.
-    /// - Returns: The new `LDAPConnection` to this server.
+    /// - Throws: Any ``LDAPError`` happening during connection.
+    /// - Returns: The new ``LDAPConnection`` to this server.
     @inlinable
     public func openConnection() throws -> LDAPConnection { try .init(server: self) }
 }
 
 extension LDAPServer {
-    /// A new server configuration with `.ldap` scheme and LDAP_PORT as default port.
+    /// A new server configuration with ``Schema/ldap`` scheme and `LDAP_PORT` as default port.
     /// - Parameters:
     ///   - host: The host for this configuration.
-    ///   - port: The port to use. Defaults to LDAP_PORT.
+    ///   - port: The port to use. Defaults to `LDAP_PORT`.
     /// - Returns: The new server configuration.
     @inlinable
     public static func ldap(host: String, port: UInt16 = numericCast(LDAP_PORT)) -> Self {
         .init(schema: .ldap, host: host, port: port)
     }
 
-    /// A new server configuration with `.ldaps` scheme and LDAPS_PORT as default port.
+    /// A new server configuration with ``Schema/ldaps`` scheme and `LDAPS_PORT` as default port.
     /// - Parameters:
     ///   - host: The host for this configuration.
-    ///   - port: The port to use. Defaults to LDAPS_PORT.
+    ///   - port: The port to use. Defaults to `LDAPS_PORT`.
     /// - Returns: The new server configuration.
     @inlinable
     public static func ldaps(host: String, port: UInt16 = numericCast(LDAPS_PORT)) -> Self {
