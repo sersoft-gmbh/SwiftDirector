@@ -29,17 +29,13 @@ extension ObjectClassProtocol {
     public var memberOf: Attribute<Array<DistinguishedName>> { .init(key: "memberOf") }
 }
 
-public protocol _DNIdentifiedObjectClassProtocol: ObjectClassProtocol where ID == DistinguishedName {}
-extension _DNIdentifiedObjectClassProtocol {
+// This crashes the Swift 5.6 compiler...
+#if compiler(<5.6)
+extension ObjectClassProtocol where ID == DistinguishedName {
     @inlinable
     public static var idPath: IDPath { \.entryDN }
 }
-
-
-//extension ObjectClassProtocol where ID == DistinguishedName {
-//    @inlinable
-//    public static var idPath: IDPath { \.entryDN }
-//}
+#endif
 
 extension ObjectClassProtocol {
     /// The display name of this object class.
