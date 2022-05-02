@@ -2,9 +2,7 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
-#if !os(Linux)
 import Foundation
-#endif
 
 fileprivate extension Target {
     static func cldap() -> Target {
@@ -68,3 +66,7 @@ let package = Package(
             dependencies: ["CLDAP", "SwiftDirector"]),
     ]
 )
+
+if ProcessInfo.processInfo.environment["ENABLE_DOCC_SUPPORT"] == "1" {
+    package.dependencies.append(.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"))
+}
