@@ -35,7 +35,7 @@ jobs:
       - name: Install OpenLDAP
         if: runner.os == 'Linux'
         run: sudo apt-get install libldap2-dev
-      - uses: fwal/setup-swift@v1.14.0
+      - uses: swift-actions/setup-swift@v1.15.0
         with:
           swift-version: '5.6'
       - name: Read OS Version
