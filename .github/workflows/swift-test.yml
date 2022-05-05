@@ -22,10 +22,22 @@ jobs:
         if: runner.os == 'macOS'
         with:
           xcode-version: ^13.0
-      - uses: fwal/setup-swift@v1.14.0
-        id: swift-setup
+      - uses: swift-actions/setup-swift@v1.15.0
+        if: runner.os == 'Linux'
+        id: swift-setup-linux
         with:
           swift-version: ${{matrix.swift-version}}
+      # Workaround for https://github.com/swift-actions/setup-swift/issues/406
+      - uses: sersoft-gmbh/swift-version-action@v1
+        if: runner.os == 'macOS'
+        id: swift-setup-macos
+      - id: swift-setup
+        run: |
+          if [ '${{runner.os}}' == 'macOS' ]; then
+            echo "::set-output name=version::${{steps.swift-setup-macos.outputs.version}}"
+          else
+            echo "::set-output name=version::${{steps.swift-setup-linux.outputs.version}}"
+          fi
       - name: Read OS Version
         uses: sersoft-gmbh/os-version-action@v1.0.0
         id: os-version
