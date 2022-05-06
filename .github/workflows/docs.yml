@@ -118,7 +118,7 @@ jobs:
           done
       - name: Merge documentations
         env:
-          TARGETS: ${{join(needs.spm-context.outputs.package-dump.products.*.targets.*, ' '}}
+          TARGETS: ${{join(needs.spm-context.outputs.package-dump.products.*.targets.*, ' ')}}
           DOCS_BASE_DIR: repository/${{needs.release-context.outputs.version-name}}
         run: |
           rm -rf "${DOCS_BASE_DIR}"
@@ -143,7 +143,7 @@ jobs:
       - name: Create version index
         working-directory: repository
         env:
-          TARGETS: ${{join(needs.spm-context.outputs.package-dump.products.*.targets.*, ' '}}
+          TARGETS: ${{join(needs.spm-context.outputs.package-dump.products.*.targets.*, ' ')}}
           INDEX_FILE: '${{needs.release-context.outputs.version-name}}/index.html'
           BASE_URL: 'https://${{github.repository_owner}}.github.io/${{github.event.repository.name}}/${{needs.release-context.outputs.version-name}}/documentation'
         run: |
