@@ -49,8 +49,15 @@ jobs:
           key: ${{runner.os}}-${{steps.os-version.outputs.version}}-${{github.repository}}-spm-${{steps.swift-setup.outputs.version}}-${{hashFiles('**/Package.resolved')}}
           restore-keys: |
             ${{runner.os}}-${{steps.os-version.outputs.version}}-${{github.repository}}-spm-${{steps.swift-setup.outputs.version}}-
-      - id: dump-package
-        run: echo "::set-output name=package-dump::$(swift package dump-package)"
+      - name: Dump package
+        id: dump-package
+        # We need to escape newlines: https://github.community/t/set-output-truncates-multiline-strings/16852/5
+        run: |
+          package_dump="$(swift package dump-package)"
+          package_dump="${package_dump//'%'/'%25'}"
+          package_dump="${package_dump//$'\n'/'%0A'}"
+          package_dump="${package_dump//$'\r'/'%0D'}"
+          echo "::set-output name=package-dump::${package_dump}"
 
   generate-docs:
     needs:
