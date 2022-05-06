@@ -200,6 +200,7 @@ jobs:
           EOF
       - name: Determine changes
         id: check-changes
+        working-directory: repository
         run: |
           if git status --exit-code; then
             echo "::set-output name=has-changes::true"
