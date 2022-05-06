@@ -202,7 +202,7 @@ jobs:
         id: check-changes
         working-directory: repository
         run: |
-          if git status --exit-code; then
+          if [ -n "$(git status --porcelain)" ]; then
             echo "::set-output name=has-changes::true"
           else
             echo "::set-output name=has-changes::false"
