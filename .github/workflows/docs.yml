@@ -113,7 +113,7 @@ jobs:
         with:
           path: artifacts
       - name: Extract tars
-        run: find artifacts -name '*.tar' -exec tar -xvf '{}' \; -delete
+        run: find artifacts -name '*.tar' -execdir tar -xvf '{}' --strip-components 1 \; -delete
       - name: Merge documentations
         env:
           TARGETS: ${{join(fromJson(needs.spm-context.outputs.package-dump).products.*.targets.*, ' ')}}
