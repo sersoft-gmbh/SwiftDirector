@@ -22,7 +22,8 @@ jobs:
           throwing: false
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - id: compare-tags
+      - name: Compare tags
+        id: compare-tags
         run: |
           if [ '${{github.ref_type}}' == 'tag' ] && [ '${{steps.latest-release.outputs.tag_name}}' == '${{github.ref_name}}' ]; then
             echo "::set-output name=is-latest::true"
@@ -92,7 +93,8 @@ jobs:
           transform-for-static-hosting: true
           hosting-base-path: ${{github.event.repository.name}}/${{needs.release-context.outputs.version-name}}
           output: ${{matrix.target}}-docs
-      - run: tar -cvf '${{matrix.target}}-docs.tar' '${{matrix.target}}-docs'
+      - name: Package docs
+        run: tar -cvf '${{matrix.target}}-docs.tar' '${{matrix.target}}-docs'
       - uses: actions/upload-artifact@v3
         with:
           name: ${{matrix.target}}-docs
