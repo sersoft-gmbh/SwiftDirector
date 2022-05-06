@@ -119,17 +119,21 @@ jobs:
           TARGETS: ${{join(fromJson(needs.spm-context.outputs.package-dump).products.*.targets.*, ' ')}}
           DOCS_BASE_DIR: repository/${{needs.release-context.outputs.version-name}}
         run: |
+          ls -alR 'artifacts'
           rm -rf "${DOCS_BASE_DIR}"
           is_first=1
           for target in $TARGETS; do
             if [ $is_first -eq 1 ]; then
+              echo "Copying initial documentation for ${target}"
               cp -R "artifacts/${target}-docs" "${DOCS_BASE_DIR}"
               is_first=0
             else
+              echo "Merging documentation for ${target}"
               cp -R "artifacts/${target}-docs/data/documentation/"* "${DOCS_BASE_DIR}/data/documentation/"
               cp -R "artifacts/${target}-docs/documentation/"* "${DOCS_BASE_DIR}/documentation/"
             fi
           done
+          echo "Deleting non-mergable metadata.json"
           rm -f "${DOCS_BASE_DIR}/metadata.json"
       - name: Create latest symlink
         if: ${{needs.release-context.outputs.is-latest}}
@@ -154,6 +158,7 @@ jobs:
             fi
           done
           if [ ${target_count} -gt 1 ]; then
+          echo "Found ${target_count} targets. Generating list..."
           cat > "${INDEX_FILE}" <<EOF
           <!DOCTYPE html>
           <html>
@@ -168,6 +173,7 @@ jobs:
           </html>
           EOF
           else
+          echo "Found one target. Generating redirect file to target ${single_target_name}"
           cat > "${INDEX_FILE}" <<EOF
           <!DOCTYPE html>
           <html>
