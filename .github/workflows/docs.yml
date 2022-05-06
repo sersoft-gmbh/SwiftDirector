@@ -149,7 +149,7 @@ jobs:
           target_list=""
           single_target_name=""
           for target in ${TARGETS}; do
-            single_target_name="$(echo "${target}" | awk '{ print toupper($1) }')"
+            single_target_name="$(echo "${target}" | awk '{ print tolower($1) }')"
             target_count=$((target_count+1))
             target_list="${target_list}\n<li><a href=\"${BASE_URL}/${single_target_name}\"><pre>${target}</pre> Documentation</a></li>"
           done
