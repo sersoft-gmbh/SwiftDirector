@@ -33,7 +33,7 @@ jobs:
   spm-context:
     runs-on: ubuntu-latest
     outputs:
-      package-dump: ${{fromJson(steps.dump-package.outputs.package-dump)}}
+      package-dump: ${{steps.dump-package.outputs.package-dump}}
     steps:
       - uses: swift-actions/setup-swift@v1.15.0
         id: swift-setup
@@ -66,7 +66,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        target: ${{needs.spm-context.outputs.package-dump.products.*.targets.*}}
+        target: ${{fromJson(needs.spm-context.outputs.package-dump).products.*.targets.*}}
     steps:
       - name: Install OpenLDAP
         if: runner.os == 'Linux'
@@ -126,7 +126,7 @@ jobs:
           done
       - name: Merge documentations
         env:
-          TARGETS: ${{join(needs.spm-context.outputs.package-dump.products.*.targets.*, ' ')}}
+          TARGETS: ${{join(fromJson(needs.spm-context.outputs.package-dump).products.*.targets.*, ' ')}}
           DOCS_BASE_DIR: repository/${{needs.release-context.outputs.version-name}}
         run: |
           rm -rf "${DOCS_BASE_DIR}"
@@ -151,7 +151,7 @@ jobs:
       - name: Create version index
         working-directory: repository
         env:
-          TARGETS: ${{join(needs.spm-context.outputs.package-dump.products.*.targets.*, ' ')}}
+          TARGETS: ${{join(fromJson(needs.spm-context.outputs.package-dump).products.*.targets.*, ' ')}}
           INDEX_FILE: '${{needs.release-context.outputs.version-name}}/index.html'
           BASE_URL: 'https://${{github.repository_owner}}.github.io/${{github.event.repository.name}}/${{needs.release-context.outputs.version-name}}/documentation'
         run: |
