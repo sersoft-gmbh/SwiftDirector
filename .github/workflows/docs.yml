@@ -154,32 +154,32 @@ jobs:
             single_target_name="${target}"
           done
           if [ ${target_count} -gt 1 ]; then
-            cat > "${INDEX_FILE}" <<EOF
-              <!DOCTYPE html>
-              <html>
-                 <head>
-                    <title>${{github.event.repository.name}} Documentation</title>
-                 </head>
-                 <body>
-                    <ul>
-                      ${target_list}
-                    </ul>
-                 </body>
-              </html>
-              EOF
+          cat > "${INDEX_FILE}" <<EOF
+          <!DOCTYPE html>
+          <html>
+             <head>
+                <title>${{github.event.repository.name}} Documentation</title>
+             </head>
+             <body>
+                <ul>
+                  ${target_list}
+                </ul>
+             </body>
+          </html>
+          EOF
           else
-            cat > "${INDEX_FILE}" <<EOF
-              <!DOCTYPE html>
-              <html>
-                 <head>
-                    <title>${{github.event.repository.name}} Documentation</title>
-                    <meta http-equiv="refresh" content="0; url=${BASE_URL}/${single_target_name}" />
-                 </head>
-                 <body>
-                    <p>Redirecting...</p>
-                 </body>
-              </html>
-              EOF
+          cat > "${INDEX_FILE}" <<EOF
+          <!DOCTYPE html>
+          <html>
+             <head>
+                <title>${{github.event.repository.name}} Documentation</title>
+                <meta http-equiv="refresh" content="0; url=${BASE_URL}/${single_target_name}" />
+             </head>
+             <body>
+                <p>Redirecting...</p>
+             </body>
+          </html>
+          EOF
           fi
       - name: Create root index
         working-directory: repository
@@ -187,17 +187,17 @@ jobs:
           REDIRECT_URL: 'https://${{github.repository_owner}}.github.io/${{github.event.repository.name}}/latest'
         run: |
           cat > 'index.html' <<EOF
-            <!DOCTYPE html>
-            <html>
-               <head>
-                  <title>${{github.event.repository.name}} Documentation</title>
-                  <meta http-equiv="refresh" content="0; url=${REDIRECT_URL}" />
-               </head>
-               <body>
-                  <p>Redirecting...</p>
-               </body>
-            </html>
-            EOF
+          <!DOCTYPE html>
+          <html>
+             <head>
+                <title>${{github.event.repository.name}} Documentation</title>
+                <meta http-equiv="refresh" content="0; url=${REDIRECT_URL}" />
+             </head>
+             <body>
+                <p>Redirecting...</p>
+             </body>
+          </html>
+          EOF
       - name: Determine changes
         id: check-changes
         run: |
