@@ -214,3 +214,5 @@ jobs:
           commit_message: Deploy documentation for '${{needs.release-context.outputs.version-name}}'
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Cleanup Artifacts
+        uses: joutvhu/delete-artifact@v1
