@@ -59,7 +59,10 @@ let package = Package(
         .cldap(),
         .target(
             name: "SwiftDirector",
-            dependencies: ["CLDAP"]
+            dependencies: ["CLDAP"],
+            resources: [
+                .process("Documentation.docc"),
+            ]
         ),
         .testTarget(
             name: "SwiftDirectorTests",

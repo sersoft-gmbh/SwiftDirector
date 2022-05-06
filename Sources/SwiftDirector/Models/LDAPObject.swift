@@ -1,6 +1,6 @@
 /// Represents a concrete object of a given object class type. This type can be used to extract attributes for this object.
 @dynamicMemberLookup
-public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable, Identifiable, CustomStringConvertible, CustomDebugStringConvertible {
+public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable, Identifiable, CustomStringConvertible, CustomDebugStringConvertible, _SwiftDirectorSendable {
     public typealias ID = ObjectClass.ID
 
     /*private but*/ @usableFromInline let metaObjectClass = ObjectClass()
@@ -107,16 +107,16 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable,
 
 // Needs to be defined outside the LDAPObject generic object to be able to pass it on.
 /*fileprivate but*/ @usableFromInline final class LDAPObjectStorage {
-    fileprivate private(set) var raw: [AttributeKey: [String]]
-    fileprivate private(set) var cache: [AttributeKey: Any]
+    fileprivate private(set) var raw: Dictionary<AttributeKey, LDAPRaw>
+    fileprivate private(set) var cache: Dictionary<AttributeKey, _SwiftDirectorSendable>
 
-    private init(raw: [AttributeKey: [String]], cache: [AttributeKey: Any]) {
+    private init(raw: Dictionary<AttributeKey, LDAPRaw>, cache: Dictionary<AttributeKey, _SwiftDirectorSendable>) {
         self.raw = raw
         self.cache = cache
     }
 
-    fileprivate convenience init(raw: [AttributeKey: [String]]) {
-        self.init(raw: raw, cache: [:])
+    fileprivate convenience init(raw: Dictionary<AttributeKey, Array<String>>) {
+        self.init(raw: raw.mapValues { LDAPRaw($0) }, cache: .init(minimumCapacity: raw.count))
     }
 
     fileprivate func copy() -> LDAPObjectStorage { .init(raw: raw, cache: cache) }
@@ -127,13 +127,13 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable,
             if let cachedValue = cache[attribute.key] {
                 return cachedValue as! T
             }
-            let converted = raw[attribute.key].map(T.init) ?? T(fromLDAPRaw: EmptyCollection())
+            let converted = raw[attribute.key].map(T.init) ?? T(fromLDAPRaw: ._empty)
             cache[attribute.key] = converted
             return converted
         }
         set {
             cache[attribute.key] = newValue
-            raw[attribute.key] = Array(newValue.ldapRaw)
+            raw[attribute.key] = newValue.ldapRaw
         }
     }
 
@@ -144,6 +144,5 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable,
 }
 
 #if compiler(>=5.5) && canImport(_Concurrency)
-extension LDAPObjectStorage: @unchecked Sendable {}
-extension LDAPObject: Sendable where ObjectClass: Sendable {}
+extension LDAPObjectStorage: @unchecked _SwiftDirectorSendable {}
 #endif

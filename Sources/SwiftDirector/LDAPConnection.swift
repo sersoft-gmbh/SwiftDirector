@@ -157,9 +157,9 @@ public final class LDAPConnection {
     /// - Returns: A list of ``LDAPObject``s of the given object class type.
     public func search<ObjectClass>(for objectClass: ObjectClass.Type = ObjectClass.self,
                                     inBase base: String,
-                                    filteredBy filter: String? = nil) throws -> [LDAPObject<ObjectClass>] {
-        func readAttributes(entryPtr: OpaquePointer) -> [AttributeKey: [String]] {
-            func readValues(attributeKey: UnsafePointer<CChar>) -> [String]? {
+                                    filteredBy filter: String? = nil) throws -> Array<LDAPObject<ObjectClass>> {
+        func readAttributes(entryPtr: OpaquePointer) -> Dictionary<AttributeKey, Array<String>> {
+            func readValues(attributeKey: UnsafePointer<CChar>) -> Array<String>? {
                 guard let valuesPtr = ldap_get_values_len(handle, entryPtr, attributeKey) else { return nil }
                 defer { ldap_value_free_len(valuesPtr) }
                 return UnsafeMutableBufferPointer(start: valuesPtr, count: numericCast(ldap_count_values_len(valuesPtr))).compactMap {
@@ -193,7 +193,7 @@ public final class LDAPConnection {
 }
 
 fileprivate extension Collection where Element == String {
-    func withMutableArrayOfCStrings<R>(_ body: (inout [UnsafeMutablePointer<CChar>?]) throws -> R) rethrows -> R {
+    func withMutableArrayOfCStrings<R>(_ body: (inout Array<UnsafeMutablePointer<CChar>?>) throws -> R) rethrows -> R {
         var cStrings = map { strdup($0) } + CollectionOfOne(nil)
         defer { cStrings.lazy.compactMap { $0 }.forEach { free($0) } }
         return try body(&cStrings)

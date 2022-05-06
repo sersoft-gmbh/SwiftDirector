@@ -1,5 +1,14 @@
 /// Represents a key for an attribute.
-public struct AttributeKey: RawRepresentable, Hashable, Comparable, Codable, ExpressibleByStringLiteral, CustomStringConvertible, CustomDebugStringConvertible {
+@frozen
+public struct AttributeKey: RawRepresentable,
+                            Hashable,
+                            Comparable,
+                            Codable,
+                            ExpressibleByStringLiteral,
+                            CustomStringConvertible,
+                            CustomDebugStringConvertible,
+                            _SwiftDirectorSendable
+{
     public typealias RawValue = String
 
     public let rawValue: RawValue
@@ -23,7 +32,7 @@ public struct AttributeKey: RawRepresentable, Hashable, Comparable, Codable, Exp
 }
 
 /// Represents an (typed) attribute containing its key.
-public struct Attribute<Value: LDAPValue>: Hashable, CustomStringConvertible, CustomDebugStringConvertible {
+public struct Attribute<Value: LDAPValue>: Hashable, CustomStringConvertible, CustomDebugStringConvertible, _SwiftDirectorSendable {
     /// The key for this attribute.
     public let key: AttributeKey
 
@@ -34,8 +43,3 @@ public struct Attribute<Value: LDAPValue>: Hashable, CustomStringConvertible, Cu
     /// - Parameter key: The key to use for this attribute.
     public init(key: AttributeKey) { self.key = key }
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension AttributeKey: Sendable {}
-extension Attribute: Sendable {} // independent of `Value`, since `Value` is only in the type signature.
-#endif
