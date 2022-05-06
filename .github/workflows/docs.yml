@@ -119,7 +119,6 @@ jobs:
           TARGETS: ${{join(fromJson(needs.spm-context.outputs.package-dump).products.*.targets.*, ' ')}}
           DOCS_BASE_DIR: repository/${{needs.release-context.outputs.version-name}}
         run: |
-          ls -alR 'artifacts'
           rm -rf "${DOCS_BASE_DIR}"
           is_first=1
           for target in $TARGETS; do
@@ -135,16 +134,11 @@ jobs:
           done
           echo "Deleting non-mergable metadata.json"
           rm -f "${DOCS_BASE_DIR}/metadata.json"
-      - name: Create latest symlink
-        if: ${{needs.release-context.outputs.is-latest}}
-        working-directory: repository
-        run: |
-          rm -f 'latest'
-          ln -s '${{needs.release-context.outputs.version-name}}' 'latest'
       - name: Create version index
+        working-directory: repository
         env:
-          TARGET_DOCS_DIR: repository/${{needs.release-context.outputs.version-name}}/documentation
-          INDEX_FILE: '${{needs.release-context.outputs.version-name}}/index.html'
+          TARGET_DOCS_DIR: ${{needs.release-context.outputs.version-name}}/documentation
+          INDEX_FILE: ${{needs.release-context.outputs.version-name}}/index.html
           BASE_URL: 'https://${{github.repository_owner}}.github.io/${{github.event.repository.name}}/${{needs.release-context.outputs.version-name}}/documentation'
         run: |
           target_count=0
@@ -204,6 +198,12 @@ jobs:
              </body>
           </html>
           EOF
+      - name: Create latest symlink
+        if: ${{needs.release-context.outputs.is-latest}}
+        working-directory: repository
+        run: |
+          rm -f 'latest'
+          ln -s '${{needs.release-context.outputs.version-name}}' 'latest'
       - name: Determine changes
         id: check-changes
         working-directory: repository
