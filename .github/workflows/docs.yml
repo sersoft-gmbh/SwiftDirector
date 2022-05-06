@@ -120,7 +120,6 @@ jobs:
           DOCS_BASE_DIR: repository/${{needs.release-context.outputs.version-name}}
         run: |
           rm -rf "${DOCS_BASE_DIR}"
-          mkdir -p "${DOCS_BASE_DIR}"
           is_first=1
           for target in $TARGETS; do
             if [ $is_first -eq 1 ]; then
