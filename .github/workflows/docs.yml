@@ -227,6 +227,7 @@ jobs:
       - generate-docs
       - publish-docs
     if: always()
-    jobs:
+    runs-on: ubuntu-latest
+    steps:
       - name: Cleanup Artifacts
         uses: joutvhu/delete-artifact@v1
