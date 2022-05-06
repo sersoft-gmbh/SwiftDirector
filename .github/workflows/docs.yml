@@ -101,6 +101,7 @@ jobs:
       - release-context
       - spm-context
       - generate-docs
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.0.2
         with:
