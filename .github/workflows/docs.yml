@@ -90,7 +90,7 @@ jobs:
           enable-inherited-docs: true
           enable-index-building: false
           transform-for-static-hosting: true
-          hosting-base-path: ${{github.event.repository.name}}/${{needs.release-context.version-name}}
+          hosting-base-path: ${{github.event.repository.name}}/${{needs.release-context.outputs.version-name}}
           output: ${{matrix.target}}-docs
       - run: tar -cvf '${{matrix.target}}-docs.tar' '${{matrix.target}}-docs'
       - uses: actions/upload-artifact@v3
