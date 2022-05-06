@@ -1,4 +1,4 @@
-name: Documentation
+name: Publish Documentation
 
 on:
   release:
@@ -221,5 +221,12 @@ jobs:
           commit_message: Deploy documentation for '${{needs.release-context.outputs.version-name}}'
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  cleanup:
+    needs:
+      - generate-docs
+      - publish-docs
+    if: always()
+    jobs:
       - name: Cleanup Artifacts
         uses: joutvhu/delete-artifact@v1
