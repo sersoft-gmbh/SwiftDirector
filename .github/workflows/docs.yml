@@ -43,12 +43,7 @@ jobs:
         uses: sersoft-gmbh/os-version-action@v1.0.0
         id: os-version
       - uses: actions/checkout@v3.0.2
-      - uses: actions/cache@v3.0.2
-        with:
-          path: .build
-          key: ${{runner.os}}-${{steps.os-version.outputs.version}}-${{github.repository}}-spm-${{steps.swift-setup.outputs.version}}-${{hashFiles('**/Package.resolved')}}
-          restore-keys: |
-            ${{runner.os}}-${{steps.os-version.outputs.version}}-${{github.repository}}-spm-${{steps.swift-setup.outputs.version}}-
+      # We don't use a cache here, because SPM doesn't resolve dependencies when dumping packages.
       - name: Dump package
         id: dump-package
         # We need to escape newlines: https://github.community/t/set-output-truncates-multiline-strings/16852/5
@@ -118,12 +113,7 @@ jobs:
         with:
           path: artifacts
       - name: Extract tars
-        working-directory: artifacts
-        run: |
-          for tar_file in *.tar; do
-            tar -xvf "${tar_file}"
-            rm "${tar_file}"
-          done
+        run: find artifacts -name '*.tar' -exec tar -xvf '{}' \; -delete
       - name: Merge documentations
         env:
           TARGETS: ${{join(fromJson(needs.spm-context.outputs.package-dump).products.*.targets.*, ' ')}}
