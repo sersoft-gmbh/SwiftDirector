@@ -127,8 +127,8 @@ jobs:
               cp -R "artifacts/${target}-docs" "${DOCS_BASE_DIR}"
               is_first=0
             else
-              cp -R "artifacts/${target}-docs/data/documentation/${target}"* "${DOCS_BASE_DIR}/data/documentation/"
-              cp -R "artifacts/${target}-docs/documentation/${target}" "${DOCS_BASE_DIR}/documentation/${target}"
+              cp -R "artifacts/${target}-docs/data/documentation/"* "${DOCS_BASE_DIR}/data/documentation/"
+              cp -R "artifacts/${target}-docs/documentation/"* "${DOCS_BASE_DIR}/documentation/"
             fi
           done
           rm -f "${DOCS_BASE_DIR}/metadata.json"
@@ -139,19 +139,20 @@ jobs:
           rm -f 'latest'
           ln -s '${{needs.release-context.outputs.version-name}}' 'latest'
       - name: Create version index
-        working-directory: repository
         env:
-          TARGETS: ${{join(fromJson(needs.spm-context.outputs.package-dump).products.*.targets.*, ' ')}}
+          TARGET_DOCS_DIR: repository/${{needs.release-context.outputs.version-name}}/documentation
           INDEX_FILE: '${{needs.release-context.outputs.version-name}}/index.html'
           BASE_URL: 'https://${{github.repository_owner}}.github.io/${{github.event.repository.name}}/${{needs.release-context.outputs.version-name}}/documentation'
         run: |
           target_count=0
           target_list=""
           single_target_name=""
-          for target in ${TARGETS}; do
-            single_target_name="$(echo "${target}" | awk '{ print tolower($1) }')"
-            target_count=$((target_count+1))
-            target_list="${target_list}\n<li><a href=\"${BASE_URL}/${single_target_name}\"><pre>${target}</pre> Documentation</a></li>"
+          for target in $(ls "${TARGET_DOCS_DIR}"); do
+            if [ -d "${TARGET_DOCS_DIR}/${target}" ]; then
+              single_target_name="${target}"
+              target_count=$((target_count+1))
+              target_list="${target_list}\n<li><a href=\"${BASE_URL}/${target}\"><pre>${target}</pre> Documentation</a></li>"
+            fi
           done
           if [ ${target_count} -gt 1 ]; then
           cat > "${INDEX_FILE}" <<EOF
