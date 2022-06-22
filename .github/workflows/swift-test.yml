@@ -28,7 +28,7 @@ jobs:
         with:
           swift-version: ${{matrix.swift-version}}
       # Workaround for https://github.com/swift-actions/setup-swift/issues/406
-      - uses: sersoft-gmbh/swift-version-action@v1
+      - uses: sersoft-gmbh/swift-version-action@v2
         if: runner.os == 'macOS'
         id: swift-setup-macos
       - id: swift-setup
