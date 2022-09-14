@@ -22,7 +22,7 @@ jobs:
         if: runner.os == 'macOS'
         with:
           xcode-version: ^13.0
-      - uses: swift-actions/setup-swift@v1.16.0
+      - uses: swift-actions/setup-swift@v1.17.0
         if: runner.os == 'Linux'
         id: swift-setup-linux
         with:
