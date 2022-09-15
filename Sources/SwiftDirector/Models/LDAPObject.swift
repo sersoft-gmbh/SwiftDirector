@@ -16,7 +16,7 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable,
         self.storage = storage
     }
 
-    init(rawAttributes: [AttributeKey: [String]]) {
+    init(rawAttributes: Dictionary<AttributeKey, Array<String>>) {
         self.init(storage: .init(raw: rawAttributes))
     }
 
@@ -84,7 +84,7 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable,
 
     private func description(includeCache: Bool) -> String {
         let idAttrKey = metaObjectClass[keyPath: ObjectClass.idPath].key
-        func description<V>(for dict: [AttributeKey: V], indent: Int) -> String {
+        func description<V>(for dict: Dictionary<AttributeKey, V>, indent: Int) -> String {
             dict.sorted { $0.key < $1.key }
                 .lazy
                 .filter { $0.key != idAttrKey }

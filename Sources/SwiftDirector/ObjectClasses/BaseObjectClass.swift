@@ -2,6 +2,24 @@
 /// New object classes should always declare a protocol (MyObjectClassProtocol) and a corresponding implementation (MyObjectClass).
 /// However, the implementation should alway just be an empty struct just containing the oid and the protocol should have all properties defined in an extension.
 /// See e.g. ``OrganizationalPerson``.
+#if compiler(>=5.7)
+public protocol ObjectClassProtocol<ID>: _SwiftDirectorSendable {
+    /// The type of the identifier of object of this object class.
+    associatedtype ID: Hashable, LDAPValue = DistinguishedName
+
+    typealias IDPath = KeyPath<Self, Attribute<ID>>
+
+    /// The numeric identifier of this object class.
+    static var oid: String { get }
+    /// The name of this object class (e.g. top or shadowAccount).
+    static var name: String { get }
+    /// The path to the identifying attribute of this object class. Defaults to the ``entryDN`` if ``ID`` is ``DistinguishedName``.
+    static var idPath: IDPath { get }
+
+    /// Creates a new instance of the object class. The object class is just a descriptor and should thus not have any fields and the initializer should not do anything.
+    init()
+}
+#else
 public protocol ObjectClassProtocol: _SwiftDirectorSendable {
     /// The type of the identifier of object of this object class.
     associatedtype ID: Hashable, LDAPValue = DistinguishedName
@@ -18,6 +36,7 @@ public protocol ObjectClassProtocol: _SwiftDirectorSendable {
     /// Creates a new instance of the object class. The object class is just a descriptor and should thus not have any fields and the initializer should not do anything.
     init()
 }
+#endif
 
 extension ObjectClassProtocol {
     /// The entry's distinguished name.
