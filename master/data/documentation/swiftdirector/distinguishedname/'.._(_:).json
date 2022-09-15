@@ -10,7 +10,7 @@
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Comparable-Implementations"
       ]
     ]
   },
@@ -331,7 +331,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -395,17 +395,6 @@
   "title" : "DistinguishedName",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : " Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/distinguishedname\/-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/.._(_:)": {
   "abstract" : [
@@ -475,6 +464,17 @@
   "title" : "..<(_:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname\/'.._(_:)"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/Comparable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Comparable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Comparable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/distinguishedname\/comparable-implementations"
 }
 }
 }

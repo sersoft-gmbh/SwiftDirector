@@ -109,7 +109,7 @@
   ],
   "schemaVersion" : {
     "major" : 0,
-    "minor" : 2,
+    "minor" : 3,
     "patch" : 0
   },
   "sections" : [
@@ -158,8 +158,6 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/-Implementations",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/Comparable-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/Equatable-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
@@ -294,17 +292,6 @@
   "title" : "AttributeKey",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/attributekey"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : " Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/attributekey\/-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/Comparable-Implementations": {
   "abstract" : [
