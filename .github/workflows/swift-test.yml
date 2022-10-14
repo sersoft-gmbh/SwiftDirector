@@ -30,30 +30,35 @@ jobs:
             swift-version: 5.7
             xcode-version: ''
 
-    runs-on: ${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+
     steps:
       - name: Install OpenLDAP
-        if: runner.os == 'Linux'
+        if: ${{ runner.os == 'Linux' }}
         run: sudo apt-get install libldap2-dev
       - uses: maxim-lobanov/setup-xcode@v1.5.0
-        if: runner.os == 'macOS'
+        if: ${{ runner.os == 'macOS' }}
         with:
-          xcode-version: ${{matrix.xcode-version}}
+          xcode-version: ${{ matrix.xcode-version }}
       - uses: swift-actions/setup-swift@v1.18.0
-        if: runner.os == 'Linux'
+        if: ${{ runner.os == 'Linux' }}
         id: swift-setup-linux
         with:
-          swift-version: ${{matrix.swift-version}}
+          swift-version: ${{ matrix.swift-version }}
       # Workaround for https://github.com/swift-actions/setup-swift/issues/406
       - uses: sersoft-gmbh/swift-version-action@v2
-        if: runner.os == 'macOS'
+        if: ${{ runner.os == 'macOS' }}
         id: swift-setup-macos
       - id: swift-setup
+        env:
+          RUNNER_OS: ${{ runner.os }}
+          MACOS_SWIFT_VERSION: ${{ steps.swift-setup-macos.outputs.swift-version }}
+          LINUX_SWIFT_VERSION: ${{ steps.swift-setup-linux.outputs.swift-version }}
         run: |
-          if [ '${{runner.os}}' == 'macOS' ]; then
-            echo "version=${{steps.swift-setup-macos.outputs.version}}" >> "${GITHUB_OUTPUT}"
+          if [ "${RUNNER_OS}" == 'macOS' ]; then
+            echo "version=${MACOS_SWIFT_VERSION}" >> "${GITHUB_OUTPUT}"
           else
-            echo "version=${{steps.swift-setup-linux.outputs.version}}" >> "${GITHUB_OUTPUT}"
+            echo "version=${LINUX_SWIFT_VERSION}" >> "${GITHUB_OUTPUT}"
           fi
       - name: Read OS Version
         uses: sersoft-gmbh/os-version-action@v2.0.0
@@ -62,9 +67,9 @@ jobs:
       - uses: actions/cache@v3.0.11
         with:
           path: .build
-          key: ${{runner.os}}-${{steps.os-version.outputs.version}}-${{github.repository}}-spm-${{steps.swift-setup.outputs.version}}-${{hashFiles('**/Package.resolved')}}
+          key: ${{ runner.os }}-${{ steps.os-version.outputs.version }}-${{ github.repository }}-spm-${{ steps.swift-version.outputs.version }}-${{ hashFiles('**/Package.resolved') }}
           restore-keys: |
-            ${{runner.os}}-${{steps.os-version.outputs.version}}-${{github.repository}}-spm-${{steps.swift-setup.outputs.version}}-
+            ${{ runner.os }}-${{ steps.os-version.outputs.version }}-${{ github.repository }}-spm-${{ steps.swift-version.outputs.version }}-
       - name: Build & Test
         run: swift test -v --parallel --enable-code-coverage
       - name: Generate Coverage Files
@@ -72,6 +77,6 @@ jobs:
         id: coverage-files
       - uses: codecov/codecov-action@v3.1.1
         with:
-          token: ${{secrets.CODECOV_TOKEN}}
-          files: ${{join(fromJSON(steps.coverage-files.outputs.files), ',')}}
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ${{ join(fromJSON(steps.coverage-files.outputs.files), ',') }}
           fail_ci_if_error: true
