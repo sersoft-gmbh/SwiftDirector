@@ -51,9 +51,9 @@ jobs:
       - id: swift-setup
         run: |
           if [ '${{runner.os}}' == 'macOS' ]; then
-            echo "::set-output name=version::${{steps.swift-setup-macos.outputs.version}}"
+            echo "version=${{steps.swift-setup-macos.outputs.version}}" >> "${GITHUB_OUTPUT}"
           else
-            echo "::set-output name=version::${{steps.swift-setup-linux.outputs.version}}"
+            echo "version=${{steps.swift-setup-linux.outputs.version}}" >> "${GITHUB_OUTPUT}"
           fi
       - name: Read OS Version
         uses: sersoft-gmbh/os-version-action@v2.0.0
