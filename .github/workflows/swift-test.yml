@@ -36,7 +36,7 @@ jobs:
       - name: Install OpenLDAP
         if: ${{ runner.os == 'Linux' }}
         run: sudo apt-get install libldap2-dev
-      - uses: maxim-lobanov/setup-xcode@v1.5.0
+      - uses: maxim-lobanov/setup-xcode@v1.5.1
         if: ${{ runner.os == 'macOS' }}
         with:
           xcode-version: ${{ matrix.xcode-version }}
