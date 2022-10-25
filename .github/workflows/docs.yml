@@ -80,9 +80,9 @@ jobs:
       - uses: actions/cache@v3.0.11
         with:
           path: .build
-          key: ${{ runner.os }}-${{ steps.os-version.outputs.version }}-${{ github.repository }}-spm-${{ steps.swift-setup.outputs.version }}-${{ hashFiles('**/Package.resolved') }}
+          key: ${{ runner.os }}-${{ steps.os-version.outputs.version }}-spm-${{ steps.swift-setup.outputs.version }}-${{ hashFiles('**/Package.resolved') }}
           restore-keys: |
-            ${{ runner.os }}-${{ steps.os-version.outputs.version }}-${{ github.repository }}-spm-${{ steps.swift-setup.outputs.version }}-
+            ${{ runner.os }}-${{ steps.os-version.outputs.version }}-spm-${{ steps.swift-setup.outputs.version }}-
       - uses: sersoft-gmbh/swifty-docs-action@v2.0.3
         env:
           ENABLE_DOCC_SUPPORT: '1'
