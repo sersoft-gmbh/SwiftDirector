@@ -41,12 +41,8 @@ jobs:
       package-dump: ${{ steps.dump-package.outputs.package-dump }}
     steps:
       - uses: swift-actions/setup-swift@v1.18.0
-        id: swift-setup
         with:
           swift-version: '5.7'
-      - name: Read OS Version
-        uses: sersoft-gmbh/os-version-action@v2.0.1
-        id: os-version
       - uses: actions/checkout@v3.1.0
       # We don't use a cache here, because SPM doesn't resolve dependencies when dumping packages.
       - name: Dump package
