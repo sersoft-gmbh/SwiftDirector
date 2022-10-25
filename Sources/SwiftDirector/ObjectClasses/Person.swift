@@ -24,7 +24,3 @@ public struct Person: PersonProtocol {
 
     public init() {}
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension Person: Sendable {}
-#endif

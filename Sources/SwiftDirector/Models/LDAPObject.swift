@@ -1,6 +1,8 @@
 /// Represents a concrete object of a given object class type. This type can be used to extract attributes for this object.
 @dynamicMemberLookup
-public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable, Identifiable, CustomStringConvertible, CustomDebugStringConvertible, _SwiftDirectorSendable {
+public struct LDAPObject<ObjectClass>: Hashable, Identifiable, Sendable, CustomStringConvertible, CustomDebugStringConvertible
+where ObjectClass: ObjectClassProtocol
+{
     public typealias ID = ObjectClass.ID
 
     /*private but*/ @usableFromInline let metaObjectClass = ObjectClass()
@@ -106,11 +108,11 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable,
 }
 
 // Needs to be defined outside the LDAPObject generic object to be able to pass it on.
-/*fileprivate but*/ @usableFromInline final class LDAPObjectStorage {
+/*fileprivate but*/ @usableFromInline final class LDAPObjectStorage: @unchecked Sendable {
     fileprivate private(set) var raw: Dictionary<AttributeKey, LDAPRaw>
-    fileprivate private(set) var cache: Dictionary<AttributeKey, _SwiftDirectorSendable>
+    fileprivate private(set) var cache: Dictionary<AttributeKey, Sendable>
 
-    private init(raw: Dictionary<AttributeKey, LDAPRaw>, cache: Dictionary<AttributeKey, _SwiftDirectorSendable>) {
+    private init(raw: Dictionary<AttributeKey, LDAPRaw>, cache: Dictionary<AttributeKey, Sendable>) {
         self.raw = raw
         self.cache = cache
     }
@@ -142,7 +144,3 @@ public struct LDAPObject<ObjectClass: ObjectClassProtocol>: Equatable, Hashable,
         raw.keys.contains(attribute.key)
     }
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension LDAPObjectStorage: @unchecked _SwiftDirectorSendable {}
-#endif

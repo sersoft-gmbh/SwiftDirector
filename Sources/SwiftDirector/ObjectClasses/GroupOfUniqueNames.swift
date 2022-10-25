@@ -23,7 +23,3 @@ public struct GroupOfUniqueNames: GroupOfUniqueNamesProtocol {
 
     public init() {}
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension GroupOfUniqueNames: Sendable {}
-#endif

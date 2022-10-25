@@ -168,10 +168,11 @@ public final class LDAPConnection {
             }
             var attrPtr: OpaquePointer?
             guard let firstAttrKey = ldap_first_attribute(handle, entryPtr, &attrPtr) else { return [:] }
-            return sequence(first: firstAttrKey, next: { [handle] _ in ldap_next_attribute(handle, entryPtr, attrPtr) }).reduce(into: [:]) { dict, ptr in
-                defer { free(ptr) }
-                dict[.init(rawValue: String(cString: ptr))] = readValues(attributeKey: ptr)
-            }
+            return sequence(first: firstAttrKey, next: { [handle] _ in ldap_next_attribute(handle, entryPtr, attrPtr) })
+                .reduce(into: [:]) { dict, ptr in
+                    defer { free(ptr) }
+                    dict[.init(rawValue: String(cString: ptr))] = readValues(attributeKey: ptr)
+                }
         }
 
         assertValid()

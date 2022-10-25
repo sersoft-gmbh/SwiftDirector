@@ -3,9 +3,9 @@
 
 /// Represents a raw LDAP value.
 /// - SeeAlso: ``LDAPValue``
-public struct LDAPRaw: Hashable, _SwiftDirectorSendable {
+public struct LDAPRaw: Hashable, Sendable {
     @usableFromInline
-    enum _Storage: Hashable, _SwiftDirectorSendable, Collection {
+    enum _Storage: Hashable, Sendable, Collection {
         @usableFromInline
         typealias Element = String
 
@@ -183,7 +183,7 @@ public struct LDAPRaw: Hashable, _SwiftDirectorSendable {
 #if compiler(>=5.6)
 /// Represents a type that can be converted from and to an LDAP raw type.
 @preconcurrency
-public protocol LDAPValue: Equatable, _SwiftDirectorSendable {
+public protocol LDAPValue: Equatable, Sendable {
     /// The raw LDAP value this type converts *to*.
 //    associatedtype LDAPRawType: LDAPRaw
     /// The raw LDAP value of this type.
@@ -195,7 +195,7 @@ public protocol LDAPValue: Equatable, _SwiftDirectorSendable {
 }
 #else
 /// Represents a type that can be converted from and to an LDAP raw type.
-public protocol LDAPValue: Equatable, _SwiftDirectorSendable {
+public protocol LDAPValue: Equatable, Sendable {
     /// The raw LDAP value this type converts *to*.
 //    associatedtype LDAPRawType: LDAPRaw
     /// The raw LDAP value of this type.

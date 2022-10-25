@@ -21,7 +21,3 @@ public struct GroupOfNames: GroupOfNamesProtocol {
 
     public init() {}
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension GroupOfNames: Sendable {}
-#endif

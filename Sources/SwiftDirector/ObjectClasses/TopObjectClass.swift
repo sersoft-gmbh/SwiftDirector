@@ -10,7 +10,3 @@ public struct TopObjectClass: TopObjectClassProtocol {
 
     public init() {}
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension TopObjectClass: Sendable {}
-#endif

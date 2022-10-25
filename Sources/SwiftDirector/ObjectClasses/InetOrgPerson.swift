@@ -20,7 +20,3 @@ public struct InetOrgPerson: InetOrgPersonProtocol {
     
     public init() {}
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension InetOrgPerson: Sendable {}
-#endif

@@ -5,8 +5,7 @@ public struct DistinguishedName: RawRepresentable,
                                  ExpressibleByStringLiteral,
                                  CustomStringConvertible,
                                  CustomDebugStringConvertible,
-                                 LDAPValue,
-                                 _SwiftDirectorSendable
+                                 LDAPValue
 {
     public typealias RawValue = String
 
@@ -29,6 +28,7 @@ public struct DistinguishedName: RawRepresentable,
 //    public init<Raw>(fromLDAPRaw ldapRaw: Raw) where Raw: LDAPRaw {
 //        self.init(rawValue: .init(fromLDAPRaw: ldapRaw))
 //    }
+
     @inlinable
     public init(fromLDAPRaw ldapRaw: LDAPRaw) {
         self.init(rawValue: .init(fromLDAPRaw: ldapRaw))

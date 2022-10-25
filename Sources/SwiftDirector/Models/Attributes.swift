@@ -4,10 +4,10 @@ public struct AttributeKey: RawRepresentable,
                             Hashable,
                             Comparable,
                             Codable,
+                            Sendable,
                             ExpressibleByStringLiteral,
                             CustomStringConvertible,
-                            CustomDebugStringConvertible,
-                            _SwiftDirectorSendable
+                            CustomDebugStringConvertible
 {
     public typealias RawValue = String
 
@@ -32,7 +32,7 @@ public struct AttributeKey: RawRepresentable,
 }
 
 /// Represents an (typed) attribute containing its key.
-public struct Attribute<Value: LDAPValue>: Hashable, CustomStringConvertible, CustomDebugStringConvertible, _SwiftDirectorSendable {
+public struct Attribute<Value: LDAPValue>: Hashable, Sendable, CustomStringConvertible, CustomDebugStringConvertible {
     /// The key for this attribute.
     public let key: AttributeKey
 

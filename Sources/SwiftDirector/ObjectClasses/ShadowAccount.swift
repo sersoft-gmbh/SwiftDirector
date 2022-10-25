@@ -22,7 +22,3 @@ public struct ShadowAccount: ShadowAccountProtocol {
 
     public init() {}
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension ShadowAccount: Sendable {}
-#endif

@@ -1,9 +1,9 @@
 import CLDAP
 
 /// Represents a server configuration.
-public struct LDAPServer: Hashable {
+public struct LDAPServer: Hashable, Sendable {
     /// The schema to use for connecting to the LDAP.
-    public enum Schema: Hashable {
+    public enum Schema: Hashable, Sendable {
         case ldap, ldaps
         case ldapi, cldap
         case custom(String)
@@ -69,8 +69,3 @@ extension LDAPServer {
         .init(schema: .ldaps, host: host, port: port)
     }
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension LDAPServer: Sendable {}
-extension LDAPServer.Schema: Sendable {}
-#endif

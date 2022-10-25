@@ -21,7 +21,3 @@ public struct OrganizationalPerson: OrganizationalPersonProtocol {
     
     public init() {}
 }
-
-#if compiler(>=5.5) && canImport(_Concurrency)
-extension OrganizationalPerson: Sendable {}
-#endif

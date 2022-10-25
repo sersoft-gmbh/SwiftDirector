@@ -3,7 +3,7 @@
 /// However, the implementation should alway just be an empty struct just containing the oid and the protocol should have all properties defined in an extension.
 /// See e.g. ``OrganizationalPerson``.
 #if compiler(>=5.7)
-public protocol ObjectClassProtocol<ID>: _SwiftDirectorSendable {
+public protocol ObjectClassProtocol<ID>: Sendable {
     /// The type of the identifier of object of this object class.
     associatedtype ID: Hashable, LDAPValue = DistinguishedName
 
@@ -20,7 +20,7 @@ public protocol ObjectClassProtocol<ID>: _SwiftDirectorSendable {
     init()
 }
 #else
-public protocol ObjectClassProtocol: _SwiftDirectorSendable {
+public protocol ObjectClassProtocol: Sendable {
     /// The type of the identifier of object of this object class.
     associatedtype ID: Hashable, LDAPValue = DistinguishedName
 
