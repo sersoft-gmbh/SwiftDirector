@@ -148,6 +148,7 @@
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Comparable-Implementations",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/CustomStringConvertible-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Equatable-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByUnicodeScalarLiteral-Implementations",
@@ -323,6 +324,17 @@
   "title" : "Comparable Implementations",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname\/comparable-implementations"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/CustomStringConvertible-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/CustomStringConvertible-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "CustomStringConvertible Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/distinguishedname\/customstringconvertible-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/Equatable-Implementations": {
   "abstract" : [

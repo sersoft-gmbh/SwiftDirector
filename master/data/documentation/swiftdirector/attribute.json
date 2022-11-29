@@ -164,6 +164,7 @@
     {
       "generated" : true,
       "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute\/CustomStringConvertible-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute\/Equatable-Implementations"
       ],
       "title" : "Default Implementations"
@@ -240,6 +241,17 @@
   "title" : "Attribute",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/attribute"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Attribute/CustomStringConvertible-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute\/CustomStringConvertible-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "CustomStringConvertible Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/attribute\/customstringconvertible-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/Attribute/Equatable-Implementations": {
   "abstract" : [
