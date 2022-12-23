@@ -37,7 +37,7 @@ jobs:
         if: ${{ runner.os == 'macOS' }}
         with:
           xcode-version: ${{ matrix.xcode-version }}
-      - uses: swift-actions/setup-swift@v1.20.0
+      - uses: swift-actions/setup-swift@v1.21.0
         if: ${{ runner.os == 'Linux' }}
         id: swift-setup-linux
         with:
