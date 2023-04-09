@@ -1,0 +1,162 @@
+{
+  "abstract" : [
+    {
+      "text" : "Creates a new instance of the object class. The object class is just a descriptor and should thus not have any fields and the initializer should not do anything.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol\/init()"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:13SwiftDirector19ObjectClassProtocolPxycfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "SwiftDirector"
+      }
+    ],
+    "required" : true,
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "()"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/swiftdirector\/objectclassprotocol\/init()"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://SwiftDirector/documentation/SwiftDirector": {
+  "abstract" : [
+    {
+      "text" : "A Swift interface to OpenLDAP.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SwiftDirector",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/ObjectClassProtocol": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ObjectClassProtocol"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ObjectClassProtocol"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ObjectClassProtocol",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/objectclassprotocol"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/ObjectClassProtocol/init()": {
+  "abstract" : [
+    {
+      "text" : "Creates a new instance of the object class. The object class is just a descriptor and should thus not have any fields and the initializer should not do anything.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol\/init()",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "init()",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/objectclassprotocol\/init()"
+}
+}
+}

@@ -1,0 +1,748 @@
+{
+  "abstract" : [
+    {
+      "text" : "Represents a server configuration.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:13SwiftDirector10LDAPServerV",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "struct"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "LDAPServer"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "SwiftDirector"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "LDAPServer"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Structure",
+    "symbolKind" : "struct",
+    "title" : "LDAPServer"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "struct"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "LDAPServer"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/SQ",
+        "doc:\/\/SwiftDirector\/SH",
+        "doc:\/\/SwiftDirector\/s8SendableP"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforms To",
+      "type" : "conformsTo"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "seeAlsoSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection"
+      ],
+      "title" : "Connecting to a Server"
+    }
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/init(schema:host:port:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/host",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/port",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/schema-swift.property"
+      ],
+      "title" : "Instance Properties"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/openConnection()"
+      ],
+      "title" : "Instance Methods"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/ldap(host:port:)",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/ldaps(host:port:)"
+      ],
+      "title" : "Type Methods"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Schema-swift.enum"
+      ],
+      "title" : "Enumerations"
+    },
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Equatable-Implementations"
+      ],
+      "title" : "Default Implementations"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/swiftdirector\/ldapserver"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://SwiftDirector/SH": {
+  "identifier" : "doc:\/\/SwiftDirector\/SH",
+  "title" : "Swift.Hashable",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/SQ": {
+  "identifier" : "doc:\/\/SwiftDirector\/SQ",
+  "title" : "Swift.Equatable",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector": {
+  "abstract" : [
+    {
+      "text" : "A Swift interface to OpenLDAP.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SwiftDirector",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPConnection": {
+  "abstract" : [
+    {
+      "text" : "Represents a connection to an LDAP server.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "class"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LDAPConnection"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LDAPConnection"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LDAPConnection",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapconnection"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer": {
+  "abstract" : [
+    {
+      "text" : "Represents a server configuration.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LDAPServer"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LDAPServer"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LDAPServer",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/Equatable-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Equatable-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "Equatable Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/equatable-implementations"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/Schema-swift.enum": {
+  "abstract" : [
+    {
+      "text" : "The schema to use for connecting to the LDAP.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "enum"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "Schema"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Schema-swift.enum",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Schema"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LDAPServer.Schema",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/host": {
+  "abstract" : [
+    {
+      "text" : "The host to connect to.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "host"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/host",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "host",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/host"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/init(schema:host:port:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a new server configuration with the given schema, host and port.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "schema"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPServerV",
+      "text" : "LDAPServer"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPServerV6SchemaO",
+      "text" : "Schema"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "host"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "port"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s6UInt16V",
+      "text" : "UInt16"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/init(schema:host:port:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(schema:host:port:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/init(schema:host:port:)"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/ldap(host:port:)": {
+  "abstract" : [
+    {
+      "text" : "A new server configuration with ",
+      "type" : "text"
+    },
+    {
+      "code" : "Schema\/ldap",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " scheme and ",
+      "type" : "text"
+    },
+    {
+      "code" : "LDAP_PORT",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " as default port.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ldap"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "host"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "port"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s6UInt16V",
+      "text" : "UInt16"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPServerV",
+      "text" : "LDAPServer"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/ldap(host:port:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "ldap(host:port:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/ldap(host:port:)"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/ldaps(host:port:)": {
+  "abstract" : [
+    {
+      "text" : "A new server configuration with ",
+      "type" : "text"
+    },
+    {
+      "code" : "Schema\/ldaps",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " scheme and ",
+      "type" : "text"
+    },
+    {
+      "code" : "LDAPS_PORT",
+      "type" : "codeVoice"
+    },
+    {
+      "text" : " as default port.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ldaps"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "host"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "port"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s6UInt16V",
+      "text" : "UInt16"
+    },
+    {
+      "kind" : "text",
+      "text" : ") -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPServerV",
+      "text" : "LDAPServer"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/ldaps(host:port:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "ldaps(host:port:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/ldaps(host:port:)"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/openConnection()": {
+  "abstract" : [
+    {
+      "text" : "Opens a new connection to this server.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "openConnection"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector14LDAPConnectionC",
+      "text" : "LDAPConnection"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/openConnection()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "openConnection()",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/openconnection()"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/port": {
+  "abstract" : [
+    {
+      "text" : "The port to use for connecting.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "port"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s6UInt16V",
+      "text" : "UInt16"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/port",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "port",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/port"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/schema-swift.property": {
+  "abstract" : [
+    {
+      "text" : "The schema to use for connecting.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "schema"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPServerV",
+      "text" : "LDAPServer"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPServerV6SchemaO",
+      "text" : "Schema"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/schema-swift.property",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "schema",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.property"
+},
+"doc://SwiftDirector/s8SendableP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}

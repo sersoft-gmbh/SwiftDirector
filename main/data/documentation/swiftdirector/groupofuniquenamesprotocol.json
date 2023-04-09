@@ -1,0 +1,527 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:13SwiftDirector26GroupOfUniqueNamesProtocolP",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "protocol"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "GroupOfUniqueNamesProtocol"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "SwiftDirector"
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "GroupOfUniqueNamesProtocol"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Protocol",
+    "symbolKind" : "protocol",
+    "title" : "GroupOfUniqueNamesProtocol"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "protocol"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "GroupOfUniqueNamesProtocol"
+            },
+            {
+              "kind" : "text",
+              "text" : " : "
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/TopObjectClassProtocol",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:13SwiftDirector22TopObjectClassProtocolP",
+              "text" : "TopObjectClassProtocol"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "relationshipsSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol",
+        "doc:\/\/SwiftDirector\/s8SendableP",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/TopObjectClassProtocol"
+      ],
+      "kind" : "relationships",
+      "title" : "Inherits From",
+      "type" : "inheritsFrom"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames"
+      ],
+      "kind" : "relationships",
+      "title" : "Conforming Types",
+      "type" : "conformingTypes"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/commonName",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/organization",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/organizationalUnit",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/owner",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/uniqueMember"
+      ],
+      "title" : "Instance Properties"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/swiftdirector\/groupofuniquenamesprotocol"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://SwiftDirector/documentation/SwiftDirector": {
+  "abstract" : [
+    {
+      "text" : "A Swift interface to OpenLDAP.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SwiftDirector",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNames": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "GroupOfUniqueNames"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "GroupOfUniqueNames"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "GroupOfUniqueNames",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/groupofuniquenames"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNamesProtocol": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "GroupOfUniqueNamesProtocol"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "GroupOfUniqueNamesProtocol"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "GroupOfUniqueNamesProtocol",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNamesProtocol/commonName": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "commonName"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/commonName",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "commonName",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/commonname"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNamesProtocol/organization": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "organization"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/organization",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "organization",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/organization"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNamesProtocol/organizationalUnit": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "organizationalUnit"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/organizationalUnit",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "organizationalUnit",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/organizationalunit"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNamesProtocol/owner": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "owner"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector17DistinguishedNameV",
+      "text" : "DistinguishedName"
+    },
+    {
+      "kind" : "text",
+      "text" : "?>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/owner",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "owner",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/owner"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNamesProtocol/uniqueMember": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "uniqueMember"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sa",
+      "text" : "Array"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector17DistinguishedNameV",
+      "text" : "DistinguishedName"
+    },
+    {
+      "kind" : "text",
+      "text" : ">>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol\/uniqueMember",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "uniqueMember",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/uniquemember"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/ObjectClassProtocol": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ObjectClassProtocol"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ObjectClassProtocol"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ObjectClassProtocol",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/objectclassprotocol"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/TopObjectClassProtocol": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "TopObjectClassProtocol"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/TopObjectClassProtocol",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "TopObjectClassProtocol"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "TopObjectClassProtocol",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/topobjectclassprotocol"
+},
+"doc://SwiftDirector/s8SendableP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s8SendableP",
+  "title" : "Swift.Sendable",
+  "type" : "unresolvable"
+}
+}
+}

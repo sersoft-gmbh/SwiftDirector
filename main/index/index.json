@@ -1,0 +1,2239 @@
+{
+  "interfaceLanguages" : {
+    "swift" : [
+      {
+        "children" : [
+          {
+            "title" : "Connecting to a Server",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/init(schema:host:port:)",
+                "title" : "init(schema: LDAPServer.Schema, host: String, port: UInt16)",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/host",
+                "title" : "var host: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/port",
+                "title" : "var port: UInt16",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.property",
+                "title" : "var schema: LDAPServer.Schema",
+                "type" : "property"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/openconnection()",
+                "title" : "func openConnection() throws -> LDAPConnection",
+                "type" : "method"
+              },
+              {
+                "title" : "Type Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/ldap(host:port:)",
+                "title" : "static func ldap(host: String, port: UInt16) -> LDAPServer",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/ldaps(host:port:)",
+                "title" : "static func ldaps(host: String, port: UInt16) -> LDAPServer",
+                "type" : "method"
+              },
+              {
+                "title" : "Enumerations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Enumeration Cases",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/cldap",
+                    "title" : "case cldap",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/custom(_:)",
+                    "title" : "case custom(String)",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/ldap",
+                    "title" : "case ldap",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/ldapi",
+                    "title" : "case ldapi",
+                    "type" : "case"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/ldaps",
+                    "title" : "case ldaps",
+                    "type" : "case"
+                  },
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Operators",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/!=(_:_:)",
+                        "title" : "static func != (Self, Self) -> Bool",
+                        "type" : "op"
+                      }
+                    ],
+                    "path" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/equatable-implementations",
+                    "title" : "Equatable Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum",
+                "title" : "LDAPServer.Schema",
+                "type" : "enum"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapserver\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/ldapserver",
+            "title" : "LDAPServer",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapconnection\/isduplicate",
+                "title" : "var isDuplicate: Bool",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapconnection\/server",
+                "title" : "var server: LDAPServer",
+                "type" : "property"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapconnection\/bind(dn:credentials:)",
+                "title" : "func bind(dn: DistinguishedName, credentials: String) throws",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapconnection\/close()",
+                "title" : "func close() throws",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapconnection\/duplicate(fromoriginal:)",
+                "title" : "func duplicate(fromOriginal: Bool) throws -> LDAPConnection",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapconnection\/newprimaryconnection()",
+                "title" : "func newPrimaryConnection() throws -> LDAPConnection",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapconnection\/search(for:inbase:filteredby:)",
+                "title" : "func search<ObjectClass>(for: ObjectClass.Type, inBase: String, filteredBy: String?) throws -> Array<LDAPObject<ObjectClass>>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapconnection\/unbind()",
+                "title" : "func unbind() throws",
+                "type" : "method"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/ldapconnection",
+            "title" : "LDAPConnection",
+            "type" : "class"
+          },
+          {
+            "title" : "Attributes & Values",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Operators",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attributekey\/_(_:_:)-6hu6t",
+                "title" : "static func < (AttributeKey, AttributeKey) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attributekey\/init(rawvalue:)",
+                "title" : "init(rawValue: AttributeKey.RawValue)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attributekey\/init(stringliteral:)",
+                "title" : "init(stringLiteral: AttributeKey.RawValue.StringLiteralType)",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attributekey\/debugdescription",
+                "title" : "var debugDescription: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attributekey\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attributekey\/rawvalue-swift.property",
+                "title" : "let rawValue: AttributeKey.RawValue",
+                "type" : "property"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attributekey\/rawvalue-swift.typealias",
+                "title" : "AttributeKey.RawValue",
+                "type" : "typealias"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/'...(_:)-1uvpi",
+                    "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/'...(_:)-5ohh4",
+                    "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/'...(_:_:)",
+                    "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/'.._(_:)",
+                    "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/'.._(_:_:)",
+                    "title" : "static func ..< (Self, Self) -> Range<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/_(_:_:)-884sd",
+                    "title" : "static func > (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/_=(_:_:)-22mv2",
+                    "title" : "static func >= (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/_=(_:_:)-fv02",
+                    "title" : "static func <= (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/attributekey\/comparable-implementations",
+                "title" : "Comparable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/attributekey\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/attributekey\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/init(extendedgraphemeclusterliteral:)",
+                    "title" : "init(extendedGraphemeClusterLiteral: Self.StringLiteralType)",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/attributekey\/expressiblebyextendedgraphemeclusterliteral-implementations",
+                "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/init(unicodescalarliteral:)",
+                    "title" : "init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/attributekey\/expressiblebyunicodescalarliteral-implementations",
+                "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/init(from:)",
+                    "title" : "init(from: Decoder) throws",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/hashvalue",
+                    "title" : "var hashValue: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/encode(to:)",
+                    "title" : "func encode(to: Encoder) throws",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attributekey\/hash(into:)",
+                    "title" : "func hash(into: inout Hasher)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/attributekey\/rawrepresentable-implementations",
+                "title" : "RawRepresentable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/attributekey",
+            "title" : "AttributeKey",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attribute\/init(key:)",
+                "title" : "init(key: AttributeKey)",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attribute\/debugdescription",
+                "title" : "var debugDescription: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attribute\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/attribute\/key",
+                "title" : "let key: AttributeKey",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attribute\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/attribute\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/attribute\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/attribute\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/attribute",
+            "title" : "Attribute",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapvalue\/init(fromldapraw:)",
+                "title" : "init(fromLDAPRaw: LDAPRaw)",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapvalue\/ldapraw",
+                "title" : "var ldapRaw: LDAPRaw",
+                "type" : "property"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/ldapvalue",
+            "title" : "LDAPValue",
+            "type" : "protocol"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Operators",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/==(_:_:)",
+                "title" : "static func == (LDAPObject<ObjectClass>, LDAPObject<ObjectClass>) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/debugdescription",
+                "title" : "var debugDescription: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/id-swift.property-9x716",
+                "title" : "var id: LDAPObject<ObjectClass>.ID",
+                "type" : "property"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/cancast(to:)",
+                "title" : "func canCast<C>(to: C.Type) -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/cast(to:)",
+                "title" : "func cast<C>(to: C.Type) -> LDAPObject<C>?",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/forcecast(to:)",
+                "title" : "func forceCast<C>(to: C.Type) -> LDAPObject<C>",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/hasattribute(_:)",
+                "title" : "func hasAttribute<T>(KeyPath<ObjectClass, Attribute<T>>) -> Bool",
+                "type" : "method"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/hash(into:)",
+                "title" : "func hash(into: inout Hasher)",
+                "type" : "method"
+              },
+              {
+                "title" : "Subscripts",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/subscript(dynamicmember:)",
+                "title" : "subscript<T>(dynamicMember _: KeyPath<ObjectClass, Attribute<T>>) -> T",
+                "type" : "subscript"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/id-swift.typealias",
+                "title" : "LDAPObject.ID",
+                "type" : "typealias"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapobject\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapobject\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapobject\/id-swift.property-6hkca",
+                    "title" : "var id: ObjectIdentifier",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/identifiable-implementations",
+                "title" : "Identifiable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/ldapobject",
+            "title" : "LDAPObject",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Operators",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/_(_:_:)-1z9a2",
+                "title" : "static func < (DistinguishedName, DistinguishedName) -> Bool",
+                "type" : "op"
+              },
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/init(fromldapraw:)",
+                "title" : "init(fromLDAPRaw: LDAPRaw)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/init(rawvalue:)",
+                "title" : "init(rawValue: DistinguishedName.RawValue)",
+                "type" : "init"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/init(stringliteral:)",
+                "title" : "init(stringLiteral: DistinguishedName.RawValue.StringLiteralType)",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/debugdescription",
+                "title" : "var debugDescription: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/ldapraw",
+                "title" : "var ldapRaw: LDAPRaw",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/rawvalue-swift.property",
+                "title" : "let rawValue: DistinguishedName.RawValue",
+                "type" : "property"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/rawvalue-swift.typealias",
+                "title" : "DistinguishedName.RawValue",
+                "type" : "typealias"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/'...(_:)-4x9bv",
+                    "title" : "static func ... (Self) -> PartialRangeFrom<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/'...(_:)-7r4rp",
+                    "title" : "static func ... (Self) -> PartialRangeThrough<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/'...(_:_:)",
+                    "title" : "static func ... (Self, Self) -> ClosedRange<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/'.._(_:)",
+                    "title" : "static func ..< (Self) -> PartialRangeUpTo<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/'.._(_:_:)",
+                    "title" : "static func ..< (Self, Self) -> Range<Self>",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/_(_:_:)-2qv30",
+                    "title" : "static func > (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/_=(_:_:)-7oa9g",
+                    "title" : "static func >= (Self, Self) -> Bool",
+                    "type" : "op"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/_=(_:_:)-9rjld",
+                    "title" : "static func <= (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/comparable-implementations",
+                "title" : "Comparable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/init(extendedgraphemeclusterliteral:)",
+                    "title" : "init(extendedGraphemeClusterLiteral: Self.StringLiteralType)",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/expressiblebyextendedgraphemeclusterliteral-implementations",
+                "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/init(unicodescalarliteral:)",
+                    "title" : "init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)",
+                    "type" : "init"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/expressiblebyunicodescalarliteral-implementations",
+                "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/init(from:)",
+                    "title" : "init(from: Decoder) throws",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/hashvalue",
+                    "title" : "var hashValue: Int",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/encode(to:)",
+                    "title" : "func encode(to: Encoder) throws",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/hash(into:)",
+                    "title" : "func hash(into: inout Hasher)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/distinguishedname\/rawrepresentable-implementations",
+                "title" : "RawRepresentable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/distinguishedname",
+            "title" : "DistinguishedName",
+            "type" : "struct"
+          },
+          {
+            "title" : "Object Classes",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Associated Types",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/id",
+                "title" : "ID",
+                "type" : "associatedtype"
+              },
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/entrydn",
+                "title" : "var entryDN: Attribute<DistinguishedName>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/memberof",
+                "title" : "var memberOf: Attribute<Array<DistinguishedName>>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/objectclasses",
+                "title" : "var objectClasses: Attribute<Array<String>>",
+                "type" : "property"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/idpath-swift.typealias",
+                "title" : "ObjectClassProtocol.IDPath",
+                "type" : "typealias"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/displayname",
+                "title" : "static var displayName: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/idpath-swift.type.property",
+                "title" : "static var idPath: Self.IDPath",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/name",
+                "title" : "static var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/oid",
+                "title" : "static var oid: String",
+                "type" : "property"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/objectclassprotocol",
+            "title" : "ObjectClassProtocol",
+            "type" : "protocol"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/anyobjectclass\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/anyobjectclass\/idpath",
+                "title" : "static var idPath: AnyObjectClass.IDPath",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/anyobjectclass\/name",
+                "title" : "static var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/anyobjectclass\/oid",
+                "title" : "static var oid: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/anyobjectclass\/entrydn",
+                    "title" : "var entryDN: Attribute<DistinguishedName>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/anyobjectclass\/memberof",
+                    "title" : "var memberOf: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/anyobjectclass\/objectclasses",
+                    "title" : "var objectClasses: Attribute<Array<String>>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/anyobjectclass\/displayname",
+                    "title" : "static var displayName: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/anyobjectclass\/objectclassprotocol-implementations",
+                "title" : "ObjectClassProtocol Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/anyobjectclass",
+            "title" : "AnyObjectClass",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/topobjectclass\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/topobjectclass\/idpath",
+                "title" : "static var idPath: TopObjectClass.IDPath",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/topobjectclass\/name",
+                "title" : "static var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/topobjectclass\/oid",
+                "title" : "static var oid: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/topobjectclass\/entrydn",
+                    "title" : "var entryDN: Attribute<DistinguishedName>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/topobjectclass\/memberof",
+                    "title" : "var memberOf: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/topobjectclass\/objectclasses",
+                    "title" : "var objectClasses: Attribute<Array<String>>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/topobjectclass\/displayname",
+                    "title" : "static var displayName: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/topobjectclass\/objectclassprotocol-implementations",
+                "title" : "ObjectClassProtocol Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/topobjectclass",
+            "title" : "TopObjectClass",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofnames\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofnames\/idpath",
+                "title" : "static var idPath: GroupOfNames.IDPath",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofnames\/name",
+                "title" : "static var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofnames\/oid",
+                "title" : "static var oid: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/commonname",
+                    "title" : "var commonName: Attribute<String>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/member",
+                    "title" : "var member: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/organization",
+                    "title" : "var organization: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/organizationalunit",
+                    "title" : "var organizationalUnit: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/owner",
+                    "title" : "var owner: Attribute<DistinguishedName?>",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/groupofnames\/groupofnamesprotocol-implementations",
+                "title" : "GroupOfNamesProtocol Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/entrydn",
+                    "title" : "var entryDN: Attribute<DistinguishedName>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/memberof",
+                    "title" : "var memberOf: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/objectclasses",
+                    "title" : "var objectClasses: Attribute<Array<String>>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/displayname",
+                    "title" : "static var displayName: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/groupofnames\/objectclassprotocol-implementations",
+                "title" : "ObjectClassProtocol Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/groupofnames",
+            "title" : "GroupOfNames",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/id",
+                "title" : "GroupOfUniqueNames.ID",
+                "type" : "typealias"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/idpath",
+                "title" : "static var idPath: GroupOfUniqueNames.IDPath",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/name",
+                "title" : "static var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/oid",
+                "title" : "static var oid: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/commonname",
+                    "title" : "var commonName: Attribute<String>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/organization",
+                    "title" : "var organization: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/organizationalunit",
+                    "title" : "var organizationalUnit: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/owner",
+                    "title" : "var owner: Attribute<DistinguishedName?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/uniquemember",
+                    "title" : "var uniqueMember: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/groupofuniquenamesprotocol-implementations",
+                "title" : "GroupOfUniqueNamesProtocol Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/entrydn",
+                    "title" : "var entryDN: Attribute<DistinguishedName>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/memberof",
+                    "title" : "var memberOf: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/objectclasses",
+                    "title" : "var objectClasses: Attribute<Array<String>>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/displayname",
+                    "title" : "static var displayName: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/objectclassprotocol-implementations",
+                "title" : "ObjectClassProtocol Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/groupofuniquenames",
+            "title" : "GroupOfUniqueNames",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgperson\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgperson\/id",
+                "title" : "InetOrgPerson.ID",
+                "type" : "typealias"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgperson\/idpath",
+                "title" : "static var idPath: InetOrgPerson.IDPath",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgperson\/name",
+                "title" : "static var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgperson\/oid",
+                "title" : "static var oid: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/displayname-swift.property",
+                    "title" : "var displayName: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/employeenumber",
+                    "title" : "var employeeNumber: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/givenname",
+                    "title" : "var givenName: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/mail",
+                    "title" : "var mail: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/userid",
+                    "title" : "var userID: Attribute<String?>",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/inetorgperson\/inetorgpersonprotocol-implementations",
+                "title" : "InetOrgPersonProtocol Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/entrydn",
+                    "title" : "var entryDN: Attribute<DistinguishedName>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/memberof",
+                    "title" : "var memberOf: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/objectclasses",
+                    "title" : "var objectClasses: Attribute<Array<String>>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/displayname-swift.type.property",
+                    "title" : "static var displayName: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/inetorgperson\/objectclassprotocol-implementations",
+                "title" : "ObjectClassProtocol Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/organizationalunit",
+                    "title" : "var organizationalUnit: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/postaladdress",
+                    "title" : "var postalAddress: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/postalcode",
+                    "title" : "var postalCode: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/street",
+                    "title" : "var street: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/title",
+                    "title" : "var title: Attribute<String?>",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/inetorgperson\/organizationalpersonprotocol-implementations",
+                "title" : "OrganizationalPersonProtocol Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/inetorgperson",
+            "title" : "InetOrgPerson",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalperson\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalperson\/id",
+                "title" : "OrganizationalPerson.ID",
+                "type" : "typealias"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalperson\/idpath",
+                "title" : "static var idPath: OrganizationalPerson.IDPath",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalperson\/name",
+                "title" : "static var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalperson\/oid",
+                "title" : "static var oid: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/entrydn",
+                    "title" : "var entryDN: Attribute<DistinguishedName>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/memberof",
+                    "title" : "var memberOf: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/objectclasses",
+                    "title" : "var objectClasses: Attribute<Array<String>>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/displayname",
+                    "title" : "static var displayName: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/organizationalperson\/objectclassprotocol-implementations",
+                "title" : "ObjectClassProtocol Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/organizationalunit",
+                    "title" : "var organizationalUnit: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/postaladdress",
+                    "title" : "var postalAddress: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/postalcode",
+                    "title" : "var postalCode: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/street",
+                    "title" : "var street: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/title",
+                    "title" : "var title: Attribute<String?>",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/organizationalperson\/organizationalpersonprotocol-implementations",
+                "title" : "OrganizationalPersonProtocol Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/organizationalperson",
+            "title" : "OrganizationalPerson",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/person\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Type Aliases",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/person\/id",
+                "title" : "Person.ID",
+                "type" : "typealias"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/person\/idpath",
+                "title" : "static var idPath: Person.IDPath",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/person\/name",
+                "title" : "static var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/person\/oid",
+                "title" : "static var oid: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/entrydn",
+                    "title" : "var entryDN: Attribute<DistinguishedName>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/memberof",
+                    "title" : "var memberOf: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/objectclasses",
+                    "title" : "var objectClasses: Attribute<Array<String>>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/displayname",
+                    "title" : "static var displayName: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/person\/objectclassprotocol-implementations",
+                "title" : "ObjectClassProtocol Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/commonname",
+                    "title" : "var commonName: Attribute<String>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/fullname",
+                    "title" : "var fullName: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/givenname",
+                    "title" : "var givenName: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/initials",
+                    "title" : "var initials: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/preferredname",
+                    "title" : "var preferredName: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/surname",
+                    "title" : "var surname: Attribute<String>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/userid",
+                    "title" : "var userID: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/userpassword",
+                    "title" : "var userPassword: Attribute<String?>",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/person\/personprotocol-implementations",
+                "title" : "PersonProtocol Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/person",
+            "title" : "Person",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Initializers",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccount\/init()",
+                "title" : "init()",
+                "type" : "init"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccount\/idpath",
+                "title" : "static var idPath: ShadowAccount.IDPath",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccount\/name",
+                "title" : "static var name: String",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccount\/oid",
+                "title" : "static var oid: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/entrydn",
+                    "title" : "var entryDN: Attribute<DistinguishedName>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/memberof",
+                    "title" : "var memberOf: Attribute<Array<DistinguishedName>>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/objectclasses",
+                    "title" : "var objectClasses: Attribute<Array<String>>",
+                    "type" : "property"
+                  },
+                  {
+                    "title" : "Type Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/displayname",
+                    "title" : "static var displayName: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/shadowaccount\/objectclassprotocol-implementations",
+                "title" : "ObjectClassProtocol Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/authpassword",
+                    "title" : "var authPassword: Attribute<String?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/shadowinactive",
+                    "title" : "var shadowInactive: Attribute<Int?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/shadowlastchange",
+                    "title" : "var shadowLastChange: Attribute<Int?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/shadowmax",
+                    "title" : "var shadowMax: Attribute<Int?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/shadowmin",
+                    "title" : "var shadowMin: Attribute<Int?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/shadowwarning",
+                    "title" : "var shadowWarning: Attribute<Int?>",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/userid",
+                    "title" : "var userID: Attribute<String>",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/shadowaccount\/shadowaccountprotocol-implementations",
+                "title" : "ShadowAccountProtocol Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/shadowaccount",
+            "title" : "ShadowAccount",
+            "type" : "struct"
+          },
+          {
+            "title" : "Errors",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldaperror\/description",
+                "title" : "var description: String",
+                "type" : "property"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldaperror\/unknown",
+                "title" : "static var unknown: LDAPError",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldaperror\/halfwidthcornerquoted",
+                    "title" : "var halfWidthCornerQuoted: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/ldaperror\/customstringconvertible-implementations",
+                "title" : "CustomStringConvertible Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldaperror\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/ldaperror\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldaperror\/localizeddescription",
+                    "title" : "var localizedDescription: String",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/ldaperror\/error-implementations",
+                "title" : "Error Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/ldaperror",
+            "title" : "LDAPError",
+            "type" : "struct"
+          },
+          {
+            "title" : "Protocols",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofnamesprotocol\/commonname",
+                "title" : "var commonName: Attribute<String>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofnamesprotocol\/member",
+                "title" : "var member: Attribute<Array<DistinguishedName>>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofnamesprotocol\/organization",
+                "title" : "var organization: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofnamesprotocol\/organizationalunit",
+                "title" : "var organizationalUnit: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofnamesprotocol\/owner",
+                "title" : "var owner: Attribute<DistinguishedName?>",
+                "type" : "property"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/groupofnamesprotocol",
+            "title" : "GroupOfNamesProtocol",
+            "type" : "protocol"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/commonname",
+                "title" : "var commonName: Attribute<String>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/organization",
+                "title" : "var organization: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/organizationalunit",
+                "title" : "var organizationalUnit: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/owner",
+                "title" : "var owner: Attribute<DistinguishedName?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol\/uniquemember",
+                "title" : "var uniqueMember: Attribute<Array<DistinguishedName>>",
+                "type" : "property"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/groupofuniquenamesprotocol",
+            "title" : "GroupOfUniqueNamesProtocol",
+            "type" : "protocol"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgpersonprotocol\/displayname",
+                "title" : "var displayName: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgpersonprotocol\/employeenumber",
+                "title" : "var employeeNumber: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgpersonprotocol\/givenname",
+                "title" : "var givenName: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgpersonprotocol\/mail",
+                "title" : "var mail: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/inetorgpersonprotocol\/userid",
+                "title" : "var userID: Attribute<String?>",
+                "type" : "property"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/inetorgpersonprotocol",
+            "title" : "InetOrgPersonProtocol",
+            "type" : "protocol"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalpersonprotocol\/organizationalunit",
+                "title" : "var organizationalUnit: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalpersonprotocol\/postaladdress",
+                "title" : "var postalAddress: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalpersonprotocol\/postalcode",
+                "title" : "var postalCode: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalpersonprotocol\/street",
+                "title" : "var street: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/organizationalpersonprotocol\/title",
+                "title" : "var title: Attribute<String?>",
+                "type" : "property"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/organizationalpersonprotocol",
+            "title" : "OrganizationalPersonProtocol",
+            "type" : "protocol"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/personprotocol\/commonname",
+                "title" : "var commonName: Attribute<String>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/personprotocol\/fullname",
+                "title" : "var fullName: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/personprotocol\/givenname",
+                "title" : "var givenName: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/personprotocol\/initials",
+                "title" : "var initials: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/personprotocol\/preferredname",
+                "title" : "var preferredName: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/personprotocol\/surname",
+                "title" : "var surname: Attribute<String>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/personprotocol\/userid",
+                "title" : "var userID: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/personprotocol\/userpassword",
+                "title" : "var userPassword: Attribute<String?>",
+                "type" : "property"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/personprotocol",
+            "title" : "PersonProtocol",
+            "type" : "protocol"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccountprotocol\/authpassword",
+                "title" : "var authPassword: Attribute<String?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccountprotocol\/shadowinactive",
+                "title" : "var shadowInactive: Attribute<Int?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccountprotocol\/shadowlastchange",
+                "title" : "var shadowLastChange: Attribute<Int?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccountprotocol\/shadowmax",
+                "title" : "var shadowMax: Attribute<Int?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccountprotocol\/shadowmin",
+                "title" : "var shadowMin: Attribute<Int?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccountprotocol\/shadowwarning",
+                "title" : "var shadowWarning: Attribute<Int?>",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/shadowaccountprotocol\/userid",
+                "title" : "var userID: Attribute<String>",
+                "type" : "property"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/shadowaccountprotocol",
+            "title" : "ShadowAccountProtocol",
+            "type" : "protocol"
+          },
+          {
+            "path" : "\/documentation\/swiftdirector\/topobjectclassprotocol",
+            "title" : "TopObjectClassProtocol",
+            "type" : "protocol"
+          },
+          {
+            "title" : "Structures",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Operators",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/ldapraw\/!=(_:_:)",
+                    "title" : "static func != (Self, Self) -> Bool",
+                    "type" : "op"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/ldapraw\/equatable-implementations",
+                "title" : "Equatable Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/ldapraw",
+            "title" : "LDAPRaw",
+            "type" : "struct"
+          }
+        ],
+        "path" : "\/documentation\/swiftdirector",
+        "title" : "SwiftDirector",
+        "type" : "module"
+      }
+    ]
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 1,
+    "patch" : 0
+  }
+}
