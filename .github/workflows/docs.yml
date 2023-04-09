@@ -6,7 +6,7 @@ on:
       - published
       - edited
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   release-context:
