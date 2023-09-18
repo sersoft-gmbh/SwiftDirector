@@ -58,7 +58,7 @@ jobs:
             echo "version=${LINUX_SWIFT_VERSION}" >> "${GITHUB_OUTPUT}"
           fi
       - name: Read OS Version
-        uses: sersoft-gmbh/os-version-action@v2
+        uses: sersoft-gmbh/os-version-action@v3
         id: os-version
       - uses: actions/checkout@v4
       - uses: actions/cache@v3
