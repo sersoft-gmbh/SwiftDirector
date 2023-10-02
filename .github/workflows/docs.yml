@@ -24,3 +24,4 @@ jobs:
       organisation: ${{ github.repository_owner }}
       repository: ${{ github.event.repository.name }}
       pages-branch: gh-pages
+      container-before-run: apt-get update -qq && apt-get install -yq libldap2-dev
