@@ -1,0 +1,340 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/OrganizationalPersonProtocol-Implementations"
+  },
+  "kind" : "article",
+  "metadata" : {
+    "modules" : [
+      {
+        "name" : "SwiftDirector"
+      }
+    ],
+    "role" : "collectionGroup",
+    "title" : "OrganizationalPersonProtocol Implementations"
+  },
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "generated" : true,
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/organizationalUnit",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/postalAddress",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/postalCode",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/street",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/title"
+      ],
+      "title" : "Instance Properties"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/swiftdirector\/inetorgperson\/organizationalpersonprotocol-implementations"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://SwiftDirector/documentation/SwiftDirector": {
+  "abstract" : [
+    {
+      "text" : "A Swift interface to OpenLDAP.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SwiftDirector",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "InetOrgPerson"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "InetOrgPerson"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "InetOrgPerson",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/inetorgperson"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/organizationalUnit": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "organizationalUnit"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/organizationalUnit",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "organizationalUnit",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/inetorgperson\/organizationalunit"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/postalAddress": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "postalAddress"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/postalAddress",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "postalAddress",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/inetorgperson\/postaladdress"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/postalCode": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "postalCode"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/postalCode",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "postalCode",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/inetorgperson\/postalcode"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/street": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "street"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/street",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "street",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/inetorgperson\/street"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/title": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "title"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9AttributeV",
+      "text" : "Attribute"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/title",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "title",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/inetorgperson\/title"
+}
+}
+}

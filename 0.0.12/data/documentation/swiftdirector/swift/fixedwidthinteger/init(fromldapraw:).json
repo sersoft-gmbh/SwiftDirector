@@ -1,0 +1,326 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/FixedWidthInteger"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/FixedWidthInteger\/init(fromLDAPRaw:)"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "conformance" : {
+      "availabilityPrefix" : [
+        {
+          "text" : "Available when",
+          "type" : "text"
+        }
+      ],
+      "conformancePrefix" : [
+        {
+          "text" : "Conforms when",
+          "type" : "text"
+        }
+      ],
+      "constraints" : [
+        {
+          "code" : "Self",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : " conforms to ",
+          "type" : "text"
+        },
+        {
+          "code" : "LDAPValue",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : ".",
+          "type" : "text"
+        }
+      ]
+    },
+    "extendedModule" : "Swift",
+    "externalID" : "s:s17FixedWidthIntegerP13SwiftDirectorAC9LDAPValueRzrlE11fromLDAPRawxAC0H0V_tcfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "("
+      },
+      {
+        "kind" : "externalParam",
+        "text" : "fromLDAPRaw"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:13SwiftDirector7LDAPRawV",
+        "text" : "LDAPRaw"
+      },
+      {
+        "kind" : "text",
+        "text" : ")"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "SwiftDirector",
+        "relatedModules" : [
+          "Swift"
+        ]
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init(fromLDAPRaw:)"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "("
+            },
+            {
+              "kind" : "externalParam",
+              "text" : "fromLDAPRaw"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "internalParam",
+              "text" : "ldapRaw"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPRaw",
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:13SwiftDirector7LDAPRawV",
+              "text" : "LDAPRaw"
+            },
+            {
+              "kind" : "text",
+              "text" : ")"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/swiftdirector\/swift\/fixedwidthinteger\/init(fromldapraw:)"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://SwiftDirector/documentation/SwiftDirector": {
+  "abstract" : [
+    {
+      "text" : "A Swift interface to OpenLDAP.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SwiftDirector",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPRaw": {
+  "abstract" : [
+    {
+      "text" : "Represents a raw LDAP value.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LDAPRaw"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPRaw",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LDAPRaw"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LDAPRaw",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapraw"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Swift",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/FixedWidthInteger": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:s17FixedWidthIntegerP",
+      "text" : "FixedWidthInteger"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/FixedWidthInteger",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "FixedWidthInteger"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "FixedWidthInteger",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/fixedwidthinteger"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/FixedWidthInteger/init(fromLDAPRaw:)": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Self",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "LDAPValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "fromLDAPRaw"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector7LDAPRawV",
+      "text" : "LDAPRaw"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/FixedWidthInteger\/init(fromLDAPRaw:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(fromLDAPRaw:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/fixedwidthinteger\/init(fromldapraw:)"
+}
+}
+}

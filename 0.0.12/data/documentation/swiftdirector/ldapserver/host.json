@@ -1,0 +1,202 @@
+{
+  "abstract" : [
+    {
+      "text" : "The host to connect to.",
+      "type" : "text"
+    }
+  ],
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/host"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:13SwiftDirector10LDAPServerV4hostSSvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "var"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "text" : "host"
+      },
+      {
+        "kind" : "text",
+        "text" : ": "
+      },
+      {
+        "kind" : "typeIdentifier",
+        "preciseIdentifier" : "s:SS",
+        "text" : "String"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "SwiftDirector"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Instance Property",
+    "symbolKind" : "property",
+    "title" : "host"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "var"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "identifier",
+              "text" : "host"
+            },
+            {
+              "kind" : "text",
+              "text" : ": "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:SS",
+              "text" : "String"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/swiftdirector\/ldapserver\/host"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://SwiftDirector/documentation/SwiftDirector": {
+  "abstract" : [
+    {
+      "text" : "A Swift interface to OpenLDAP.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SwiftDirector",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer": {
+  "abstract" : [
+    {
+      "text" : "Represents a server configuration.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LDAPServer"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LDAPServer"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LDAPServer",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/host": {
+  "abstract" : [
+    {
+      "text" : "The host to connect to.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "host"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/host",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "host",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/host"
+}
+}
+}
