@@ -1,11 +1,11 @@
-// swift-tools-version:5.8
+// swift-tools-version:5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 import Foundation
 
 fileprivate extension Target {
-    static func cldap() -> Target {
+    static func cLDAP() -> Target {
 #if os(Linux)
         return systemLibrary(
             name: "CLDAP",
@@ -28,16 +28,26 @@ fileprivate extension Target {
             name: "CLDAP",
             path: "Sources/CLDAPMac",
             cSettings: [
-//                .headerSearchPath("\(openldapPath)/include", .when(platforms: [.iOS, .tvOS, .watchOS, .macOS])),
-                .unsafeFlags(["-I\(openldapPath)/include"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS])),
+//                .headerSearchPath("\(openldapPath)/include", .when(platforms: [.iOS, .tvOS, .watchOS, .macOS, .macCatalyst])),
+                .unsafeFlags(["-I\(openldapPath)/include"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS, .macCatalyst])),
             ],
             linkerSettings: [
-                .unsafeFlags(["-L\(openldapPath)/lib"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS])),
+                .unsafeFlags(["-L\(openldapPath)/lib"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS, .macCatalyst])),
                 .linkedLibrary("ldap"),
             ])
 #endif
     }
 }
+
+let swiftSettings: Array<SwiftSetting> = [
+    .enableUpcomingFeature("ConciseMagicFile"),
+    .enableUpcomingFeature("ExistentialAny"),
+    .enableUpcomingFeature("BareSlashRegexLiterals"),
+    .enableUpcomingFeature("DisableOutwardActorInference"),
+//    .enableExperimentalFeature("AccessLevelOnImport"),
+//    .enableExperimentalFeature("VariadicGenerics"),
+//    .unsafeFlags(["-warn-concurrency"], .when(configuration: .debug)),
+]
 
 let package = Package(
     name: "SwiftDirector",
@@ -53,23 +63,26 @@ let package = Package(
             name: "SwiftDirector",
             targets: ["SwiftDirector"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
+    ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .cldap(),
+        .cLDAP(),
         .target(
             name: "SwiftDirector",
             dependencies: ["CLDAP"],
             resources: [
                 .process("Documentation.docc"),
-            ]
-        ),
+            ],
+            swiftSettings: swiftSettings),
         .testTarget(
             name: "SwiftDirectorTests",
-            dependencies: ["CLDAP", "SwiftDirector"]),
+            dependencies: [
+                "CLDAP",
+                "SwiftDirector",
+            ],
+            swiftSettings: swiftSettings),
     ]
 )
-
-if ProcessInfo.processInfo.environment["ENABLE_DOCC_SUPPORT"] == "1" {
-    package.dependencies.append(.package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"))
-}

@@ -13,9 +13,6 @@ extension OrganizationalPersonProtocol {
 public struct OrganizationalPerson: OrganizationalPersonProtocol {
     public typealias ID = DistinguishedName
 
-    @inlinable
-    public static var idPath: IDPath { \.entryDN }
-
     public static var oid: String { "2.5.6.7" }
     public static var name: String { "organizationalPerson" }
     

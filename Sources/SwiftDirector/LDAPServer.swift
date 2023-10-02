@@ -11,11 +11,11 @@ public struct LDAPServer: Hashable, Sendable {
         @usableFromInline
         var schemeString: String {
             switch self {
-            case .ldap: return "ldap"
-            case .ldaps: return "ldaps"
-            case .ldapi: return "ldapi"
-            case .cldap: return "cldap"
-            case .custom(let str): return str
+            case .ldap: "ldap"
+            case .ldaps: "ldaps"
+            case .ldapi: "ldapi"
+            case .cldap: "cldap"
+            case .custom(let str): str
             }
         }
     }

@@ -12,9 +12,6 @@ extension InetOrgPersonProtocol {
 public struct InetOrgPerson: InetOrgPersonProtocol {
     public typealias ID = DistinguishedName
 
-    @inlinable
-    public static var idPath: IDPath { \.entryDN }
-
     public static var oid: String { "2.16.840.1.113730.3.2.2" }
     public static var name: String { "inetOrgPerson" }
     

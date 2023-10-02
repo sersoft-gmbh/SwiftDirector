@@ -5,10 +5,11 @@ typealias LDAPErrno = CInt
 
 /// The error type representing errors occurring during LDAP operations.
 public struct LDAPError: Error, Equatable, CustomStringConvertible {
-    private enum Kind: Equatable {
+    private enum Kind: Sendable, Equatable {
         case ldap(LDAPErrno)
         case unknown
     }
+
     private let kind: Kind
 
     var ldapErrno: LDAPErrno? {

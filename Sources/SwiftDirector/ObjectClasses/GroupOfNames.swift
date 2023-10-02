@@ -16,8 +16,5 @@ public struct GroupOfNames: GroupOfNamesProtocol {
     public static var oid: String { "2.5.6.9" }
     public static var name: String { "groupOfNames" }
 
-    @inlinable
-    public static var idPath: IDPath { \.entryDN }
-
     public init() {}
 }

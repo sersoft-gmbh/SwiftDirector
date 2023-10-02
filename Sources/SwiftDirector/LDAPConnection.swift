@@ -82,7 +82,7 @@ public final class LDAPConnection {
     /// If this connection is a primary connection (non-duplicate), it will be unbound.
     /// If this is a duplicate connection, it will be destroyed.
     /// - Throws: Any ``LDAPError`` occuring during unbinding / destroying.
-    /// - SeeAlso: `unbind()`
+    /// - SeeAlso: ``LDAPConnection/unbind()``
     public func close() throws {
         switch mode {
         case .primary(_, let isClosed):
@@ -139,7 +139,7 @@ public final class LDAPConnection {
     }
 
     /// Unbinds this connection invalidating it.
-    /// - Throws: An `LDAPError` if unbinding fails.
+    /// - Throws: An ``LDAPError`` if unbinding fails.
     /// - Note: The connection cannot be used after this operation.
     public func unbind() throws {
         try LDAPError.validateVoid {

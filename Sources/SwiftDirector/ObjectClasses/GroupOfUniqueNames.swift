@@ -15,9 +15,6 @@ extension GroupOfUniqueNamesProtocol {
 public struct GroupOfUniqueNames: GroupOfUniqueNamesProtocol {
     public typealias ID = DistinguishedName
 
-    @inlinable
-    public static var idPath: IDPath { \.entryDN }
-
     public static var oid: String { "2.5.6.17" }
     public static var name: String { "groupOfUniqueNames" }
 

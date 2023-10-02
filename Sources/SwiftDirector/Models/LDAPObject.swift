@@ -110,9 +110,9 @@ where ObjectClass: ObjectClassProtocol
 // Needs to be defined outside the LDAPObject generic object to be able to pass it on.
 /*fileprivate but*/ @usableFromInline final class LDAPObjectStorage: @unchecked Sendable {
     fileprivate private(set) var raw: Dictionary<AttributeKey, LDAPRaw>
-    fileprivate private(set) var cache: Dictionary<AttributeKey, Sendable>
+    fileprivate private(set) var cache: Dictionary<AttributeKey, any Sendable>
 
-    private init(raw: Dictionary<AttributeKey, LDAPRaw>, cache: Dictionary<AttributeKey, Sendable>) {
+    private init(raw: Dictionary<AttributeKey, LDAPRaw>, cache: Dictionary<AttributeKey, any Sendable>) {
         self.raw = raw
         self.cache = cache
     }

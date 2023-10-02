@@ -180,7 +180,6 @@ public struct LDAPRaw: Hashable, Sendable {
 //extension EmptyCollection: LDAPRaw where Element == String {}
 //extension AnyRandomAccessCollection: LDAPRaw where Element == String {}
 
-#if compiler(>=5.6)
 /// Represents a type that can be converted from and to an LDAP raw type.
 @preconcurrency
 public protocol LDAPValue: Equatable, Sendable {
@@ -193,19 +192,6 @@ public protocol LDAPValue: Equatable, Sendable {
     /// - Parameter ldapRaw: The raw LDAP value.
     init(fromLDAPRaw ldapRaw: LDAPRaw)
 }
-#else
-/// Represents a type that can be converted from and to an LDAP raw type.
-public protocol LDAPValue: Equatable, Sendable {
-    /// The raw LDAP value this type converts *to*.
-//    associatedtype LDAPRawType: LDAPRaw
-    /// The raw LDAP value of this type.
-    var ldapRaw: LDAPRaw { get }
-
-    /// Initializes this type from a raw LDAP value.
-    /// - Parameter ldapRaw: The raw LDAP value.
-    init(fromLDAPRaw ldapRaw: LDAPRaw)
-}
-#endif
 
 extension String: LDAPValue {
 //    public var ldapRaw: some LDAPRaw { CollectionOfOne(self) }

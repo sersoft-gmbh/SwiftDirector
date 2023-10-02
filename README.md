@@ -12,7 +12,7 @@ A Swift interface for (Open)LDAP.
 
 Add the following dependency to your `Package.swift`:
 ```swift
-.package(url: "https://github.com/sersoft-gmbh/SwiftDirector.git", from: "1.0.0"),
+.package(url: "https://github.com/sersoft-gmbh/SwiftDirector", from: "1.0.0"),
 ```
 
 ## Usage
