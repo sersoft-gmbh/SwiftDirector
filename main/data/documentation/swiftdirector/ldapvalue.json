@@ -116,7 +116,25 @@
     },
     {
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Array",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Bool",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/ContiguousArray",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Double",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Float",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int16",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int32",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int64",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int8",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Optional",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Set",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/String",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt16",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt32",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt64",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt8"
       ],
       "kind" : "relationships",
       "title" : "Conforming Types",
@@ -436,6 +454,394 @@
   "title" : "ldapRaw",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapvalue\/ldapraw"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Array": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "LDAPValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:Sa",
+      "text" : "Array"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Array",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Array"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Array",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/array"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Bool": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Bool",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Bool"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Bool",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/bool"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/ContiguousArray": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "LDAPValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:s15ContiguousArrayV",
+      "text" : "ContiguousArray"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/ContiguousArray",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "ContiguousArray"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "ContiguousArray",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/contiguousarray"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Double": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Double",
+  "title" : "Double",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Float": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Float",
+  "title" : "Float",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Int": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int",
+  "title" : "Int",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Int16": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int16",
+  "title" : "Int16",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Int32": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int32",
+  "title" : "Int32",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Int64": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int64",
+  "title" : "Int64",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Int8": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Int8",
+  "title" : "Int8",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Optional": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Wrapped",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "LDAPValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:Sq",
+      "text" : "Optional"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Optional",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Optional"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Optional",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/optional"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/Set": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Element",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "Hashable",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "LDAPValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:Sh",
+      "text" : "Set"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Set",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "Set"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "Set",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/set"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/String": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/String",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "String"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "String",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/string"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/UInt": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt",
+  "title" : "UInt",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/UInt16": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt16",
+  "title" : "UInt16",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/UInt32": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt32",
+  "title" : "UInt32",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/UInt64": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt64",
+  "title" : "UInt64",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/UInt8": {
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt8",
+  "title" : "UInt8",
+  "type" : "unresolvable"
 },
 "doc://SwiftDirector/s8SendableP": {
   "identifier" : "doc:\/\/SwiftDirector\/s8SendableP",

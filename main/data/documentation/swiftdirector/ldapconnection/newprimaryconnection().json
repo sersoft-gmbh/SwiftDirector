@@ -167,6 +167,27 @@
           "name" : "Throws",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/server",
+                  "isActive" : true,
+                  "type" : "reference"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "See Also",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -294,6 +315,43 @@
   "title" : "newPrimaryConnection()",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapconnection\/newprimaryconnection()"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPConnection/server": {
+  "abstract" : [
+    {
+      "text" : "The server this connection is connected to.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "server"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPServerV",
+      "text" : "LDAPServer"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/server",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "server",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapconnection\/server"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPError": {
   "abstract" : [

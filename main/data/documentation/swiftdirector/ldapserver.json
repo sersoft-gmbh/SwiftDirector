@@ -300,6 +300,56 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum"
 },
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/Schema-swift.enum/ldap": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ldap"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Schema-swift.enum\/ldap",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "LDAPServer.Schema.ldap",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/ldap"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/Schema-swift.enum/ldaps": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ldaps"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Schema-swift.enum\/ldaps",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "LDAPServer.Schema.ldaps",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/ldaps"
+},
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/host": {
   "abstract" : [
     {
@@ -428,8 +478,9 @@
       "type" : "text"
     },
     {
-      "code" : "Schema\/ldap",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Schema-swift.enum\/ldap",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : " scheme and ",
@@ -523,8 +574,9 @@
       "type" : "text"
     },
     {
-      "code" : "Schema\/ldaps",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Schema-swift.enum\/ldaps",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : " scheme and ",

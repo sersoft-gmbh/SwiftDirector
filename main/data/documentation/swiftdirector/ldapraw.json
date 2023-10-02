@@ -76,6 +76,38 @@
         }
       ],
       "kind" : "declarations"
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "overview",
+          "level" : 2,
+          "text" : "Overview",
+          "type" : "heading"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPValue",
+                  "isActive" : true,
+                  "type" : "reference"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "See Also",
+          "style" : "note",
+          "type" : "aside"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "relationshipsSections" : [
@@ -189,6 +221,40 @@
   "title" : "Equatable Implementations",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapraw\/equatable-implementations"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPValue": {
+  "abstract" : [
+    {
+      "text" : "Represents a type that can be converted from and to an LDAP raw type.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "protocol"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "LDAPValue"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPValue",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LDAPValue"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LDAPValue",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapvalue"
 },
 "doc://SwiftDirector/s8SendableP": {
   "identifier" : "doc:\/\/SwiftDirector\/s8SendableP",

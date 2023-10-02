@@ -166,7 +166,7 @@
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/debugDescription",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/description",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/id-swift.property-9x716"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/id-swift.property"
       ],
       "title" : "Instance Properties"
     },
@@ -195,9 +195,7 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/CustomStringConvertible-Implementations",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/Equatable-Implementations",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/Identifiable-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/Equatable-Implementations"
       ],
       "title" : "Default Implementations"
     }
@@ -453,17 +451,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapobject\/==(_:_:)"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/CustomStringConvertible-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/CustomStringConvertible-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "CustomStringConvertible Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/ldapobject\/customstringconvertible-implementations"
-},
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/Equatable-Implementations": {
   "abstract" : [
 
@@ -505,17 +492,6 @@
   "title" : "LDAPObject.ID",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapobject\/id-swift.typealias"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/Identifiable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/Identifiable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Identifiable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/ldapobject\/identifiable-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/canCast(to:)": {
   "abstract" : [
@@ -925,7 +901,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapobject\/hash(into:)"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/id-swift.property-9x716": {
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/id-swift.property": {
   "abstract" : [
 
   ],
@@ -968,12 +944,12 @@
       "text" : "ID"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/id-swift.property-9x716",
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/id-swift.property",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "id",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/ldapobject\/id-swift.property-9x716"
+  "url" : "\/documentation\/swiftdirector\/ldapobject\/id-swift.property"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/subscript(dynamicMember:)": {
   "abstract" : [
@@ -1086,7 +1062,43 @@
 },
 "doc://SwiftDirector/documentation/SwiftDirector/ObjectClassProtocol": {
   "abstract" : [
-
+    {
+      "text" : "The base protocol for all object classes.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "New object classes should always declare a protocol (MyObjectClassProtocol) and a corresponding implementation (MyObjectClass).",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "However, the implementation should alway just be an empty struct just containing the oid and the protocol should have all properties defined in an extension.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "See e.g. ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPerson",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -1114,6 +1126,37 @@
   "title" : "ObjectClassProtocol",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/objectclassprotocol"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/OrganizationalPerson": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "OrganizationalPerson"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPerson",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "OrganizationalPerson"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "OrganizationalPerson",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/organizationalperson"
 },
 "doc://SwiftDirector/s12IdentifiableP": {
   "identifier" : "doc:\/\/SwiftDirector\/s12IdentifiableP",

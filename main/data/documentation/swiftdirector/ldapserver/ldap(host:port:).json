@@ -5,8 +5,9 @@
       "type" : "text"
     },
     {
-      "code" : "Schema\/ldap",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Schema-swift.enum\/ldap",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : " scheme and ",
@@ -193,26 +194,6 @@
       "kind" : "declarations"
     },
     {
-      "content" : [
-        {
-          "anchor" : "return-value",
-          "level" : 2,
-          "text" : "Return Value",
-          "type" : "heading"
-        },
-        {
-          "inlineContent" : [
-            {
-              "text" : "The new server configuration.",
-              "type" : "text"
-            }
-          ],
-          "type" : "paragraph"
-        }
-      ],
-      "kind" : "content"
-    },
-    {
       "kind" : "parameters",
       "parameters" : [
         {
@@ -252,6 +233,26 @@
           "name" : "port"
         }
       ]
+    },
+    {
+      "content" : [
+        {
+          "anchor" : "return-value",
+          "level" : 2,
+          "text" : "Return Value",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The new server configuration.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
     }
   ],
   "schemaVersion" : {
@@ -324,6 +325,31 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapserver"
 },
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/Schema-swift.enum/ldap": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "case"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ldap"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Schema-swift.enum\/ldap",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "LDAPServer.Schema.ldap",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/ldap"
+},
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/ldap(host:port:)": {
   "abstract" : [
     {
@@ -331,8 +357,9 @@
       "type" : "text"
     },
     {
-      "code" : "Schema\/ldap",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/Schema-swift.enum\/ldap",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : " scheme and ",

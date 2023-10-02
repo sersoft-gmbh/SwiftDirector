@@ -33,7 +33,7 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/displayName-swift.property",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/displayName",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/employeeNumber",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/givenName",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/mail",
@@ -101,7 +101,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/inetorgperson"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/displayName-swift.property": {
+"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/displayName": {
   "abstract" : [
 
   ],
@@ -141,12 +141,12 @@
       "text" : "?>"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/displayName-swift.property",
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/displayName",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "displayName",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/inetorgperson\/displayname-swift.property"
+  "url" : "\/documentation\/swiftdirector\/inetorgperson\/displayname"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/employeeNumber": {
   "abstract" : [

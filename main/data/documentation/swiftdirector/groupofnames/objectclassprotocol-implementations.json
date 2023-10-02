@@ -42,7 +42,8 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfNames\/displayName"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfNames\/displayName",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfNames\/idPath"
       ],
       "title" : "Type Properties"
     }
@@ -200,6 +201,88 @@
   "title" : "entryDN",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/groupofnames\/entrydn"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/GroupOfNames/idPath": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "ID",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "DistinguishedName",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "idPath"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector19ObjectClassProtocolP6IDPatha",
+      "text" : "IDPath"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfNames\/idPath",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "idPath",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/groupofnames\/idpath"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/GroupOfNames/memberOf": {
   "abstract" : [

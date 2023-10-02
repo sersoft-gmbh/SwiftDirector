@@ -92,6 +92,12 @@
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPRaw"
       ],
       "title" : "Structures"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift"
+      ],
+      "title" : "Extended Modules"
     }
   ],
   "variants" : [
@@ -647,7 +653,43 @@
 },
 "doc://SwiftDirector/documentation/SwiftDirector/ObjectClassProtocol": {
   "abstract" : [
-
+    {
+      "text" : "The base protocol for all object classes.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "New object classes should always declare a protocol (MyObjectClassProtocol) and a corresponding implementation (MyObjectClass).",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "However, the implementation should alway just be an empty struct just containing the oid and the protocol should have all properties defined in an extension.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "See e.g. ",
+      "type" : "text"
+    },
+    {
+      "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPerson",
+      "isActive" : true,
+      "type" : "reference"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {
@@ -861,6 +903,17 @@
   "title" : "ShadowAccountProtocol",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/shadowaccountprotocol"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Swift",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/TopObjectClass": {
   "abstract" : [

@@ -1,0 +1,328 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/LosslessStringConvertible"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "extendedModule" : "Swift",
+    "externalID" : "s:e:s:s25LosslessStringConvertibleP13SwiftDirectorSBRzAC9LDAPValueRzrlE7ldapRawAC7LDAPRawVvp",
+    "fragments" : [
+      {
+        "kind" : "keyword",
+        "text" : "extension"
+      },
+      {
+        "kind" : "text",
+        "text" : " "
+      },
+      {
+        "kind" : "identifier",
+        "preciseIdentifier" : "s:s25LosslessStringConvertibleP",
+        "text" : "LosslessStringConvertible"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "SwiftDirector",
+        "relatedModules" : [
+          "Swift"
+        ]
+      }
+    ],
+    "navigatorTitle" : [
+      {
+        "kind" : "identifier",
+        "text" : "LosslessStringConvertible"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Extended Protocol",
+    "symbolKind" : "extension",
+    "title" : "LosslessStringConvertible"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "Linux"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "extension"
+            },
+            {
+              "kind" : "text",
+              "text" : " "
+            },
+            {
+              "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:s25LosslessStringConvertibleP",
+              "text" : "LosslessStringConvertible"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "topicSections" : [
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/LosslessStringConvertible\/init(fromLDAPRaw:)"
+      ],
+      "title" : "Initializers"
+    },
+    {
+      "identifiers" : [
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/LosslessStringConvertible\/ldapRaw"
+      ],
+      "title" : "Instance Properties"
+    }
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/swiftdirector\/swift\/losslessstringconvertible"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://SwiftDirector/documentation/SwiftDirector": {
+  "abstract" : [
+    {
+      "text" : "A Swift interface to OpenLDAP.",
+      "type" : "text"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "SwiftDirector",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "Swift",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/LosslessStringConvertible": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "extension"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "preciseIdentifier" : "s:s25LosslessStringConvertibleP",
+      "text" : "LosslessStringConvertible"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/LosslessStringConvertible",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "LosslessStringConvertible"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "LosslessStringConvertible",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/losslessstringconvertible"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/LosslessStringConvertible/init(fromLDAPRaw:)": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Self",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "BinaryFloatingPoint",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "LDAPValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "fromLDAPRaw"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector7LDAPRawV",
+      "text" : "LDAPRaw"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/LosslessStringConvertible\/init(fromLDAPRaw:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(fromLDAPRaw:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/losslessstringconvertible\/init(fromldapraw:)"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/Swift/LosslessStringConvertible/ldapRaw": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "Self",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " conforms to ",
+        "type" : "text"
+      },
+      {
+        "code" : "BinaryFloatingPoint",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " and ",
+        "type" : "text"
+      },
+      {
+        "code" : "LDAPValue",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ldapRaw"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector7LDAPRawV",
+      "text" : "LDAPRaw"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/LosslessStringConvertible\/ldapRaw",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "ldapRaw",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/swift\/losslessstringconvertible\/ldapraw"
+}
+}
+}

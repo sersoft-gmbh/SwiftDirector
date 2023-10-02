@@ -42,7 +42,7 @@
     {
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/displayName-swift.type.property"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/idPath"
       ],
       "title" : "Type Properties"
     }
@@ -106,51 +106,6 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/inetorgperson"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/displayName-swift.type.property": {
-  "abstract" : [
-    {
-      "text" : "The display name of this object class.",
-      "type" : "text"
-    }
-  ],
-  "fragments" : [
-    {
-      "kind" : "keyword",
-      "text" : "static"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "keyword",
-      "text" : "var"
-    },
-    {
-      "kind" : "text",
-      "text" : " "
-    },
-    {
-      "kind" : "identifier",
-      "text" : "displayName"
-    },
-    {
-      "kind" : "text",
-      "text" : ": "
-    },
-    {
-      "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:SS",
-      "text" : "String"
-    }
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/displayName-swift.type.property",
-  "kind" : "symbol",
-  "role" : "symbol",
-  "title" : "displayName",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/inetorgperson\/displayname-swift.type.property"
-},
 "doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/entryDN": {
   "abstract" : [
     {
@@ -200,6 +155,88 @@
   "title" : "entryDN",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/inetorgperson\/entrydn"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/idPath": {
+  "abstract" : [
+
+  ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "ID",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "DistinguishedName",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "var"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "idPath"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "Self"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector19ObjectClassProtocolP6IDPatha",
+      "text" : "IDPath"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson\/idPath",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "idPath",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/inetorgperson\/idpath"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/InetOrgPerson/memberOf": {
   "abstract" : [

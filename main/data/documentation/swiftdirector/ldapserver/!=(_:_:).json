@@ -69,7 +69,10 @@
     ],
     "modules" : [
       {
-        "name" : "SwiftDirector"
+        "name" : "SwiftDirector",
+        "relatedModules" : [
+          "Swift"
+        ]
       }
     ],
     "role" : "symbol",

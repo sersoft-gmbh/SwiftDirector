@@ -3,7 +3,8 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames\/ObjectClassProtocol-Implementations"
       ]
     ]
   },
@@ -13,7 +14,40 @@
   },
   "kind" : "symbol",
   "metadata" : {
-    "externalID" : "s:13SwiftDirector18GroupOfUniqueNamesV6idPaths03KeyH0CyAcA9AttributeVyAA17DistinguishedNameVGGvpZ",
+    "conformance" : {
+      "availabilityPrefix" : [
+        {
+          "text" : "Available when",
+          "type" : "text"
+        }
+      ],
+      "conformancePrefix" : [
+        {
+          "text" : "Conforms when",
+          "type" : "text"
+        }
+      ],
+      "constraints" : [
+        {
+          "code" : "ID",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : " is ",
+          "type" : "text"
+        },
+        {
+          "code" : "DistinguishedName",
+          "type" : "codeVoice"
+        },
+        {
+          "text" : ".",
+          "type" : "text"
+        }
+      ]
+    },
+    "extendedModule" : "SwiftDirector",
+    "externalID" : "s:13SwiftDirector19ObjectClassProtocolPA2A17DistinguishedNameV2IDRtzrlE6idPaths03KeyJ0CyxAA9AttributeVyAEGGvpZ::SYNTHESIZED::s:13SwiftDirector18GroupOfUniqueNamesV",
     "fragments" : [
       {
         "kind" : "keyword",
@@ -41,8 +75,7 @@
       },
       {
         "kind" : "typeIdentifier",
-        "preciseIdentifier" : "s:13SwiftDirector18GroupOfUniqueNamesV",
-        "text" : "GroupOfUniqueNames"
+        "text" : "Self"
       },
       {
         "kind" : "text",
@@ -100,10 +133,8 @@
               "text" : ": "
             },
             {
-              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames",
               "kind" : "typeIdentifier",
-              "preciseIdentifier" : "s:13SwiftDirector18GroupOfUniqueNamesV",
-              "text" : "GroupOfUniqueNames"
+              "text" : "Self"
             },
             {
               "kind" : "text",
@@ -200,10 +231,53 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/groupofuniquenames"
 },
+"doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNames/ObjectClassProtocol-Implementations": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames\/ObjectClassProtocol-Implementations",
+  "kind" : "article",
+  "role" : "collectionGroup",
+  "title" : "ObjectClassProtocol Implementations",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/groupofuniquenames\/objectclassprotocol-implementations"
+},
 "doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNames/idPath": {
   "abstract" : [
 
   ],
+  "conformance" : {
+    "availabilityPrefix" : [
+      {
+        "text" : "Available when",
+        "type" : "text"
+      }
+    ],
+    "conformancePrefix" : [
+      {
+        "text" : "Conforms when",
+        "type" : "text"
+      }
+    ],
+    "constraints" : [
+      {
+        "code" : "ID",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : " is ",
+        "type" : "text"
+      },
+      {
+        "code" : "DistinguishedName",
+        "type" : "codeVoice"
+      },
+      {
+        "text" : ".",
+        "type" : "text"
+      }
+    ]
+  },
   "fragments" : [
     {
       "kind" : "keyword",
@@ -231,8 +305,7 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:13SwiftDirector18GroupOfUniqueNamesV",
-      "text" : "GroupOfUniqueNames"
+      "text" : "Self"
     },
     {
       "kind" : "text",

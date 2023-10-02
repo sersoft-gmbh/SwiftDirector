@@ -315,22 +315,6 @@
               {
                 "children" : [
                   {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/swiftdirector\/attributekey\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/swiftdirector\/attributekey\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
                     "title" : "Operators",
                     "type" : "groupMarker"
                   },
@@ -457,22 +441,6 @@
               {
                 "children" : [
                   {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/swiftdirector\/attribute\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/swiftdirector\/attribute\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
                     "title" : "Operators",
                     "type" : "groupMarker"
                   },
@@ -542,7 +510,7 @@
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/swiftdirector\/ldapobject\/id-swift.property-9x716",
+                "path" : "\/documentation\/swiftdirector\/ldapobject\/id-swift.property",
                 "title" : "var id: LDAPObject<ObjectClass>.ID",
                 "type" : "property"
               },
@@ -600,22 +568,6 @@
               {
                 "children" : [
                   {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/swiftdirector\/ldapobject\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/swiftdirector\/ldapobject\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
                     "title" : "Operators",
                     "type" : "groupMarker"
                   },
@@ -627,22 +579,6 @@
                 ],
                 "path" : "\/documentation\/swiftdirector\/ldapobject\/equatable-implementations",
                 "title" : "Equatable Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/swiftdirector\/ldapobject\/id-swift.property-6hkca",
-                    "title" : "var id: ObjectIdentifier",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/swiftdirector\/ldapobject\/identifiable-implementations",
-                "title" : "Identifiable Implementations",
                 "type" : "symbol"
               }
             ],
@@ -766,22 +702,6 @@
                 ],
                 "path" : "\/documentation\/swiftdirector\/distinguishedname\/comparable-implementations",
                 "title" : "Comparable Implementations",
-                "type" : "symbol"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/swiftdirector\/distinguishedname\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/swiftdirector\/distinguishedname\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
                 "type" : "symbol"
               },
               {
@@ -938,7 +858,20 @@
                 "type" : "property"
               },
               {
-                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/idpath-swift.type.property",
+                "children" : [
+                  {
+                    "children" : [
+                      {
+                        "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/idpath-hydf",
+                        "title" : "static var idPath: Self.IDPath",
+                        "type" : "property"
+                      }
+                    ],
+                    "title" : "ObjectClassProtocol Implementations",
+                    "type" : "groupMarker"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/objectclassprotocol\/idpath-1gz82",
                 "title" : "static var idPath: Self.IDPath",
                 "type" : "property"
               },
@@ -971,11 +904,6 @@
               {
                 "title" : "Type Properties",
                 "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/swiftdirector\/anyobjectclass\/idpath",
-                "title" : "static var idPath: AnyObjectClass.IDPath",
-                "type" : "property"
               },
               {
                 "path" : "\/documentation\/swiftdirector\/anyobjectclass\/name",
@@ -1020,6 +948,11 @@
                     "path" : "\/documentation\/swiftdirector\/anyobjectclass\/displayname",
                     "title" : "static var displayName: String",
                     "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/anyobjectclass\/idpath",
+                    "title" : "static var idPath: Self.IDPath",
+                    "type" : "property"
                   }
                 ],
                 "path" : "\/documentation\/swiftdirector\/anyobjectclass\/objectclassprotocol-implementations",
@@ -1045,11 +978,6 @@
               {
                 "title" : "Type Properties",
                 "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/swiftdirector\/topobjectclass\/idpath",
-                "title" : "static var idPath: TopObjectClass.IDPath",
-                "type" : "property"
               },
               {
                 "path" : "\/documentation\/swiftdirector\/topobjectclass\/name",
@@ -1094,6 +1022,11 @@
                     "path" : "\/documentation\/swiftdirector\/topobjectclass\/displayname",
                     "title" : "static var displayName: String",
                     "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/topobjectclass\/idpath",
+                    "title" : "static var idPath: Self.IDPath",
+                    "type" : "property"
                   }
                 ],
                 "path" : "\/documentation\/swiftdirector\/topobjectclass\/objectclassprotocol-implementations",
@@ -1119,11 +1052,6 @@
               {
                 "title" : "Type Properties",
                 "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/swiftdirector\/groupofnames\/idpath",
-                "title" : "static var idPath: GroupOfNames.IDPath",
-                "type" : "property"
               },
               {
                 "path" : "\/documentation\/swiftdirector\/groupofnames\/name",
@@ -1204,6 +1132,11 @@
                     "path" : "\/documentation\/swiftdirector\/groupofnames\/displayname",
                     "title" : "static var displayName: String",
                     "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofnames\/idpath",
+                    "title" : "static var idPath: Self.IDPath",
+                    "type" : "property"
                   }
                 ],
                 "path" : "\/documentation\/swiftdirector\/groupofnames\/objectclassprotocol-implementations",
@@ -1238,11 +1171,6 @@
               {
                 "title" : "Type Properties",
                 "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/idpath",
-                "title" : "static var idPath: GroupOfUniqueNames.IDPath",
-                "type" : "property"
               },
               {
                 "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/name",
@@ -1323,6 +1251,11 @@
                     "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/displayname",
                     "title" : "static var displayName: String",
                     "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/idpath",
+                    "title" : "static var idPath: Self.IDPath",
+                    "type" : "property"
                   }
                 ],
                 "path" : "\/documentation\/swiftdirector\/groupofuniquenames\/objectclassprotocol-implementations",
@@ -1359,11 +1292,6 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/swiftdirector\/inetorgperson\/idpath",
-                "title" : "static var idPath: InetOrgPerson.IDPath",
-                "type" : "property"
-              },
-              {
                 "path" : "\/documentation\/swiftdirector\/inetorgperson\/name",
                 "title" : "static var name: String",
                 "type" : "property"
@@ -1384,7 +1312,7 @@
                     "type" : "groupMarker"
                   },
                   {
-                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/displayname-swift.property",
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/displayname",
                     "title" : "var displayName: Attribute<String?>",
                     "type" : "property"
                   },
@@ -1439,8 +1367,8 @@
                     "type" : "groupMarker"
                   },
                   {
-                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/displayname-swift.type.property",
-                    "title" : "static var displayName: String",
+                    "path" : "\/documentation\/swiftdirector\/inetorgperson\/idpath",
+                    "title" : "static var idPath: Self.IDPath",
                     "type" : "property"
                   }
                 ],
@@ -1514,11 +1442,6 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/swiftdirector\/organizationalperson\/idpath",
-                "title" : "static var idPath: OrganizationalPerson.IDPath",
-                "type" : "property"
-              },
-              {
                 "path" : "\/documentation\/swiftdirector\/organizationalperson\/name",
                 "title" : "static var name: String",
                 "type" : "property"
@@ -1560,6 +1483,11 @@
                   {
                     "path" : "\/documentation\/swiftdirector\/organizationalperson\/displayname",
                     "title" : "static var displayName: String",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/organizationalperson\/idpath",
+                    "title" : "static var idPath: Self.IDPath",
                     "type" : "property"
                   }
                 ],
@@ -1633,11 +1561,6 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/swiftdirector\/person\/idpath",
-                "title" : "static var idPath: Person.IDPath",
-                "type" : "property"
-              },
-              {
                 "path" : "\/documentation\/swiftdirector\/person\/name",
                 "title" : "static var name: String",
                 "type" : "property"
@@ -1679,6 +1602,11 @@
                   {
                     "path" : "\/documentation\/swiftdirector\/person\/displayname",
                     "title" : "static var displayName: String",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/person\/idpath",
+                    "title" : "static var idPath: Self.IDPath",
                     "type" : "property"
                   }
                 ],
@@ -1758,11 +1686,6 @@
                 "type" : "groupMarker"
               },
               {
-                "path" : "\/documentation\/swiftdirector\/shadowaccount\/idpath",
-                "title" : "static var idPath: ShadowAccount.IDPath",
-                "type" : "property"
-              },
-              {
                 "path" : "\/documentation\/swiftdirector\/shadowaccount\/name",
                 "title" : "static var name: String",
                 "type" : "property"
@@ -1804,6 +1727,11 @@
                   {
                     "path" : "\/documentation\/swiftdirector\/shadowaccount\/displayname",
                     "title" : "static var displayName: String",
+                    "type" : "property"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/shadowaccount\/idpath",
+                    "title" : "static var idPath: Self.IDPath",
                     "type" : "property"
                   }
                 ],
@@ -1889,22 +1817,6 @@
               {
                 "title" : "Default Implementations",
                 "type" : "groupMarker"
-              },
-              {
-                "children" : [
-                  {
-                    "title" : "Instance Properties",
-                    "type" : "groupMarker"
-                  },
-                  {
-                    "path" : "\/documentation\/swiftdirector\/ldaperror\/halfwidthcornerquoted",
-                    "title" : "var halfWidthCornerQuoted: String",
-                    "type" : "property"
-                  }
-                ],
-                "path" : "\/documentation\/swiftdirector\/ldaperror\/customstringconvertible-implementations",
-                "title" : "CustomStringConvertible Implementations",
-                "type" : "symbol"
               },
               {
                 "children" : [
@@ -2223,6 +2135,284 @@
             "path" : "\/documentation\/swiftdirector\/ldapraw",
             "title" : "LDAPRaw",
             "type" : "struct"
+          },
+          {
+            "title" : "Extended Modules",
+            "type" : "groupMarker"
+          },
+          {
+            "children" : [
+              {
+                "title" : "Extended Protocols",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/swift\/fixedwidthinteger\/init(fromldapraw:)",
+                    "title" : "init(fromLDAPRaw: LDAPRaw)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/swift\/fixedwidthinteger\/ldapraw",
+                    "title" : "var ldapRaw: LDAPRaw",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/swift\/fixedwidthinteger",
+                "title" : "FixedWidthInteger",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Initializers",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/swift\/losslessstringconvertible\/init(fromldapraw:)",
+                    "title" : "init(fromLDAPRaw: LDAPRaw)",
+                    "type" : "init"
+                  },
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/swift\/losslessstringconvertible\/ldapraw",
+                    "title" : "var ldapRaw: LDAPRaw",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/swift\/losslessstringconvertible",
+                "title" : "LosslessStringConvertible",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Properties",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/swiftdirector\/swift\/sequence\/ldapraw",
+                    "title" : "var ldapRaw: LDAPRaw",
+                    "type" : "property"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/swift\/sequence",
+                "title" : "Sequence",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Structures",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/swift\/array\/init(fromldapraw:)",
+                        "title" : "init(fromLDAPRaw: LDAPRaw)",
+                        "type" : "init"
+                      }
+                    ],
+                    "path" : "\/documentation\/swiftdirector\/swift\/array\/ldapvalue-implementations",
+                    "title" : "LDAPValue Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/swift\/array",
+                "title" : "Array",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/swift\/bool\/init(fromldapraw:)",
+                        "title" : "init(fromLDAPRaw: LDAPRaw)",
+                        "type" : "init"
+                      },
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/swift\/bool\/ldapraw",
+                        "title" : "var ldapRaw: LDAPRaw",
+                        "type" : "property"
+                      }
+                    ],
+                    "path" : "\/documentation\/swiftdirector\/swift\/bool\/ldapvalue-implementations",
+                    "title" : "LDAPValue Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/swift\/bool",
+                "title" : "Bool",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/swift\/contiguousarray\/init(fromldapraw:)",
+                        "title" : "init(fromLDAPRaw: LDAPRaw)",
+                        "type" : "init"
+                      }
+                    ],
+                    "path" : "\/documentation\/swiftdirector\/swift\/contiguousarray\/ldapvalue-implementations",
+                    "title" : "LDAPValue Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/swift\/contiguousarray",
+                "title" : "ContiguousArray",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/swift\/set\/init(fromldapraw:)",
+                        "title" : "init(fromLDAPRaw: LDAPRaw)",
+                        "type" : "init"
+                      }
+                    ],
+                    "path" : "\/documentation\/swiftdirector\/swift\/set\/ldapvalue-implementations",
+                    "title" : "LDAPValue Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/swift\/set",
+                "title" : "Set",
+                "type" : "extension"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/swift\/string\/init(fromldapraw:)",
+                        "title" : "init(fromLDAPRaw: LDAPRaw)",
+                        "type" : "init"
+                      },
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/swift\/string\/ldapraw",
+                        "title" : "var ldapRaw: LDAPRaw",
+                        "type" : "property"
+                      }
+                    ],
+                    "path" : "\/documentation\/swiftdirector\/swift\/string\/ldapvalue-implementations",
+                    "title" : "LDAPValue Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/swift\/string",
+                "title" : "String",
+                "type" : "extension"
+              },
+              {
+                "title" : "Extended Enumerations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Default Implementations",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "children" : [
+                      {
+                        "title" : "Initializers",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/swift\/optional\/init(fromldapraw:)",
+                        "title" : "init(fromLDAPRaw: LDAPRaw)",
+                        "type" : "init"
+                      },
+                      {
+                        "title" : "Instance Properties",
+                        "type" : "groupMarker"
+                      },
+                      {
+                        "path" : "\/documentation\/swiftdirector\/swift\/optional\/ldapraw",
+                        "title" : "var ldapRaw: LDAPRaw",
+                        "type" : "property"
+                      }
+                    ],
+                    "path" : "\/documentation\/swiftdirector\/swift\/optional\/ldapvalue-implementations",
+                    "title" : "LDAPValue Implementations",
+                    "type" : "symbol"
+                  }
+                ],
+                "path" : "\/documentation\/swiftdirector\/swift\/optional",
+                "title" : "Optional",
+                "type" : "extension"
+              }
+            ],
+            "path" : "\/documentation\/swiftdirector\/swift",
+            "title" : "Swift",
+            "type" : "extension"
           }
         ],
         "path" : "\/documentation\/swiftdirector",
@@ -2234,6 +2424,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 0
+    "patch" : 1
   }
 }

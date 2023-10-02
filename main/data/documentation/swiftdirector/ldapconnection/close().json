@@ -136,6 +136,27 @@
           "name" : "Throws",
           "style" : "note",
           "type" : "aside"
+        },
+        {
+          "content" : [
+            {
+              "inlineContent" : [
+                {
+                  "text" : "",
+                  "type" : "text"
+                },
+                {
+                  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/unbind()",
+                  "isActive" : true,
+                  "type" : "reference"
+                }
+              ],
+              "type" : "paragraph"
+            }
+          ],
+          "name" : "See Also",
+          "style" : "note",
+          "type" : "aside"
         }
       ],
       "kind" : "content"
@@ -262,6 +283,42 @@
   "title" : "close()",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapconnection\/close()"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPConnection/unbind()": {
+  "abstract" : [
+    {
+      "text" : "Unbinds this connection invalidating it.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "unbind"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/unbind()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "unbind()",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapconnection\/unbind()"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPError": {
   "abstract" : [
