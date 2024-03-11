@@ -193,6 +193,9 @@ public final class LDAPConnection {
     }
 }
 
+@available(*, unavailable)
+extension LDAPConnection: Sendable {}
+
 fileprivate extension Collection where Element == String {
     func withMutableArrayOfCStrings<R>(_ body: (inout Array<UnsafeMutablePointer<CChar>?>) throws -> R) rethrows -> R {
         var cStrings = map { strdup($0) } + CollectionOfOne(nil)

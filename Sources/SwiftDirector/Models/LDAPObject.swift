@@ -57,7 +57,7 @@ where ObjectClass: ObjectClassProtocol
     }
 
     @usableFromInline
-    func uncheckedForceCast<C: ObjectClassProtocol>(to other: C.Type) -> LDAPObject<C> {
+    func uncheckedForceCast<C: ObjectClassProtocol>(to _: C.Type) -> LDAPObject<C> {
         LDAPObject<C>(storage: storage)
     }
 
@@ -75,7 +75,7 @@ where ObjectClass: ObjectClassProtocol
     /// Casts this object to a new object class type if possible.
     /// - Parameter other: The new object class type to use.
     /// - Returns: The new object of the new object class type or nil if the receiver is not castable to the new object class type.
-    /// - SeeAlso: `canCast(to:)`
+    /// - SeeAlso: ``LDAPObject/canCast(to:)``
     @inlinable
     public func cast<C: ObjectClassProtocol>(to other: C.Type = C.self) -> LDAPObject<C>? {
         canCast(to: other) ? uncheckedForceCast(to: other) : nil
