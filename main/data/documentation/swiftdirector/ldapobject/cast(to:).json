@@ -249,8 +249,9 @@
                   "type" : "text"
                 },
                 {
-                  "code" : "canCast(to:)",
-                  "type" : "codeVoice"
+                  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/canCast(to:)",
+                  "isActive" : true,
+                  "type" : "reference"
                 }
               ],
               "type" : "paragraph"
@@ -333,6 +334,67 @@
   "title" : "LDAPObject",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapobject"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/canCast(to:)": {
+  "abstract" : [
+    {
+      "text" : "Checks whether this object can be casted to the given other object class.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "canCast"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "to"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/canCast(to:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "canCast(to:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapobject\/cancast(to:)"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/cast(to:)": {
   "abstract" : [

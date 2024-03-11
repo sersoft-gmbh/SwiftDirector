@@ -19,6 +19,7 @@
       }
     ],
     "role" : "collectionGroup",
+    "roleHeading" : "API Collection",
     "title" : "Equatable Implementations"
   },
   "schemaVersion" : {
@@ -102,7 +103,10 @@
 },
 "doc://SwiftDirector/documentation/SwiftDirector/Attribute/!=(_:_:)": {
   "abstract" : [
-
+    {
+      "text" : "Returns a Boolean value indicating whether two values are not equal.",
+      "type" : "text"
+    }
   ],
   "fragments" : [
     {

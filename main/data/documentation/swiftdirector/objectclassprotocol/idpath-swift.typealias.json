@@ -107,7 +107,9 @@
               "text" : "."
             },
             {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol\/ID",
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:13SwiftDirector19ObjectClassProtocolP2IDQa",
               "text" : "ID"
             },
             {
@@ -256,6 +258,62 @@
   "title" : "ObjectClassProtocol",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/objectclassprotocol"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/ObjectClassProtocol/ID": {
+  "abstract" : [
+    {
+      "text" : "The type of the identifier of object of this object class.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "associatedtype"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "ID"
+    },
+    {
+      "kind" : "text",
+      "text" : " : "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SH",
+      "text" : "Hashable"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector9LDAPValueP",
+      "text" : "LDAPValue"
+    },
+    {
+      "kind" : "text",
+      "text" : " = "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector17DistinguishedNameV",
+      "text" : "DistinguishedName"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol\/ID",
+  "kind" : "symbol",
+  "required" : true,
+  "role" : "symbol",
+  "title" : "ID",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/objectclassprotocol\/id"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/ObjectClassProtocol/IDPath-swift.typealias": {
   "abstract" : [

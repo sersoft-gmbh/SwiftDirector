@@ -420,6 +420,27 @@
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPValue/ldapRaw": {
   "abstract" : [
     {
+      "text" : "The raw LDAP value this type converts ",
+      "type" : "text"
+    },
+    {
+      "inlineContent" : [
+        {
+          "text" : "to",
+          "type" : "text"
+        }
+      ],
+      "type" : "emphasis"
+    },
+    {
+      "text" : ".",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
       "text" : "The raw LDAP value of this type.",
       "type" : "text"
     }

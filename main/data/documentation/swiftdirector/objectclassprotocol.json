@@ -110,7 +110,9 @@
               "text" : "<"
             },
             {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol\/ID",
               "kind" : "typeIdentifier",
+              "preciseIdentifier" : "s:13SwiftDirector19ObjectClassProtocolP2IDQa",
               "text" : "ID"
             },
             {
