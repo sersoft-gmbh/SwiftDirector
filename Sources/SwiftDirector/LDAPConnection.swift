@@ -29,7 +29,8 @@ public final class LDAPConnection {
                 mode = .primary(server, isClosed: !newValue)
             case .duplicate(let original, _):
                 mode = .duplicate(original: original, isDestroyed: !newValue)
-                original.isValid = newValue
+                // This might actually be wrong - if we're closed, our parent should stay functional.
+                // original.isValid = newValue
             }
         }
     }

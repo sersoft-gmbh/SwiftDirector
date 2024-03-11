@@ -12,7 +12,7 @@ A Swift interface for (Open)LDAP.
 
 Add the following dependency to your `Package.swift`:
 ```swift
-.package(url: "https://github.com/sersoft-gmbh/SwiftDirector", from: "1.0.0"),
+.package(url: "https://github.com/sersoft-gmbh/SwiftDirector", from: "0.0.1"),
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ Note, however, that a connection cannot be re-bound once unbound. An unbound con
 A connection can be duplicated. A normal duplicated connection depends on its original connection. This means that if a connection is invalidated (unbound), all its siblings will be invalid as well.
 Duplicated connections will destroy themselves when deallocated - leaving the original connection valid. There is also an explicit `close` function which will destroy duplicated connections and unbind primary connections.
 
-Note that a duplicat of an `LDAPConnection` retains its original connection to make sure the original connection doesn't unbind itself during deallocation, thus rendering the duplicate invalid as well.
+Note that a duplicate of an `LDAPConnection` retains its original connection to make sure the original connection doesn't unbind itself during deallocation, thus rendering the duplicate invalid as well.
 
 #### Searching
 
