@@ -7,7 +7,7 @@ DerivedData/
 .netrc
 
 # We ignore the complete .swiftpm directory for now, since Xcode shows schemes from dependencies.
-# See discussion in sersoft-gmbh/xmlwranger#122 for more details.
+# See discussion in https://github.com/sersoft-gmbh/xmlwrangler#122 for more details.
 .swiftpm/
 
 # VS Code
