@@ -24,4 +24,9 @@ jobs:
       organisation: ${{ github.repository_owner }}
       repository: ${{ github.event.repository.name }}
       pages-branch: gh-pages
-      container-before-run: apt-get update -qq && apt-get install -yq libldap2-dev
+      before-run: |
+        if [ "${IS_IN_CONTAINER}" -ne 0 ]; then
+          apt-get update -qq && apt-get install -yq libldap2-dev
+        else
+          brew install openldap
+        fi

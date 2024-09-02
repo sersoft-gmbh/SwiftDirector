@@ -15,7 +15,7 @@ jobs:
       max-supported-swift-version: '5.10'
       xcode-scheme: SwiftDirector
       xcode-platform-version: latest
-      fail-if-codecov-fails: true
+      fail-if-codecov-fails: 'true'
     runs-on: ubuntu-latest
     steps:
       - run: exit 0
@@ -32,6 +32,11 @@ jobs:
       max-swift-version: ${{ needs.variables.outputs.max-supported-swift-version }}
       swift-version-offset: ${{ matrix.swift-version-offset }}
       fail-if-codecov-fails: ${{ fromJson(needs.variables.outputs.fail-if-codecov-fails) }}
-      container-before-run: apt-get update -qq && apt-get install -yq libldap2-dev
+      before-run: |
+        if [ "${IS_IN_CONTAINER}" -ne 0 ]; then
+          apt-get update -qq && apt-get install -yq libldap2-dev
+        else
+          brew install openldap
+        fi
     secrets:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
