@@ -29,6 +29,10 @@
         "name" : "SwiftDirector"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "GroupOfNames.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/GroupOfNames.swift#L19"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",

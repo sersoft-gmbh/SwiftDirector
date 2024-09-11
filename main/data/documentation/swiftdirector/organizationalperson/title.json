@@ -57,6 +57,10 @@
         "name" : "SwiftDirector"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "OrganizationalPerson.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/OrganizationalPerson.swift#L4"
+    },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
     "symbolKind" : "property",

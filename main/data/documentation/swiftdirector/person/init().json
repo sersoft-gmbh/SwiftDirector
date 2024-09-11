@@ -29,6 +29,10 @@
         "name" : "SwiftDirector"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Person.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/Person.swift#L22"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",

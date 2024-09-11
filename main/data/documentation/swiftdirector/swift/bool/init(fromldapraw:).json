@@ -52,6 +52,10 @@
         ]
       }
     ],
+    "remoteSource" : {
+      "fileName" : "LDAPValue.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/LDAPValue.swift#L215"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",

@@ -64,6 +64,10 @@
         "name" : "SwiftDirector"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Attributes.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/Attributes.swift#L24"
+    },
     "role" : "symbol",
     "roleHeading" : "Initializer",
     "symbolKind" : "init",

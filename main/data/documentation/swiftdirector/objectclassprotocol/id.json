@@ -66,6 +66,10 @@
         "name" : "SwiftDirector"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "BaseObjectClass.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/BaseObjectClass.swift#L7"
+    },
     "required" : true,
     "role" : "symbol",
     "roleHeading" : "Associated Type",

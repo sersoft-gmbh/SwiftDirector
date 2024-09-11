@@ -38,6 +38,10 @@
         "text" : "OrganizationalPersonProtocol"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "OrganizationalPerson.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/OrganizationalPerson.swift#L1"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",

@@ -38,6 +38,10 @@
         "text" : "TopObjectClassProtocol"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "TopObjectClass.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/TopObjectClass.swift#L1"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",

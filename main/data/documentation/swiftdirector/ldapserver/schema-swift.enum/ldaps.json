@@ -34,6 +34,10 @@
         "name" : "SwiftDirector"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "LDAPServer.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPServer.swift#L7"
+    },
     "role" : "symbol",
     "roleHeading" : "Case",
     "symbolKind" : "case",

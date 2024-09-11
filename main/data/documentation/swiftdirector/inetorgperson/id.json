@@ -39,6 +39,10 @@
         "text" : "ID"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "InetOrgPerson.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/InetOrgPerson.swift#L13"
+    },
     "role" : "symbol",
     "roleHeading" : "Type Alias",
     "symbolKind" : "typealias",

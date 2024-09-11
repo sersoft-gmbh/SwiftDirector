@@ -44,6 +44,10 @@
         "text" : "LDAPError"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "LDAPError.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPError.swift#L7"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",

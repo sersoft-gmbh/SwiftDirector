@@ -38,6 +38,10 @@
         "text" : "InetOrgPersonProtocol"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "InetOrgPerson.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/InetOrgPerson.swift#L1"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",

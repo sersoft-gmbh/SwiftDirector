@@ -38,6 +38,10 @@
         "text" : "GroupOfNamesProtocol"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "GroupOfNames.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/GroupOfNames.swift#L1"
+    },
     "role" : "symbol",
     "roleHeading" : "Protocol",
     "symbolKind" : "protocol",

@@ -38,6 +38,10 @@
         "text" : "OrganizationalPerson"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "OrganizationalPerson.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/OrganizationalPerson.swift#L13"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",

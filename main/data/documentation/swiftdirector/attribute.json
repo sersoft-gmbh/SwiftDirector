@@ -44,6 +44,10 @@
         "text" : "Attribute"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "Attributes.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/Attributes.swift#L35"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",

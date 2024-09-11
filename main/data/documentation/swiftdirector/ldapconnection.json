@@ -44,6 +44,10 @@
         "text" : "LDAPConnection"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "LDAPConnection.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPConnection.swift#L9"
+    },
     "role" : "symbol",
     "roleHeading" : "Class",
     "symbolKind" : "class",

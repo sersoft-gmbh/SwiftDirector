@@ -38,6 +38,10 @@
         "text" : "DistinguishedName"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "DistinguishedName.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/DistinguishedName.swift#L1"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",

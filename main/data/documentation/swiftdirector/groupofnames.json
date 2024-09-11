@@ -38,6 +38,10 @@
         "text" : "GroupOfNames"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "GroupOfNames.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/GroupOfNames.swift#L15"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",

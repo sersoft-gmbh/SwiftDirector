@@ -38,6 +38,10 @@
         "text" : "InetOrgPerson"
       }
     ],
+    "remoteSource" : {
+      "fileName" : "InetOrgPerson.swift",
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/InetOrgPerson.swift#L12"
+    },
     "role" : "symbol",
     "roleHeading" : "Structure",
     "symbolKind" : "struct",
