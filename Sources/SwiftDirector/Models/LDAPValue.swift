@@ -63,35 +63,35 @@ public struct LDAPRaw: Hashable, Sendable {
         @inlinable
         var startIndex: Index {
             switch self {
-            case .empty, .singleValue(_): return .init(_storage: 0)
-            case .valueList(let list): return .init(_storage: list.startIndex)
+            case .empty, .singleValue(_): .init(_storage: 0)
+            case .valueList(let list): .init(_storage: list.startIndex)
             }
         }
 
         @inlinable
         var endIndex: Index {
             switch self {
-            case .empty: return .init(_storage: 0)
-            case .singleValue(_): return .init(_storage: 1)
-            case .valueList(let list): return .init(_storage: list.endIndex)
+            case .empty: .init(_storage: 0)
+            case .singleValue(_): .init(_storage: 1)
+            case .valueList(let list): .init(_storage: list.endIndex)
             }
         }
 
         @inlinable
         var count: Int {
             switch self {
-            case .empty: return 0
-            case .singleValue(_): return 1
-            case .valueList(let list): return list.count
+            case .empty: 0
+            case .singleValue(_): 1
+            case .valueList(let list): list.count
             }
         }
 
         @inlinable
         var isEmpty: Bool {
             switch self {
-            case .empty: return true
-            case .singleValue(_): return false
-            case .valueList(let list): return list.isEmpty
+            case .empty: true
+            case .singleValue(_): false
+            case .valueList(let list): list.isEmpty
             }
         }
 
@@ -99,26 +99,26 @@ public struct LDAPRaw: Hashable, Sendable {
         subscript(position: Index) -> Element {
             switch self {
             case .empty: fatalError("Out of bounds!")
-            case .singleValue(let value) where position._storage == 0: return value
+            case .singleValue(let value) where position._storage == 0: value
             case .singleValue(_): fatalError("Out of bounds!")
-            case .valueList(let list): return list[position._storage]
+            case .valueList(let list): list[position._storage]
             }
         }
 
         @inlinable
         func makeIterator() -> Iterator {
             switch self {
-            case .empty: return .init(_storage: .empty)
-            case .singleValue(let str): return .init(_storage: .singleValue(str))
-            case .valueList(let list): return .init(_storage: .valueList(list.makeIterator()))
+            case .empty: .init(_storage: .empty)
+            case .singleValue(let str): .init(_storage: .singleValue(str))
+            case .valueList(let list): .init(_storage: .valueList(list.makeIterator()))
             }
         }
 
         @inlinable
         func index(after i: Index) -> Index {
             switch self {
-            case .empty, .singleValue(_): return .init(_storage: i._storage + 1)
-            case .valueList(let list): return .init(_storage: list.index(after: i._storage))
+            case .empty, .singleValue(_): .init(_storage: i._storage + 1)
+            case .valueList(let list): .init(_storage: list.index(after: i._storage))
             }
         }
     }
@@ -165,9 +165,9 @@ public struct LDAPRaw: Hashable, Sendable {
 
     var firstValue: String? {
         switch _storage {
-        case .empty: return nil
-        case .singleValue(let string): return string
-        case .valueList(let array): return array.first
+        case .empty: nil
+        case .singleValue(let string): string
+        case .valueList(let array): array.first
         }
     }
 
@@ -183,7 +183,7 @@ public struct LDAPRaw: Hashable, Sendable {
 /// Represents a type that can be converted from and to an LDAP raw type.
 @preconcurrency
 public protocol LDAPValue: Equatable, Sendable {
-    /// The raw LDAP value this type converts *to*.
+//    /// The raw LDAP value this type converts *to*.
 //    associatedtype LDAPRawType: LDAPRaw
     /// The raw LDAP value of this type.
     var ldapRaw: LDAPRaw { get }

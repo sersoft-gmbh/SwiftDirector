@@ -3,6 +3,10 @@ import CLDAP
 import Darwin.C
 #elseif canImport(Glibc)
 import Glibc
+#elseif canImport(Musl)
+import Musl
+#elseif canImport(ucrt)
+import ucrt
 #endif
 
 /// Represents a connection to an LDAP server.
@@ -198,9 +202,17 @@ public final class LDAPConnection {
 extension LDAPConnection: Sendable {}
 
 fileprivate extension Collection where Element == String {
+#if swift(>=6.0)
+    func withMutableArrayOfCStrings<R, E: Error>(_ body: (inout Array<UnsafeMutablePointer<CChar>?>) throws(E) -> R) throws(E) -> R {
+        var cStrings = map { strdup($0) } + CollectionOfOne(nil)
+        defer { cStrings.lazy.compactMap { $0 }.forEach { free($0) } }
+        return try body(&cStrings)
+    }
+#else
     func withMutableArrayOfCStrings<R>(_ body: (inout Array<UnsafeMutablePointer<CChar>?>) throws -> R) rethrows -> R {
         var cStrings = map { strdup($0) } + CollectionOfOne(nil)
         defer { cStrings.lazy.compactMap { $0 }.forEach { free($0) } }
         return try body(&cStrings)
     }
+#endif
 }

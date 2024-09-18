@@ -49,23 +49,29 @@ public struct LDAPServer: Hashable, Sendable {
 }
 
 extension LDAPServer {
-    /// A new server configuration with ``Schema/ldap`` scheme and `LDAP_PORT` as default port.
+    /// The default LDAP port.
+    public static let defaultLdapPort: UInt16 = numericCast(LDAP_PORT)
+
+    /// The default LDAPS port.
+    public static let defaultLdapsPort: UInt16 = numericCast(LDAPS_PORT)
+
+    /// A new server configuration with ``Schema/ldap`` scheme and ``LDAPServer/defaultLdapPort`` as default port.
     /// - Parameters:
     ///   - host: The host for this configuration.
-    ///   - port: The port to use. Defaults to `LDAP_PORT`.
+    ///   - port: The port to use. Defaults to ``LDAPServer/defaultLdapPort``.
     /// - Returns: The new server configuration.
     @inlinable
-    public static func ldap(host: String, port: UInt16 = numericCast(LDAP_PORT)) -> Self {
+    public static func ldap(host: String, port: UInt16 = defaultLdapPort) -> Self {
         .init(schema: .ldap, host: host, port: port)
     }
 
-    /// A new server configuration with ``Schema/ldaps`` scheme and `LDAPS_PORT` as default port.
+    /// A new server configuration with ``Schema/ldaps`` scheme and ``LDAPServer/defaultLdapsPort``` as default port.
     /// - Parameters:
     ///   - host: The host for this configuration.
-    ///   - port: The port to use. Defaults to `LDAPS_PORT`.
+    ///   - port: The port to use. Defaults to ``LDAPServer/defaultLdapsPort``.
     /// - Returns: The new server configuration.
     @inlinable
-    public static func ldaps(host: String, port: UInt16 = numericCast(LDAPS_PORT)) -> Self {
+    public static func ldaps(host: String, port: UInt16 = defaultLdapsPort) -> Self {
         .init(schema: .ldaps, host: host, port: port)
     }
 }

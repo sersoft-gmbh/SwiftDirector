@@ -1,7 +1,7 @@
 import CLDAP
 
 /// A typealias for the error codes used in LDAP.
-typealias LDAPErrno = CInt
+internal typealias LDAPErrno = CInt
 
 /// The error type representing errors occurring during LDAP operations.
 public struct LDAPError: Error, Equatable, CustomStringConvertible {
@@ -44,6 +44,27 @@ public struct LDAPError: Error, Equatable, CustomStringConvertible {
 }
 
 // MARK: - Execution Helpers
+#if swift(>=6.0)
+extension LDAPError {
+    private static func _validateVoid(work: () -> LDAPErrno, beforeThrow: () -> ()) throws(Self) {
+        if let error = LDAPError(errno: work()) {
+            beforeThrow()
+            throw error
+        }
+    }
+
+    static func validateVoid(work: () -> LDAPErrno) throws(Self) {
+        try _validateVoid(work: work, beforeThrow: {})
+    }
+
+    static func validate<T>(freeingWith free: ((T?) -> ())? = nil, work: (inout T?) -> LDAPErrno) throws(Self) -> T {
+        var result: T?
+        try _validateVoid(work: { work(&result) }, beforeThrow: { free?(result) })
+        guard let unwrappedResult = result else { throw unknown }
+        return unwrappedResult
+    }
+}
+#else
 extension LDAPError {
     private static func _validateVoid(work: () -> LDAPErrno, beforeThrow: () -> ()) throws {
         if let error = LDAPError(errno: work()) {
@@ -63,3 +84,4 @@ extension LDAPError {
         return unwrappedResult
     }
 }
+#endif
