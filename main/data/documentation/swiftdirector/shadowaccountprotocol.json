@@ -116,6 +116,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccountProtocol\/authPassword",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccountProtocol\/shadowInactive",

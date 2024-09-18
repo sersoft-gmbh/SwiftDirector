@@ -14,8 +14,9 @@
       "type" : "text"
     },
     {
-      "code" : "LDAP_PORT",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/defaultLdapPort",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : " as default port.",
@@ -110,7 +111,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPServer.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPServer.swift#L58"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPServer.swift#L64"
     },
     "role" : "symbol",
     "roleHeading" : "Type Method",
@@ -184,7 +185,7 @@
             },
             {
               "kind" : "text",
-              "text" : " = numericCast(LDAP_PORT)) -> "
+              "text" : " = defaultLdapPort) -> "
             },
             {
               "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer",
@@ -223,8 +224,9 @@
                   "type" : "text"
                 },
                 {
-                  "code" : "LDAP_PORT",
-                  "type" : "codeVoice"
+                  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/defaultLdapPort",
+                  "isActive" : true,
+                  "type" : "reference"
                 },
                 {
                   "text" : ".",
@@ -354,6 +356,51 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapserver\/schema-swift.enum\/ldap"
 },
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/defaultLdapPort": {
+  "abstract" : [
+    {
+      "text" : "The default LDAP port.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "static"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "let"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "defaultLdapPort"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s6UInt16V",
+      "text" : "UInt16"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/defaultLdapPort",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "defaultLdapPort",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/defaultldapport"
+},
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/ldap(host:port:)": {
   "abstract" : [
     {
@@ -370,8 +417,9 @@
       "type" : "text"
     },
     {
-      "code" : "LDAP_PORT",
-      "type" : "codeVoice"
+      "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/defaultLdapPort",
+      "isActive" : true,
+      "type" : "reference"
     },
     {
       "text" : " as default port.",

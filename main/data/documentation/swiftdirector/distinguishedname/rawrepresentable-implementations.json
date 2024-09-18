@@ -32,6 +32,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/init(from:)"
@@ -39,6 +40,7 @@
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/hashValue"
@@ -46,6 +48,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/encode(to:)",
@@ -167,23 +170,7 @@
         "type" : "codeVoice"
       },
       {
-        "text" : ", ",
-        "type" : "text"
-      },
-      {
-        "code" : "Self",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : " conforms to ",
-        "type" : "text"
-      },
-      {
-        "code" : "RawRepresentable",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : ", and ",
+        "text" : " and ",
         "type" : "text"
       },
       {
@@ -492,23 +479,7 @@
         "type" : "codeVoice"
       },
       {
-        "text" : ", ",
-        "type" : "text"
-      },
-      {
-        "code" : "Self",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : " conforms to ",
-        "type" : "text"
-      },
-      {
-        "code" : "RawRepresentable",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : ", and ",
+        "text" : " and ",
         "type" : "text"
       },
       {

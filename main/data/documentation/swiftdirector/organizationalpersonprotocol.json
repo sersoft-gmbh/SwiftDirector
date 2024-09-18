@@ -125,6 +125,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPersonProtocol\/organizationalUnit",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPersonProtocol\/postalAddress",

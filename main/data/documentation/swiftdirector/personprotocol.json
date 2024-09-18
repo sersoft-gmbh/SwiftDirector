@@ -116,6 +116,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/PersonProtocol\/commonName",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/PersonProtocol\/fullName",

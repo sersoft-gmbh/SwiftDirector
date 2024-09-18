@@ -46,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPConnection.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPConnection.swift#L9"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPConnection.swift#L13"
     },
     "role" : "symbol",
     "roleHeading" : "Class",
@@ -100,6 +100,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Connecting-to-a-Server",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer"
@@ -109,6 +110,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/isDuplicate",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/server"
@@ -116,6 +119,8 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Instance-Methods",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/bind(dn:credentials:)",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/close()",

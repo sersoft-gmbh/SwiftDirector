@@ -83,6 +83,7 @@
     {
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPValue",
+        "doc:\/\/SwiftDirector\/s8CopyableP",
         "doc:\/\/SwiftDirector\/SQ",
         "doc:\/\/SwiftDirector\/s8SendableP"
       ],
@@ -101,6 +102,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Bool\/LDAPValue-Implementations"
@@ -228,6 +230,11 @@
   "title" : "LDAPValue Implementations",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/swift\/bool\/ldapvalue-implementations"
+},
+"doc://SwiftDirector/s8CopyableP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s8CopyableP",
+  "title" : "Swift.Copyable",
+  "type" : "unresolvable"
 },
 "doc://SwiftDirector/s8SendableP": {
   "identifier" : "doc:\/\/SwiftDirector\/s8SendableP",

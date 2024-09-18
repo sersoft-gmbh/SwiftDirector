@@ -155,6 +155,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Attributes--Values",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey",
@@ -167,12 +168,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPValue\/init(fromLDAPRaw:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPValue\/ldapRaw"
       ],
@@ -423,27 +428,6 @@
 },
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPValue/ldapRaw": {
   "abstract" : [
-    {
-      "text" : "The raw LDAP value this type converts ",
-      "type" : "text"
-    },
-    {
-      "inlineContent" : [
-        {
-          "text" : "to",
-          "type" : "text"
-        }
-      ],
-      "type" : "emphasis"
-    },
-    {
-      "text" : ".",
-      "type" : "text"
-    },
-    {
-      "text" : " ",
-      "type" : "text"
-    },
     {
       "text" : "The raw LDAP value of this type.",
       "type" : "text"

@@ -1,4 +1,7 @@
 {
+  "includedArchiveIdentifiers" : [
+    "SwiftDirector"
+  ],
   "interfaceLanguages" : {
     "swift" : [
       {
@@ -45,6 +48,20 @@
                 "path" : "\/documentation\/swiftdirector\/ldapserver\/openconnection()",
                 "title" : "func openConnection() throws -> LDAPConnection",
                 "type" : "method"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/defaultldapport",
+                "title" : "static let defaultLdapPort: UInt16",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/swiftdirector\/ldapserver\/defaultldapsport",
+                "title" : "static let defaultLdapsPort: UInt16",
+                "type" : "property"
               },
               {
                 "title" : "Type Methods",
@@ -2424,6 +2441,6 @@
   "schemaVersion" : {
     "major" : 0,
     "minor" : 1,
-    "patch" : 1
+    "patch" : 2
   }
 }

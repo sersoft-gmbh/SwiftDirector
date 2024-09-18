@@ -33,6 +33,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Extended-Protocols",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/FixedWidthInteger",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/LosslessStringConvertible",
@@ -41,6 +43,8 @@
       "title" : "Extended Protocols"
     },
     {
+      "anchor" : "Extended-Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Array",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Bool",
@@ -51,6 +55,8 @@
       "title" : "Extended Structures"
     },
     {
+      "anchor" : "Extended-Enumerations",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Optional"
       ],

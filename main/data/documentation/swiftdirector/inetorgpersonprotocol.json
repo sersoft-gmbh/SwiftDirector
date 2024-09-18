@@ -117,6 +117,8 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPersonProtocol\/displayName",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPersonProtocol\/employeeNumber",

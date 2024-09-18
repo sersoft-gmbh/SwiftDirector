@@ -34,6 +34,7 @@
   ],
   "defaultImplementationsSections" : [
     {
+      "anchor" : "ObjectClassProtocol-Implementations",
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol\/idPath-hydf"
       ],

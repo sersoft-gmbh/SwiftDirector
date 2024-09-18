@@ -39,6 +39,7 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Connecting-to-a-Server",
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection"
@@ -46,6 +47,7 @@
       "title" : "Connecting to a Server"
     },
     {
+      "anchor" : "Attributes--Values",
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute",
@@ -56,6 +58,7 @@
       "title" : "Attributes & Values"
     },
     {
+      "anchor" : "Object-Classes",
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AnyObjectClass",
@@ -70,12 +73,15 @@
       "title" : "Object Classes"
     },
     {
+      "anchor" : "Errors",
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPError"
       ],
       "title" : "Errors"
     },
     {
+      "anchor" : "Protocols",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfNamesProtocol",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNamesProtocol",
@@ -88,12 +94,16 @@
       "title" : "Protocols"
     },
     {
+      "anchor" : "Structures",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPRaw"
       ],
       "title" : "Structures"
     },
     {
+      "anchor" : "Extended-Modules",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift"
       ],

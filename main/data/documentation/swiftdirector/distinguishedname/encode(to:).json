@@ -67,23 +67,7 @@
           "type" : "codeVoice"
         },
         {
-          "text" : ", ",
-          "type" : "text"
-        },
-        {
-          "code" : "Self",
-          "type" : "codeVoice"
-        },
-        {
-          "text" : " conforms to ",
-          "type" : "text"
-        },
-        {
-          "code" : "RawRepresentable",
-          "type" : "codeVoice"
-        },
-        {
-          "text" : ", and ",
+          "text" : " and ",
           "type" : "text"
         },
         {
@@ -399,23 +383,7 @@
         "type" : "codeVoice"
       },
       {
-        "text" : ", ",
-        "type" : "text"
-      },
-      {
-        "code" : "Self",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : " conforms to ",
-        "type" : "text"
-      },
-      {
-        "code" : "RawRepresentable",
-        "type" : "codeVoice"
-      },
-      {
-        "text" : ", and ",
+        "text" : " and ",
         "type" : "text"
       },
       {

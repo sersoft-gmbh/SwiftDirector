@@ -140,6 +140,7 @@
   ],
   "seeAlsoSections" : [
     {
+      "anchor" : "Attributes--Values",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey",
@@ -152,12 +153,16 @@
   ],
   "topicSections" : [
     {
+      "anchor" : "Initializers",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute\/init(key:)"
       ],
       "title" : "Initializers"
     },
     {
+      "anchor" : "Instance-Properties",
+      "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute\/debugDescription",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute\/description",
@@ -166,6 +171,7 @@
       "title" : "Instance Properties"
     },
     {
+      "anchor" : "Default-Implementations",
       "generated" : true,
       "identifiers" : [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute\/Equatable-Implementations"

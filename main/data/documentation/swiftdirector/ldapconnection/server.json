@@ -50,7 +50,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPConnection.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPConnection.swift#L39"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPConnection.swift#L43"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
