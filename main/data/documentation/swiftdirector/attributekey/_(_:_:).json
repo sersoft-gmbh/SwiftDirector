@@ -9,7 +9,7 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/_(_:_:)-6hu6t"
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/_(_:_:)"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -74,7 +74,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Attributes.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/Attributes.swift#L29"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/Attributes.swift#L29"
     },
     "role" : "symbol",
     "roleHeading" : "Operator",
@@ -178,7 +178,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/swiftdirector\/attributekey\/_(_:_:)-6hu6t"
+        "\/documentation\/swiftdirector\/attributekey\/_(_:_:)"
       ],
       "traits" : [
         {
@@ -237,7 +237,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/attributekey"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/_(_:_:)-6hu6t": {
+"doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -294,12 +294,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/_(_:_:)-6hu6t",
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/attributekey\/_(_:_:)-6hu6t"
+  "url" : "\/documentation\/swiftdirector\/attributekey\/_(_:_:)"
 }
 }
 }

@@ -31,7 +31,7 @@
     ],
     "remoteSource" : {
       "fileName" : "InetOrgPerson.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/InetOrgPerson.swift#L18"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/ObjectClasses\/InetOrgPerson.swift#L18"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",

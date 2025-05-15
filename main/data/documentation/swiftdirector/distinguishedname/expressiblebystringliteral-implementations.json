@@ -3,13 +3,13 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName"
       ]
     ]
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/ExpressibleByUnicodeScalarLiteral-Implementations"
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByStringLiteral-Implementations"
   },
   "kind" : "article",
   "metadata" : {
@@ -20,7 +20,7 @@
     ],
     "role" : "collectionGroup",
     "roleHeading" : "API Collection",
-    "title" : "ExpressibleByUnicodeScalarLiteral Implementations"
+    "title" : "ExpressibleByStringLiteral Implementations"
   },
   "schemaVersion" : {
     "major" : 0,
@@ -35,7 +35,7 @@
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/init(unicodeScalarLiteral:)"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/init(extendedGraphemeClusterLiteral:)"
       ],
       "title" : "Initializers"
     }
@@ -43,7 +43,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/swiftdirector\/attributekey\/expressiblebyunicodescalarliteral-implementations"
+        "\/documentation\/swiftdirector\/distinguishedname\/expressiblebystringliteral-implementations"
       ],
       "traits" : [
         {
@@ -68,12 +68,9 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/AttributeKey": {
+"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName": {
   "abstract" : [
-    {
-      "text" : "Represents a key for an attribute.",
-      "type" : "text"
-    }
+
   ],
   "fragments" : [
     {
@@ -86,23 +83,23 @@
     },
     {
       "kind" : "identifier",
-      "text" : "AttributeKey"
+      "text" : "DistinguishedName"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey",
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName",
   "kind" : "symbol",
   "navigatorTitle" : [
     {
       "kind" : "identifier",
-      "text" : "AttributeKey"
+      "text" : "DistinguishedName"
     }
   ],
   "role" : "symbol",
-  "title" : "AttributeKey",
+  "title" : "DistinguishedName",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/attributekey"
+  "url" : "\/documentation\/swiftdirector\/distinguishedname"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/init(unicodeScalarLiteral:)": {
+"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/init(extendedGraphemeClusterLiteral:)": {
   "abstract" : [
 
   ],
@@ -129,7 +126,7 @@
         "type" : "text"
       },
       {
-        "code" : "Self.UnicodeScalarLiteralType",
+        "code" : "Self.StringLiteralType",
         "type" : "codeVoice"
       },
       {
@@ -149,7 +146,7 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "unicodeScalarLiteral"
+      "text" : "extendedGraphemeClusterLiteral"
     },
     {
       "kind" : "text",
@@ -165,20 +162,20 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
-      "text" : "ExtendedGraphemeClusterLiteralType"
+      "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
+      "text" : "StringLiteralType"
     },
     {
       "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/init(unicodeScalarLiteral:)",
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/init(extendedGraphemeClusterLiteral:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(unicodeScalarLiteral:)",
+  "title" : "init(extendedGraphemeClusterLiteral:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/attributekey\/init(unicodescalarliteral:)"
+  "url" : "\/documentation\/swiftdirector\/distinguishedname\/init(extendedgraphemeclusterliteral:)"
 }
 }
 }

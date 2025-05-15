@@ -4,8 +4,7 @@
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Optional",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Optional\/LDAPValue-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Optional"
       ]
     ]
   },
@@ -82,7 +81,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPValue.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/LDAPValue.swift#L259"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/LDAPValue.swift#L259"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -252,17 +251,6 @@
   "title" : "Optional",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/swift\/optional"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/Swift/Optional/LDAPValue-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Optional\/LDAPValue-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "LDAPValue Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/swift\/optional\/ldapvalue-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/Swift/Optional/ldapRaw": {
   "abstract" : [

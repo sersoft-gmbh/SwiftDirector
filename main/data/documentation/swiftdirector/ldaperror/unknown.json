@@ -66,7 +66,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPError.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/LDAPError.swift#L43"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/LDAPError.swift#L43"
     },
     "role" : "symbol",
     "roleHeading" : "Type Property",

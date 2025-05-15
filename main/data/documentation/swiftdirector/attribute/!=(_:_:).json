@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute\/Equatable-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute"
       ]
     ]
   },
@@ -432,17 +431,6 @@
   "title" : "!=(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/attribute\/!=(_:_:)"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/Attribute/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Attribute\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/attribute\/equatable-implementations"
 }
 }
 }

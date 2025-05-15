@@ -31,7 +31,7 @@
     ],
     "remoteSource" : {
       "fileName" : "ShadowAccount.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/ShadowAccount.swift#L20"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/ObjectClasses\/ShadowAccount.swift#L20"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",

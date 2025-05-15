@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Equatable-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName"
       ]
     ]
   },
@@ -429,17 +428,6 @@
   "title" : "!=(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname\/!=(_:_:)"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/distinguishedname\/equatable-implementations"
 }
 }
 }

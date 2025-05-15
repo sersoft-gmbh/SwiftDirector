@@ -4,8 +4,7 @@
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Bool",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Bool\/LDAPValue-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Bool"
       ]
     ]
   },
@@ -54,7 +53,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPValue.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/LDAPValue.swift#L215"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/LDAPValue.swift#L215"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -224,17 +223,6 @@
   "title" : "Bool",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/swift\/bool"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/Swift/Bool/LDAPValue-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/Bool\/LDAPValue-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "LDAPValue Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/swift\/bool\/ldapvalue-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/Swift/Bool/init(fromLDAPRaw:)": {
   "abstract" : [

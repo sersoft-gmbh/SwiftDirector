@@ -40,7 +40,7 @@
     ],
     "remoteSource" : {
       "fileName" : "DistinguishedName.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/DistinguishedName.swift#L1"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/DistinguishedName.swift#L1"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -124,7 +124,7 @@
       "anchor" : "Operators",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/_(_:_:)-1z9a2"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/_(_:_:)"
       ],
       "title" : "Operators"
     },
@@ -164,7 +164,7 @@
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Comparable-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Equatable-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByUnicodeScalarLiteral-Implementations",
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByStringLiteral-Implementations",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/RawRepresentable-Implementations"
       ],
       "title" : "Default Implementations"
@@ -360,16 +360,16 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname\/expressiblebyextendedgraphemeclusterliteral-implementations"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/ExpressibleByUnicodeScalarLiteral-Implementations": {
+"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/ExpressibleByStringLiteral-Implementations": {
   "abstract" : [
 
   ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByUnicodeScalarLiteral-Implementations",
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByStringLiteral-Implementations",
   "kind" : "article",
   "role" : "collectionGroup",
-  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
+  "title" : "ExpressibleByStringLiteral Implementations",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/distinguishedname\/expressiblebyunicodescalarliteral-implementations"
+  "url" : "\/documentation\/swiftdirector\/distinguishedname\/expressiblebystringliteral-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/RawRepresentable-Implementations": {
   "abstract" : [
@@ -413,7 +413,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname\/rawvalue-swift.typealias"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/_(_:_:)-1z9a2": {
+"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -470,12 +470,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/_(_:_:)-1z9a2",
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/distinguishedname\/_(_:_:)-1z9a2"
+  "url" : "\/documentation\/swiftdirector\/distinguishedname\/_(_:_:)"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/debugDescription": {
   "abstract" : [

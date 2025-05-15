@@ -4,8 +4,7 @@
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/ContiguousArray",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/ContiguousArray\/LDAPValue-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/ContiguousArray"
       ]
     ]
   },
@@ -86,7 +85,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPValue.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/LDAPValue.swift#L299"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/LDAPValue.swift#L299"
     },
     "role" : "symbol",
     "roleHeading" : "Initializer",
@@ -256,17 +255,6 @@
   "title" : "ContiguousArray",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/swift\/contiguousarray"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/Swift/ContiguousArray/LDAPValue-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/ContiguousArray\/LDAPValue-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "LDAPValue Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/swift\/contiguousarray\/ldapvalue-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/Swift/ContiguousArray/init(fromLDAPRaw:)": {
   "abstract" : [

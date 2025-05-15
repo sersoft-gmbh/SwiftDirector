@@ -9,7 +9,7 @@
   },
   "identifier" : {
     "interfaceLanguage" : "swift",
-    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/_(_:_:)-1z9a2"
+    "url" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/_(_:_:)"
   },
   "kind" : "symbol",
   "metadata" : {
@@ -74,7 +74,7 @@
     ],
     "remoteSource" : {
       "fileName" : "DistinguishedName.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/DistinguishedName.swift#L38"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/DistinguishedName.swift#L38"
     },
     "role" : "symbol",
     "roleHeading" : "Operator",
@@ -178,7 +178,7 @@
   "variants" : [
     {
       "paths" : [
-        "\/documentation\/swiftdirector\/distinguishedname\/_(_:_:)-1z9a2"
+        "\/documentation\/swiftdirector\/distinguishedname\/_(_:_:)"
       ],
       "traits" : [
         {
@@ -234,7 +234,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/_(_:_:)-1z9a2": {
+"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/_(_:_:)": {
   "abstract" : [
 
   ],
@@ -291,12 +291,12 @@
       "text" : "Bool"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/_(_:_:)-1z9a2",
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/_(_:_:)",
   "kind" : "symbol",
   "role" : "symbol",
   "title" : "<(_:_:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/distinguishedname\/_(_:_:)-1z9a2"
+  "url" : "\/documentation\/swiftdirector\/distinguishedname\/_(_:_:)"
 }
 }
 }

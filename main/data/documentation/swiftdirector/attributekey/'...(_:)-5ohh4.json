@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/Comparable-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey"
       ]
     ]
   },
@@ -470,17 +469,6 @@
   "title" : "...(_:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/attributekey\/'...(_:)-5ohh4"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/attributekey\/comparable-implementations"
 }
 }
 }

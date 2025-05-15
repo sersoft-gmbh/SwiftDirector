@@ -64,7 +64,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPObject.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/LDAPObject.swift#L85"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/LDAPObject.swift#L85"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",

@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Person",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Person\/ObjectClassProtocol-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Person"
       ]
     ]
   },
@@ -94,7 +93,7 @@
     ],
     "remoteSource" : {
       "fileName" : "BaseObjectClass.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/BaseObjectClass.swift#L34"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/ObjectClasses\/BaseObjectClass.swift#L34"
     },
     "role" : "symbol",
     "roleHeading" : "Type Property",
@@ -265,17 +264,6 @@
   "title" : "Person",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/person"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/Person/ObjectClassProtocol-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Person\/ObjectClassProtocol-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ObjectClassProtocol Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/person\/objectclassprotocol-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/Person/idPath": {
   "abstract" : [

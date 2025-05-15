@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey"
       ]
     ]
   },
@@ -223,17 +222,6 @@
   "title" : "AttributeKey",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/attributekey"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/ExpressibleByExtendedGraphemeClusterLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/ExpressibleByExtendedGraphemeClusterLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByExtendedGraphemeClusterLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/attributekey\/expressiblebyextendedgraphemeclusterliteral-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/init(extendedGraphemeClusterLiteral:)": {
   "abstract" : [

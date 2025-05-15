@@ -29,8 +29,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/RawRepresentable-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey"
       ]
     ]
   },
@@ -320,17 +319,6 @@
   "title" : "AttributeKey",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/attributekey"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/RawRepresentable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/RawRepresentable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "RawRepresentable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/attributekey\/rawrepresentable-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/encode(to:)": {
   "abstract" : [

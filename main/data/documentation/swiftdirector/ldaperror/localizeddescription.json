@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPError",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPError\/Error-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPError"
       ]
     ]
   },
@@ -177,17 +176,6 @@
   "title" : "LDAPError",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldaperror"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/LDAPError/Error-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPError\/Error-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Error Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/ldaperror\/error-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPError/localizedDescription": {
   "abstract" : [

@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames\/ObjectClassProtocol-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames"
       ]
     ]
   },
@@ -65,7 +64,7 @@
     ],
     "remoteSource" : {
       "fileName" : "BaseObjectClass.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/BaseObjectClass.swift#L24"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/ObjectClasses\/BaseObjectClass.swift#L24"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -264,17 +263,6 @@
   "title" : "GroupOfUniqueNames",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/groupofuniquenames"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNames/ObjectClassProtocol-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/GroupOfUniqueNames\/ObjectClassProtocol-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ObjectClassProtocol Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/groupofuniquenames\/objectclassprotocol-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/GroupOfUniqueNames/entryDN": {
   "abstract" : [

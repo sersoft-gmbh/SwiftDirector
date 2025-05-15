@@ -35,7 +35,7 @@
       "anchor" : "Initializers",
       "generated" : true,
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/init(extendedGraphemeClusterLiteral:)"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/init(unicodeScalarLiteral:)"
       ],
       "title" : "Initializers"
     }
@@ -99,7 +99,7 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname"
 },
-"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/init(extendedGraphemeClusterLiteral:)": {
+"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/init(unicodeScalarLiteral:)": {
   "abstract" : [
 
   ],
@@ -126,7 +126,7 @@
         "type" : "text"
       },
       {
-        "code" : "Self.StringLiteralType",
+        "code" : "Self.UnicodeScalarLiteralType",
         "type" : "codeVoice"
       },
       {
@@ -146,7 +146,7 @@
     },
     {
       "kind" : "externalParam",
-      "text" : "extendedGraphemeClusterLiteral"
+      "text" : "unicodeScalarLiteral"
     },
     {
       "kind" : "text",
@@ -162,20 +162,20 @@
     },
     {
       "kind" : "typeIdentifier",
-      "preciseIdentifier" : "s:s26ExpressibleByStringLiteralP0cD4TypeQa",
-      "text" : "StringLiteralType"
+      "preciseIdentifier" : "s:s43ExpressibleByExtendedGraphemeClusterLiteralP0cdeF4TypeQa",
+      "text" : "ExtendedGraphemeClusterLiteralType"
     },
     {
       "kind" : "text",
       "text" : ")"
     }
   ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/init(extendedGraphemeClusterLiteral:)",
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/init(unicodeScalarLiteral:)",
   "kind" : "symbol",
   "role" : "symbol",
-  "title" : "init(extendedGraphemeClusterLiteral:)",
+  "title" : "init(unicodeScalarLiteral:)",
   "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/distinguishedname\/init(extendedgraphemeclusterliteral:)"
+  "url" : "\/documentation\/swiftdirector\/distinguishedname\/init(unicodescalarliteral:)"
 }
 }
 }

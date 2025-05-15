@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccount",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccount\/ShadowAccountProtocol-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccount"
       ]
     ]
   },
@@ -59,7 +58,7 @@
     ],
     "remoteSource" : {
       "fileName" : "ShadowAccount.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/ShadowAccount.swift#L8"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/ObjectClasses\/ShadowAccount.swift#L8"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -226,17 +225,6 @@
   "title" : "ShadowAccount",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/shadowaccount"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/ShadowAccount/ShadowAccountProtocol-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccount\/ShadowAccountProtocol-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ShadowAccountProtocol Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/shadowaccount\/shadowaccountprotocol-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/ShadowAccount/shadowLastChange": {
   "abstract" : [

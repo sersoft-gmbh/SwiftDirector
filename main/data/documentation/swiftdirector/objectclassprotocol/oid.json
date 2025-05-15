@@ -58,7 +58,7 @@
     ],
     "remoteSource" : {
       "fileName" : "BaseObjectClass.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/BaseObjectClass.swift#L12"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/ObjectClasses\/BaseObjectClass.swift#L12"
     },
     "required" : true,
     "role" : "symbol",

@@ -17,8 +17,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/Comparable-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey"
       ]
     ]
   },
@@ -378,17 +377,6 @@
   "title" : "AttributeKey",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/attributekey"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AttributeKey\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/attributekey\/comparable-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/AttributeKey/_=(_:_:)-22mv2": {
   "abstract" : [

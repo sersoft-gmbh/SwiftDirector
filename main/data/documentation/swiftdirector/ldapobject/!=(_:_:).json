@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/Equatable-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject"
       ]
     ]
   },
@@ -432,17 +431,6 @@
   "title" : "!=(_:_:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapobject\/!=(_:_:)"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/Equatable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/Equatable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Equatable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/ldapobject\/equatable-implementations"
 }
 }
 }

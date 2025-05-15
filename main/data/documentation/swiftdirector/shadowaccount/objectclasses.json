@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccount",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccount\/ObjectClassProtocol-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccount"
       ]
     ]
   },
@@ -74,7 +73,7 @@
     ],
     "remoteSource" : {
       "fileName" : "BaseObjectClass.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/BaseObjectClass.swift#L26"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/ObjectClasses\/BaseObjectClass.swift#L26"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -250,17 +249,6 @@
   "title" : "ShadowAccount",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/shadowaccount"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/ShadowAccount/ObjectClassProtocol-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ShadowAccount\/ObjectClassProtocol-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ObjectClassProtocol Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/shadowaccount\/objectclassprotocol-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/ShadowAccount/objectClasses": {
   "abstract" : [

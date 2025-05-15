@@ -90,7 +90,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPObject.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/Models\/LDAPObject.swift#L107"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/LDAPObject.swift#L107"
     },
     "role" : "symbol",
     "roleHeading" : "Operator",

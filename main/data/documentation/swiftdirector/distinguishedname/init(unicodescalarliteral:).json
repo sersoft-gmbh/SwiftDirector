@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByUnicodeScalarLiteral-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName"
       ]
     ]
   },
@@ -220,17 +219,6 @@
   "title" : "DistinguishedName",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/ExpressibleByUnicodeScalarLiteral-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/ExpressibleByUnicodeScalarLiteral-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "ExpressibleByUnicodeScalarLiteral Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/distinguishedname\/expressiblebyunicodescalarliteral-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/init(unicodeScalarLiteral:)": {
   "abstract" : [

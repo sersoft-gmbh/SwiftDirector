@@ -3,8 +3,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPerson",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPerson\/OrganizationalPersonProtocol-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPerson"
       ]
     ]
   },
@@ -59,7 +58,7 @@
     ],
     "remoteSource" : {
       "fileName" : "OrganizationalPerson.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/Sources\/SwiftDirector\/ObjectClasses\/OrganizationalPerson.swift#L7"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/ObjectClasses\/OrganizationalPerson.swift#L7"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -226,17 +225,6 @@
   "title" : "OrganizationalPerson",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/organizationalperson"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/OrganizationalPerson/OrganizationalPersonProtocol-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPerson\/OrganizationalPersonProtocol-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "OrganizationalPersonProtocol Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/organizationalperson\/organizationalpersonprotocol-implementations"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/OrganizationalPerson/street": {
   "abstract" : [

@@ -9,8 +9,7 @@
     "paths" : [
       [
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName",
-        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Comparable-Implementations"
+        "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName"
       ]
     ]
   },
@@ -467,17 +466,6 @@
   "title" : "...(_:)",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/distinguishedname\/'...(_:)-4x9bv"
-},
-"doc://SwiftDirector/documentation/SwiftDirector/DistinguishedName/Comparable-Implementations": {
-  "abstract" : [
-
-  ],
-  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/DistinguishedName\/Comparable-Implementations",
-  "kind" : "article",
-  "role" : "collectionGroup",
-  "title" : "Comparable Implementations",
-  "type" : "topic",
-  "url" : "\/documentation\/swiftdirector\/distinguishedname\/comparable-implementations"
 }
 }
 }
