@@ -107,6 +107,11 @@ where ObjectClass: ObjectClassProtocol
     public static func ==(lhs: Self, rhs: Self) -> Bool { lhs.id == rhs.id }
 }
 
+#if swift(>=6.0)
+@DebugDescription
+extension LDAPObject {}
+#endif
+
 // Needs to be defined outside the LDAPObject generic object to be able to pass it on.
 /*fileprivate but*/ @usableFromInline final class LDAPObjectStorage: @unchecked Sendable {
     fileprivate private(set) var raw: Dictionary<AttributeKey, LDAPRaw>

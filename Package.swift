@@ -1,4 +1,4 @@
-// swift-tools-version:6.0
+// swift-tools-version:6.1
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -43,7 +43,6 @@ let swiftSettings: Array<SwiftSetting> = [
     .swiftLanguageMode(.v6),
     .enableUpcomingFeature("ExistentialAny"),
     .enableUpcomingFeature("InternalImportsByDefault"),
-    .enableExperimentalFeature("GlobalConcurrency"),
 ]
 
 let package = Package(

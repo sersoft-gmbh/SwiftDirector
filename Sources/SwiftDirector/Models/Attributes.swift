@@ -31,6 +31,11 @@ public struct AttributeKey: RawRepresentable,
     }
 }
 
+#if swift(>=6.0)
+@DebugDescription
+extension AttributeKey {}
+#endif
+
 /// Represents an (typed) attribute containing its key.
 public struct Attribute<Value: LDAPValue>: Hashable, Sendable, CustomStringConvertible, CustomDebugStringConvertible {
     /// The key for this attribute.
@@ -43,3 +48,8 @@ public struct Attribute<Value: LDAPValue>: Hashable, Sendable, CustomStringConve
     /// - Parameter key: The key to use for this attribute.
     public init(key: AttributeKey) { self.key = key }
 }
+
+#if swift(>=6.0)
+@DebugDescription
+extension Attribute {}
+#endif

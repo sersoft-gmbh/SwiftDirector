@@ -43,6 +43,11 @@ public struct LDAPError: Error, Equatable, CustomStringConvertible {
     public static var unknown: LDAPError { .init(kind: .unknown) }
 }
 
+#if swift(>=6.0)
+@DebugDescription
+extension LDAPError {}
+#endif
+
 // MARK: - Execution Helpers
 #if swift(>=6.0)
 extension LDAPError {

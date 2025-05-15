@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -28,11 +28,11 @@ fileprivate extension Target {
             name: "CLDAP",
             path: "Sources/CLDAPMac",
             cSettings: [
-//                .headerSearchPath("\(openldapPath)/include", .when(platforms: [.iOS, .tvOS, .watchOS, .macOS, .macCatalyst])),
-                .unsafeFlags(["-I\(openldapPath)/include"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS, .macCatalyst])),
+//                .headerSearchPath("\(openldapPath)/include", .when(platforms: [.iOS, .tvOS, .watchOS, .macOS, .macCatalyst, .visionOS])),
+                .unsafeFlags(["-I\(openldapPath)/include"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS, .macCatalyst, .visionOS])),
             ],
             linkerSettings: [
-                .unsafeFlags(["-L\(openldapPath)/lib"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS, .macCatalyst])),
+                .unsafeFlags(["-L\(openldapPath)/lib"], .when(platforms: [.iOS, .tvOS, .watchOS, .macOS, .macCatalyst, .visionOS])),
                 .linkedLibrary("ldap"),
             ])
 #endif
@@ -40,13 +40,9 @@ fileprivate extension Target {
 }
 
 let swiftSettings: Array<SwiftSetting> = [
-    .enableUpcomingFeature("ConciseMagicFile"),
+    .swiftLanguageMode(.v6),
     .enableUpcomingFeature("ExistentialAny"),
-    .enableUpcomingFeature("BareSlashRegexLiterals"),
-    .enableUpcomingFeature("DisableOutwardActorInference"),
-    .enableExperimentalFeature("StrictConcurrency"),
-    .enableExperimentalFeature("AccessLevelOnImport"),
-//    .enableExperimentalFeature("VariadicGenerics"),
+    .enableUpcomingFeature("InternalImportsByDefault"),
 ]
 
 let package = Package(
@@ -57,6 +53,7 @@ let package = Package(
         .tvOS(.v13),
         .watchOS(.v6),
         .macCatalyst(.v13),
+        .visionOS(.v1),
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
