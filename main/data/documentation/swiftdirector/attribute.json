@@ -46,7 +46,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Attributes.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/Attributes.swift#L40"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/Attributes.swift#L35"
     },
     "role" : "symbol",
     "roleHeading" : "Structure",
@@ -123,7 +123,8 @@
         "doc:\/\/SwiftDirector\/s23CustomStringConvertibleP",
         "doc:\/\/SwiftDirector\/SQ",
         "doc:\/\/SwiftDirector\/SH",
-        "doc:\/\/SwiftDirector\/s8SendableP"
+        "doc:\/\/SwiftDirector\/s8SendableP",
+        "doc:\/\/SwiftDirector\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -206,7 +207,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],
@@ -540,6 +541,11 @@
   "title" : "LDAPValue",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapvalue"
+},
+"doc://SwiftDirector/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://SwiftDirector/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/SwiftDirector\/s23CustomStringConvertibleP",

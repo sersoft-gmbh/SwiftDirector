@@ -19,6 +19,7 @@
   },
   "kind" : "symbol",
   "metadata" : {
+    "extendedModule" : "SwiftDirector",
     "externalID" : "s:13SwiftDirector14LDAPConnectionC6search3for6inBase10filteredBySayAA10LDAPObjectVyxGGxm_S2SSgtKAA19ObjectClassProtocolRzlF",
     "fragments" : [
       {
@@ -137,7 +138,7 @@
     ],
     "remoteSource" : {
       "fileName" : "LDAPConnection.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/LDAPConnection.swift#L163"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/LDAPConnection.swift#L218"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Method",
@@ -461,7 +462,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],

@@ -176,7 +176,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],

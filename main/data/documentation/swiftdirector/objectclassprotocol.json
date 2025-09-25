@@ -137,7 +137,8 @@
   "relationshipsSections" : [
     {
       "identifiers" : [
-        "doc:\/\/SwiftDirector\/s8SendableP"
+        "doc:\/\/SwiftDirector\/s8SendableP",
+        "doc:\/\/SwiftDirector\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -262,7 +263,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],
@@ -1337,6 +1338,11 @@
   "title" : "TopObjectClassProtocol",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/topobjectclassprotocol"
+},
+"doc://SwiftDirector/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://SwiftDirector/s8SendableP": {
   "identifier" : "doc:\/\/SwiftDirector\/s8SendableP",

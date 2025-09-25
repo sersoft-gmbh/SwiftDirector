@@ -85,7 +85,8 @@
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPValue",
         "doc:\/\/SwiftDirector\/s8CopyableP",
         "doc:\/\/SwiftDirector\/SQ",
-        "doc:\/\/SwiftDirector\/s8SendableP"
+        "doc:\/\/SwiftDirector\/s8SendableP",
+        "doc:\/\/SwiftDirector\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -132,7 +133,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],
@@ -230,6 +231,11 @@
   "title" : "LDAPValue Implementations",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/swift\/string\/ldapvalue-implementations"
+},
+"doc://SwiftDirector/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://SwiftDirector/s8CopyableP": {
   "identifier" : "doc:\/\/SwiftDirector\/s8CopyableP",

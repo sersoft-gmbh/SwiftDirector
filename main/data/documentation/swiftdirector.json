@@ -1,7 +1,7 @@
 {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],
@@ -29,6 +29,680 @@
     "symbolKind" : "module",
     "title" : "SwiftDirector"
   },
+  "primaryContentSections" : [
+    {
+      "content" : [
+        {
+          "anchor" : "Installation",
+          "level" : 2,
+          "text" : "Installation",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Add the following dependency to your ",
+              "type" : "text"
+            },
+            {
+              "code" : "Package.swift",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            ".package(url: \"https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\", from: \"0.0.1\"),"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Usage",
+          "level" : 2,
+          "text" : "Usage",
+          "type" : "heading"
+        },
+        {
+          "anchor" : "LDAPServer",
+          "level" : 3,
+          "text" : "LDAPServer",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The first thing you need is an ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ". There are two convenience static methods to get one:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "\/\/ This uses the ldap:\/\/ scheme and the default LDAP port",
+            "let server = LDAPServer.ldap(host: \"ldap.mydomain.com\")",
+            "\/* OR *\/",
+            "\/\/ This uses the ldaps:\/\/ scheme and the default LDAPS port",
+            "let server = LDAPServer.ldaps(host: \"ldaps.mydomain.com\")"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Both methods optionally take a ",
+              "type" : "text"
+            },
+            {
+              "code" : "port",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " parameter if you require a non-default port. If you need different schemes, there is the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/init(schema:host:port:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " initializer with which you can create a fully customized ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "LDAPConnection",
+          "level" : 3,
+          "text" : "LDAPConnection",
+          "type" : "heading"
+        },
+        {
+          "anchor" : "Binding-and-unbinding",
+          "level" : 4,
+          "text" : "Binding and unbinding",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Once you have a server, you need a connection. ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " has a method named ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/openConnection()",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " that will do exactly this for you:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let connection = try server.openConnection()"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "With the connection you can then perform LDAP operations like e.g. binding:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "try connection.bind(dn: \"cn=admin,dc=mydomain,dc=com\", credentials: \"supersecret\")"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The connection will automatically try to unbind itself once it’s deallocated, but you can also explicitly do so:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "try connection.unbind()"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Note, however, that a connection cannot be re-bound once unbound. An unbound connection is invalid and a new connection has to be obtained from the server. Any operation on an unbound connection will fail (and assert in debug builds).",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Duplicating",
+          "level" : 4,
+          "text" : "Duplicating",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "A connection can be duplicated. A normal duplicated connection depends on its original connection. This means that if a connection is invalidated (unbound), all its siblings will be invalid as well.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Duplicated connections will destroy themselves when deallocated - leaving the original connection valid. There is also an explicit ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/close()",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " function which will destroy duplicated connections and unbind primary connections.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Note that a duplicate of an ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " retains its original connection to make sure the original connection doesn’t unbind itself during deallocation, thus rendering the duplicate invalid as well.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "anchor" : "Searching",
+          "level" : 4,
+          "text" : "Searching",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Ultimately, a connection can be used to search the directory. The ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/search(for:inBase:filteredBy:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " method is the way to go for that.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The first parameter is the type of object class you want to search for. It defines what kind of object will be returned. If you want any object, pass ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AnyObjectClass",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " in there. Note, however, that you won’t be able to extract much information from the resulting objects (see below for more information).",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "code" : "base",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " paremeter defines the base DN to use for the search.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "With the optional ",
+              "type" : "text"
+            },
+            {
+              "code" : "filter",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", wich defaults to ",
+              "type" : "text"
+            },
+            {
+              "code" : "nil",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", you can further filter the results (in addition to the object class). Simply pass in a valid LDAP filter.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let results = try connection.search(for: ShadowAccount.self, inBase: \"dc=mydomain,dc=com\")",
+            "\/\/ `results`: Array<LDAPObject<ShadowAccount>>",
+            "for result in results {",
+            "    print(result.userID) \/\/ prints usernames of accounts",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "Object-Classes",
+          "level" : 3,
+          "text" : "Object Classes",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Object classes describe the attributes that are available on an object. In SwiftDirector, object classes are represented as protocols and (empty) structs which are used in combination with the ",
+              "type" : "text"
+            },
+            {
+              "code" : "@dynamicMemberLookup",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " features of Swift to allow you to easily access information on an ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " (see below).",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "All object classes have to inherit from the ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/ObjectClassProtocol",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ". However, since usually all object classes actually inherit from the top object class, it’s semantically more correct to let your object classes also inhert from ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/TopObjectClassProtocol",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "There is also a ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/AnyObjectClass",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " struct, that will allow searching for any object class.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "SwiftDirector currently makes no effort to deliver a conclusive list of object class implementations. The list of implementations that SwiftDirector ships will grow over time, though. It’s easy, however, to implement your own object class (or one that is missing). You simply create a protocol that is named after your object class and has the ",
+              "type" : "text"
+            },
+            {
+              "code" : "Protocol",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " suffix. The protocol itself simply defines the inheritance from other object classes but defines no requirements. In a protocol extension you then define the available attributes of this object class. Finally, you also add a struct that is named after your object class that can then be used for searching.",
+              "type" : "text"
+            },
+            {
+              "text" : " ",
+              "type" : "text"
+            },
+            {
+              "text" : "Let’s take a look at how a ",
+              "type" : "text"
+            },
+            {
+              "code" : "MySpecialPerson",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " object class (inheriting from ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/InetOrgPerson",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ") might be implemented:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "public protocol MySpecialPersonProtocol: InetOrgPersonProtocol {}",
+            "",
+            "extension MySpecialPersonProtocol {",
+            "    \/\/ Only make the attribute's type non-optional if LDAP requires the precense of the attribute!",
+            "    public var myNameAttribute: Attribute<String> { .init(key: \"myName\") }",
+            "",
+            "    \/\/ An optional attribute of type Int.",
+            "    public var myOptionalSize: Attribute<Int?> { .init(key: \"mySize\") }",
+            "",
+            "    \/\/ Collections can always be declared non-optional. If the attribute is missing, the value will be an empty collection.",
+            "    public var myList: Attribute<Array<Int>> { .init(key: \"myList\") }",
+            "}",
+            "",
+            "public struct MySpecialPerson: MySpecialPersonProtocol {",
+            "    \/\/ The oid of the object class.",
+            "    public static var oid: String { \"1.2.3.4.5\" }",
+            "    \/\/ The name as it occurs in e.g the objectClass attribute of an object",
+            "    public static var name: String { \"mySpecialPerson\" }",
+            "",
+            "    \/\/ An empty initializer allowing SwiftDirector to create an instance of your object class definition.",
+            "    public init() {}",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "anchor" : "LDAPObject",
+          "level" : 3,
+          "text" : "LDAPObject",
+          "type" : "heading"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "An ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " represents a concrete object retrieved from an LDAP directory. It’s a generic struct whose generic parameter has to be an object class. It gives access to the object class’ attributes which are exposed as simple properties thanks to the power of ",
+              "type" : "text"
+            },
+            {
+              "code" : "@dynamicMemberLookup",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ":",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let object: LDAPObject<ShadowAccount> \/\/ retrieved from a search",
+            "let username = object.userID \/\/ Extract the username"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "The ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " can also deal with the fact that in LDAP you can have an object that has multiple object classes (“multiple inheritance”). While you can’t directly access attributes of a simbling object class, there are methods that allow safe casting to different object classes:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let object: LDAPObject<ShadowAccount> \/\/ retrieved from a search",
+            "if let inetOrgPerson = object.cast(to: InetOrgPerson.self) {",
+            "    \/\/ Here you have access to attributes of the `InetOrgPerson` object class",
+            "    print(inetOrgPerson.mail ?? \"No email address available\")",
+            "}"
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "You can also simply check if the cast would succeed using ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/canCast(to:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ". And if for some reason you are ",
+              "type" : "text"
+            },
+            {
+              "inlineContent" : [
+                {
+                  "text" : "absolutely sure",
+                  "type" : "text"
+                }
+              ],
+              "type" : "strong"
+            },
+            {
+              "text" : " that a given object can be casted to another object class, there is also ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/forceCast(to:)",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : ". The latter should be treated similar to ",
+              "type" : "text"
+            },
+            {
+              "code" : "try!",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " in Swift and only be used if absolutely necessary.",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Furthermore, ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " allows checking for the availability of attributes:",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        },
+        {
+          "code" : [
+            "let object: LDAPObject<ShadowAccount> \/\/ retrieved from a search",
+            "object.hasAttribute(\\.authPassword) \/\/ Returns whether or not `authPassword` is available."
+          ],
+          "syntax" : "swift",
+          "type" : "codeListing"
+        },
+        {
+          "inlineContent" : [
+            {
+              "text" : "Finally, ",
+              "type" : "text"
+            },
+            {
+              "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject",
+              "isActive" : true,
+              "type" : "reference"
+            },
+            {
+              "text" : " uses the identifying attribute specified by the object class to conform to ",
+              "type" : "text"
+            },
+            {
+              "code" : "Equatable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ", ",
+              "type" : "text"
+            },
+            {
+              "code" : "Hashable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : " and ",
+              "type" : "text"
+            },
+            {
+              "code" : "Identifiable",
+              "type" : "codeVoice"
+            },
+            {
+              "text" : ".",
+              "type" : "text"
+            }
+          ],
+          "type" : "paragraph"
+        }
+      ],
+      "kind" : "content"
+    }
+  ],
   "schemaVersion" : {
     "major" : 0,
     "minor" : 3,
@@ -127,7 +801,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],
@@ -491,6 +1165,182 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapconnection"
 },
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPConnection/close()": {
+  "abstract" : [
+    {
+      "text" : "Closes (invalidates) this connection.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "If this connection is a primary connection (non-duplicate), it will be unbound.",
+      "type" : "text"
+    },
+    {
+      "text" : " ",
+      "type" : "text"
+    },
+    {
+      "text" : "If this is a duplicate connection, it will be destroyed.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "close"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/close()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "close()",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapconnection\/close()"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPConnection/search(for:inBase:filteredBy:)": {
+  "abstract" : [
+    {
+      "text" : "Searches the directory for objects of a given object class using the given base and additional filter.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "search"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "ObjectClass"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "for"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ObjectClass"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type, "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "inBase"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "filteredBy"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : "?) "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sa",
+      "text" : "Array"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPObjectV",
+      "text" : "LDAPObject"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "ObjectClass"
+    },
+    {
+      "kind" : "text",
+      "text" : ">>"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPConnection\/search(for:inBase:filteredBy:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "search(for:inBase:filteredBy:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapconnection\/search(for:inbase:filteredby:)"
+},
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPError": {
   "abstract" : [
     {
@@ -559,6 +1409,140 @@
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapobject"
 },
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/canCast(to:)": {
+  "abstract" : [
+    {
+      "text" : "Checks whether this object can be casted to the given other object class.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "canCast"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "to"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:Sb",
+      "text" : "Bool"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/canCast(to:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "canCast(to:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapobject\/cancast(to:)"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPObject/forceCast(to:)": {
+  "abstract" : [
+    {
+      "text" : "Force casts this object to new object class type.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "forceCast"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "genericParameter",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "to"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ".Type) -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPObjectV",
+      "text" : "LDAPObject"
+    },
+    {
+      "kind" : "text",
+      "text" : "<"
+    },
+    {
+      "kind" : "typeIdentifier",
+      "text" : "C"
+    },
+    {
+      "kind" : "text",
+      "text" : ">"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPObject\/forceCast(to:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "forceCast(to:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapobject\/forcecast(to:)"
+},
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPRaw": {
   "abstract" : [
     {
@@ -626,6 +1610,135 @@
   "title" : "LDAPServer",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldapserver"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/init(schema:host:port:)": {
+  "abstract" : [
+    {
+      "text" : "Creates a new server configuration with the given schema, host and port.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "("
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "schema"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPServerV",
+      "text" : "LDAPServer"
+    },
+    {
+      "kind" : "text",
+      "text" : "."
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector10LDAPServerV6SchemaO",
+      "text" : "Schema"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "host"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:SS",
+      "text" : "String"
+    },
+    {
+      "kind" : "text",
+      "text" : ", "
+    },
+    {
+      "kind" : "externalParam",
+      "text" : "port"
+    },
+    {
+      "kind" : "text",
+      "text" : ": "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:s6UInt16V",
+      "text" : "UInt16"
+    },
+    {
+      "kind" : "text",
+      "text" : ")"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/init(schema:host:port:)",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init(schema:host:port:)",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/init(schema:host:port:)"
+},
+"doc://SwiftDirector/documentation/SwiftDirector/LDAPServer/openConnection()": {
+  "abstract" : [
+    {
+      "text" : "Opens a new connection to this server.",
+      "type" : "text"
+    }
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "func"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "openConnection"
+    },
+    {
+      "kind" : "text",
+      "text" : "() "
+    },
+    {
+      "kind" : "keyword",
+      "text" : "throws"
+    },
+    {
+      "kind" : "text",
+      "text" : " -> "
+    },
+    {
+      "kind" : "typeIdentifier",
+      "preciseIdentifier" : "s:13SwiftDirector14LDAPConnectionC",
+      "text" : "LDAPConnection"
+    }
+  ],
+  "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/LDAPServer\/openConnection()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "openConnection()",
+  "type" : "topic",
+  "url" : "\/documentation\/swiftdirector\/ldapserver\/openconnection()"
 },
 "doc://SwiftDirector/documentation/SwiftDirector/LDAPValue": {
   "abstract" : [

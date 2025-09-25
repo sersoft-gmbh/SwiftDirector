@@ -92,6 +92,7 @@
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/OrganizationalPersonProtocol",
         "doc:\/\/SwiftDirector\/s15BitwiseCopyableP",
         "doc:\/\/SwiftDirector\/s8SendableP",
+        "doc:\/\/SwiftDirector\/s16SendableMetatypeP",
         "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/TopObjectClassProtocol"
       ],
       "kind" : "relationships",
@@ -178,7 +179,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],
@@ -772,6 +773,11 @@
 "doc://SwiftDirector/s15BitwiseCopyableP": {
   "identifier" : "doc:\/\/SwiftDirector\/s15BitwiseCopyableP",
   "title" : "Swift.BitwiseCopyable",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
   "type" : "unresolvable"
 },
 "doc://SwiftDirector/s8SendableP": {

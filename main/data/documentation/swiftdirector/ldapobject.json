@@ -132,7 +132,8 @@
         "doc:\/\/SwiftDirector\/SQ",
         "doc:\/\/SwiftDirector\/SH",
         "doc:\/\/SwiftDirector\/s12IdentifiableP",
-        "doc:\/\/SwiftDirector\/s8SendableP"
+        "doc:\/\/SwiftDirector\/s8SendableP",
+        "doc:\/\/SwiftDirector\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -243,7 +244,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],
@@ -1177,6 +1178,11 @@
 "doc://SwiftDirector/s12IdentifiableP": {
   "identifier" : "doc:\/\/SwiftDirector\/s12IdentifiableP",
   "title" : "Swift.Identifiable",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
   "type" : "unresolvable"
 },
 "doc://SwiftDirector/s23CustomStringConvertibleP": {

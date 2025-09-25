@@ -44,7 +44,7 @@
     ],
     "remoteSource" : {
       "fileName" : "Attributes.swift",
-      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/Attributes.swift#L45"
+      "url" : "https:\/\/github.com\/sersoft-gmbh\/SwiftDirector\/blob\/refs\/heads\/main\/Sources\/SwiftDirector\/Models\/Attributes.swift#L40"
     },
     "role" : "symbol",
     "roleHeading" : "Instance Property",
@@ -126,7 +126,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],

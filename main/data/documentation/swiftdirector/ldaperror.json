@@ -88,7 +88,8 @@
         "doc:\/\/SwiftDirector\/s23CustomStringConvertibleP",
         "doc:\/\/SwiftDirector\/SQ",
         "doc:\/\/SwiftDirector\/s5ErrorP",
-        "doc:\/\/SwiftDirector\/s8SendableP"
+        "doc:\/\/SwiftDirector\/s8SendableP",
+        "doc:\/\/SwiftDirector\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Conforms To",
@@ -152,7 +153,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],
@@ -305,6 +306,11 @@
   "title" : "unknown",
   "type" : "topic",
   "url" : "\/documentation\/swiftdirector\/ldaperror\/unknown"
+},
+"doc://SwiftDirector/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
+  "type" : "unresolvable"
 },
 "doc://SwiftDirector/s23CustomStringConvertibleP": {
   "identifier" : "doc:\/\/SwiftDirector\/s23CustomStringConvertibleP",

@@ -112,7 +112,8 @@
     {
       "identifiers" : [
         "doc:\/\/SwiftDirector\/SQ",
-        "doc:\/\/SwiftDirector\/s8SendableP"
+        "doc:\/\/SwiftDirector\/s8SendableP",
+        "doc:\/\/SwiftDirector\/s16SendableMetatypeP"
       ],
       "kind" : "relationships",
       "title" : "Inherits From",
@@ -206,7 +207,7 @@
 "doc://SwiftDirector/documentation/SwiftDirector": {
   "abstract" : [
     {
-      "text" : "A Swift interface to OpenLDAP.",
+      "text" : "A Swift interface for (Open)LDAP.",
       "type" : "text"
     }
   ],
@@ -850,6 +851,11 @@
 "doc://SwiftDirector/documentation/SwiftDirector/Swift/UInt8": {
   "identifier" : "doc:\/\/SwiftDirector\/documentation\/SwiftDirector\/Swift\/UInt8",
   "title" : "UInt8",
+  "type" : "unresolvable"
+},
+"doc://SwiftDirector/s16SendableMetatypeP": {
+  "identifier" : "doc:\/\/SwiftDirector\/s16SendableMetatypeP",
+  "title" : "Swift.SendableMetatype",
   "type" : "unresolvable"
 },
 "doc://SwiftDirector/s8SendableP": {
