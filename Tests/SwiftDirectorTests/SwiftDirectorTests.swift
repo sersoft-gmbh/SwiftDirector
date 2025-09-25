@@ -1,8 +1,10 @@
-import XCTest
+import Testing
 import CLDAP
 
 @testable import SwiftDirector
 
-final class SwiftDirectorTests: XCTestCase {
-    func testNothing() { XCTAssert(true) }
+@Suite
+struct SwiftDirectorTests {
+    @Test
+    func testNothing() {}
 }

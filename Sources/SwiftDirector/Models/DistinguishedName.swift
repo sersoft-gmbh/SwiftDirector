@@ -39,8 +39,3 @@ public struct DistinguishedName: RawRepresentable,
         lhs.rawValue < rhs.rawValue
     }
 }
-
-#if swift(>=6.0)
-@DebugDescription
-extension DistinguishedName {}
-#endif

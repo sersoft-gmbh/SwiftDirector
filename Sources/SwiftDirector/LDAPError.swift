@@ -18,10 +18,17 @@ public struct LDAPError: Error, Equatable, CustomStringConvertible {
     }
 
     public var description: String {
+#if compiler(>=6.2)
         switch kind {
-        case .ldap(let errno): return "[\(Self.self)] \(String(cString: ldap_err2string(errno)))"
-        case .unknown: return "[\(Self.self)] An unknown error occurred!"
+        case .ldap(let errno): unsafe "[\(Self.self)] \(String(cString: ldap_err2string(errno)))"
+        case .unknown: "[\(Self.self)] An unknown error occurred!"
         }
+#else
+        switch kind {
+        case .ldap(let errno): "[\(Self.self)] \(String(cString: ldap_err2string(errno)))"
+        case .unknown: "[\(Self.self)] An unknown error occurred!"
+        }
+#endif
     }
 
     private init(kind: Kind) {
@@ -43,13 +50,7 @@ public struct LDAPError: Error, Equatable, CustomStringConvertible {
     public static var unknown: LDAPError { .init(kind: .unknown) }
 }
 
-#if swift(>=6.0)
-@DebugDescription
-extension LDAPError {}
-#endif
-
 // MARK: - Execution Helpers
-#if swift(>=6.0)
 extension LDAPError {
     private static func _validateVoid(work: () -> LDAPErrno, beforeThrow: () -> ()) throws(Self) {
         if let error = LDAPError(errno: work()) {
@@ -69,24 +70,3 @@ extension LDAPError {
         return unwrappedResult
     }
 }
-#else
-extension LDAPError {
-    private static func _validateVoid(work: () -> LDAPErrno, beforeThrow: () -> ()) throws {
-        if let error = LDAPError(errno: work()) {
-            beforeThrow()
-            throw error
-        }
-    }
-
-    static func validateVoid(work: () -> LDAPErrno) throws {
-        try _validateVoid(work: work, beforeThrow: {})
-    }
-
-    static func validate<T>(freeingWith free: ((T?) -> ())? = nil, work: (inout T?) -> LDAPErrno) throws -> T {
-        var result: T?
-        try _validateVoid(work: { work(&result) }, beforeThrow: { free?(result) })
-        guard let unwrappedResult = result else { throw unknown }
-        return unwrappedResult
-    }
-}
-#endif
